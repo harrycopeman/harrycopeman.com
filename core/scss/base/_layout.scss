@@ -1,0 +1,46 @@
+/* 
+
+
+All things Layout 
+	
+	- Image Widths
+	- Text Widths
+
+-- */
+
+img {
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+.wide-image {
+	width: 120%;
+	margin-left: -10%;
+
+	img {
+		width: 100%;
+	}
+	.caption {
+		margin-top: -30px !important;
+	}
+}
+@media (max-width: 750px) {
+	.wide-image {
+		width: 100%;
+		margin-left: 0;
+	}
+}
+@media (max-width: $type-break) {
+	.caption {
+		font-size: 12px !important;
+	}
+}
+
+
+video {
+  width: 100%  !important;
+  height: auto  !important;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+

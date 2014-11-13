@@ -1,0 +1,143 @@
+$progress: $me;
+
+.blog {
+
+  .page-title {
+    margin-bottom: 80px !important;
+  }
+  h2 {
+    margin-top: 40px;
+    margin-bottom: 0;
+
+     &:hover {
+      color: $me;
+      transition: .2s;
+     }
+  }
+  h3 {
+    margin-bottom: 40px;
+    font-weight: 300;
+  }
+  a {
+    text-decoration: none;
+  }
+
+
+  .line {
+    height: 1px;
+    border-bottom: 1px solid lighten(gray, 35%);
+  }
+  .last {
+    margin-bottom: 30px;
+  }
+
+
+  /* Mobile */
+  @media screen and (max-width: $type-break) {
+      .last{
+        margin-bottom: -40px;
+      }
+      .line {
+      display: none;
+      }
+      h3{
+        margin-bottom: 40px;
+        padding-top: 0;
+      }
+      h2{
+        margin-top: 30px;
+      }
+
+  }
+
+}
+
+
+
+
+/* BLOG POSTS */
+
+.post {
+
+    h1 {
+      margin-bottom: 10px !important;
+    }
+    h3 {
+      text-align: center;
+      font-weight: 300;
+      margin-bottom: 60px;
+    }
+
+    /* MOBILE */
+    @media screen and (max-width: $break) {
+        h1 {
+          margin-bottom: 10px !important; 
+        }
+        h3 {
+          margin-bottom: 50px;
+        }
+    }
+
+
+}
+
+
+progress {
+  /* Positioning */
+  position: fixed;
+  left: 0;
+  top: 0;
+
+  /* Dimensions */
+  width: 100%;
+  height: .3em;
+
+  /* Reset the apperance */
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+
+  /* Get rid of the default border in Firefox/Opera. */
+  border: none;
+
+  /* For Firefox/IE10+ */
+  background-color: transparent;
+
+  /* For IE10+, color of the progress bar */
+  color: $progress;
+}
+
+progress::-webkit-progress-bar {
+  background-color: transparent;
+}
+
+.flat::-webkit-progress-value {
+  background-color: $progress;
+}
+
+.flat::-moz-progress-bar {
+  background-color: $progress;
+}
+
+
+
+.progress-container {
+  width: 100%;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: .25em;
+  display: block;
+}
+
+.progress-bar {
+  background-color: red;
+  width: 50%;
+  display: block;
+  height: inherit;
+}
+
+
+
+

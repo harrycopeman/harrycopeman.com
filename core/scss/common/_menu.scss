@@ -1,0 +1,90 @@
+.menu {
+  position: relative;
+  z-index: 100;
+  max-width: $full-width;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+
+  margin-bottom: 80px;
+
+  #name {
+    padding-top: 10px;
+    font-size: 20px;
+    font-family: $clear;
+    font-weight: 500;
+    color: $text;
+    float: left;
+  }
+  ul {
+    padding-top: 12px;
+    float: right;
+  }
+  .active {
+    color: $me !important;
+  }
+  li{
+    display: inline;
+    font-size: 14px;
+    padding-left: 50px;
+    font-family: $clear;
+
+      a {
+        text-decoration: none;
+        color: lighten($text,10%);
+
+        &:hover {
+          color: $me;
+        }
+      }
+  }
+
+  @media screen and (max-width: $break) {
+      li{
+        font-size: 14px !important;
+        padding-left: 0;
+        padding-right: 24px;
+      }
+
+      ul{
+        position: absolute;
+        float: left !important;
+        top: 44px;
+      }
+
+      #name{
+        margin-top: -14px;
+      }
+
+      .menu{
+        padding: 20px;
+      }
+  }
+}
+
+.top {
+  cursor: pointer;
+}
+
+
+
+#about {
+    .about-nav {
+      color: $me;
+    }
+}
+#portfolio {
+    .work-nav {
+      color: $me;
+    }
+}
+#blog {
+    .blog-nav {
+      color: $me;
+    }
+}
+#collection {
+    .collection-nav {
+      color: $me;
+    }
+}
