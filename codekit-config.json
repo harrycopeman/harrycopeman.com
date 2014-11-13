@@ -307,15 +307,6 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
-    "\/include\/header.php" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/include\/header.php",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
     "\/core\/imgs\/work\/outria\/2.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -326,6 +317,15 @@
       "outputAbbreviatedPath" : "\/core\/imgs\/work\/outria\/2.png",
       "initialSize" : 804294,
       "fileType" : 8192
+    },
+    "\/include\/header.php" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/include\/header.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     },
     "\/core\/imgs\/work\/outria\/9.png" : {
       "ignoreWasSetByUser" : 0,
@@ -1467,7 +1467,7 @@
   },
   "projectAttributes" : {
     "bourbonEnabled" : 0,
-    "displayValue" : "LIVE",
+    "displayValue" : "harrycopeman.com",
     "displayValueWasSetByUser" : 0,
     "compassEnabled" : 1
   }
