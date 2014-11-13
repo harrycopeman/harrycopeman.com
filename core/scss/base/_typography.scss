@@ -55,6 +55,7 @@ blockquote {
 	font-family: $minion;
 	color: lighten($text,15%);
 	font-style: normal;
+	line-height: 1.4 !important;
 
 	margin: 30px auto !important;
 
@@ -142,5 +143,12 @@ a {
     }
     .heading-three {
     	font-size: 15px;
+    }
+    blockquote {
+    	border-left: 2px solid $me;
+		margin:  20px -24px !important;
+		padding: 0px 24px 0px;
+		font-size: 16px;
+		line-height: 1.4;
     }
 }
