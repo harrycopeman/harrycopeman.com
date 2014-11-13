@@ -1,11 +1,8 @@
 // Randomize 404
-function Randomize() {
-var images = new Array("one.gif","two.gif","three.jpg","four.jpg");
-var imageNum = Math.floor(Math.random() * images.length);
-document.getElementById("divid").style.backgroundImage = "url('" + images[imageNum] + "')";
-}
+var images = ['../imgs/404/one.gif', '../imgs/404/two.gif', '../imgs/404/three.gif', '../imgs/404/four.gif', '../imgs/404/five.gif'];
 
-window.onload = Randomize;
+$('.lost-image').css({'background-image': 'url(../imgs/404/' + images[Math.floor(Math.random() * images.length)] + ')'});
+
 
 
 
