@@ -3,3 +3,5 @@
 
 #Ignore Root files
 root/
+
+git rm --cached <root/live.htaccess>
