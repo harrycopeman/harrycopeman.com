@@ -5,3 +5,7 @@
 root/
 
 git rm --cached <root/live.htaccess>
+
+git rm --cached <codekit-config.json>
+
+git rm --cached <config.rb>
