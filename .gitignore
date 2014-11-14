@@ -1,2 +1,5 @@
-root/live.htaccess
-root/old.htaccess
+# Ignore junk files
+.DS_Store
+
+#Ignore Root files
+root/
