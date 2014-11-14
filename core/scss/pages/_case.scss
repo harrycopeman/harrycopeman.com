@@ -28,12 +28,7 @@
     color: $me;
    }
 }
-.break {
-    width: 100px;
-    height: 2px;
-    background: rgba(0,0,0,0.2);
-    margin: 50px auto 50px auto;
-}
+
 @media screen and (max-width: $break) {
       .break{
         margin: 30px auto 30px auto;
