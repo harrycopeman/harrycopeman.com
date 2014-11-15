@@ -12,7 +12,7 @@ include ("include/header.php");
 
 
                 <div class="wide-image">
-                  <img src="../../core/imgs/profile.png" alt="Me"/>
+                  <img src="../../core/imgs/fog.png" alt="Me"/>
                 </div>
 
                 <h2 class="heading-two">Recent Projects</h2>
