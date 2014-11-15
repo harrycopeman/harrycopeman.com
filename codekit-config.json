@@ -1108,15 +1108,15 @@
       "initialSize" : 59761,
       "fileType" : 8192
     },
-    "\/core\/scss\/pages\/_resume.scss" : {
+    "\/core\/scss\/style.scss" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
+      "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/core\/scss\/pages\/_resume.scss",
+      "inputAbbreviatedPath" : "\/core\/scss\/style.scss",
       "outputStyle" : 1,
       "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/core\/css\/_resume.css",
+      "outputAbbreviatedPath" : "\/core\/css\/style.css",
       "fileType" : 4,
       "debugStyle" : 0
     },
@@ -1131,15 +1131,15 @@
       "initialSize" : 389341,
       "fileType" : 8192
     },
-    "\/core\/scss\/style.scss" : {
+    "\/core\/scss\/pages\/_resume.scss" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/core\/scss\/style.scss",
+      "inputAbbreviatedPath" : "\/core\/scss\/pages\/_resume.scss",
       "outputStyle" : 1,
       "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/core\/css\/style.css",
+      "outputAbbreviatedPath" : "\/core\/css\/_resume.css",
       "fileType" : 4,
       "debugStyle" : 0
     },
