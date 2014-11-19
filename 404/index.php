@@ -17,6 +17,9 @@ include ("../include/header.php");
             myimages[3]="../core/imgs/404/three.gif"
             myimages[4]="../core/imgs/404/four.gif"
             myimages[5]="../core/imgs/404/five.gif"
+            myimages[5]="../core/imgs/404/six.gif"
+            myimages[5]="../core/imgs/404/seven.gif"
+            myimages[5]="../core/imgs/404/eight.gif"
 
             var ry=Math.floor(Math.random()*myimages.length)
             if (ry==0)
@@ -25,7 +28,6 @@ include ("../include/header.php");
             }
             random_imglink()
             </script>
-            <div id="ad"></div>
             <p>It appears that something's gone wrong and now you're lost!
             <br><br>I think the best thing for us both, is that you stop searching for forbidden treasures and <a href="http://harrycopeman.com">go home</a>.</p>
           </div>
