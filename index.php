@@ -8,7 +8,7 @@ include ("include/header.php");
           <div class="loop-12">
               <div class="loop-12">
                 <h1 class="page-title">Hello</h1>
-                <p>I’m Harry Copeman, a product designer, currently working for myself in the UK. I’m passionate about <a href="portfolio">building and simplifying</a> products to improve the lives of humans. I also love to <a href="blog">write</a>, and I’m a freak for good typography. If you like, you can read a little more <a href="about">about me</a>.</p>
+                <p>I’m Harry Copeman, a product designer soon to be joining the team at Facebook. I’m passionate about <a href="portfolio">building and simplifying</a> products to improve the lives of humans. I also love to <a href="blog">write</a>, and I’m a freak for good typography. If you like, you can read a little more <a href="about">about me</a>.</p>
 
 
                 <div class="wide-image">
