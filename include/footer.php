@@ -8,7 +8,7 @@
               
   <div class="container">
     <p><a target='_blank' href="https://dribbble.com/harrycopeman" target="_blank">Dribbble</a><br>
-    <a target='_blank' href="https://www.dropbox.com/s/w38vg5upwhm74eq/Harry%20Copeman%20Résumé.pdf" target="_blank">Résumé</a></p>
+    <a href="http://dl.dropbox.com/s/w38vg5upwhm74eq/Harry%20Copeman%20R%C3%A9sum%C3%A9.pdf?dl=0">Résumé</a></p>
   </div>
 
   <div class="container">
