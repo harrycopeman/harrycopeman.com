@@ -57,9 +57,7 @@
         margin-top: -14px;
       }
 
-      .menu{
-        padding: 20px;
-      }
+
   }
 }
 
@@ -88,4 +86,10 @@
     .collection-nav {
       color: $me;
     }
+}
+@media screen and (max-width: $break) {
+      .menu{
+        padding: 20px;
+        margin-bottom: 80px !important;
+      }
 }
