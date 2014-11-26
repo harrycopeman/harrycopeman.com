@@ -6,12 +6,12 @@
   margin-right: auto;
   padding: 20px;
 
-  margin-bottom: 80px;
+  margin-bottom:120px;
 
   #name {
     padding-top: 10px;
-    font-size: 20px;
-    font-family: $clear;
+    font-size: 22px;
+    font-family: $minion;
     font-weight: 500;
     color: $text;
     float: left;
@@ -22,12 +22,13 @@
   }
   .active {
     color: $me !important;
+    font-weight: 500 !important;
   }
   li{
     display: inline;
-    font-size: 14px;
+    font-size: 16px;
     padding-left: 50px;
-    font-family: $clear;
+    font-family: $minion;
 
       a {
         text-decoration: none;

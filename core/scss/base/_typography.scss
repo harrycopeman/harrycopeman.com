@@ -18,18 +18,18 @@ All things Typography
 	font-family: $clear;
 	color: $text;
 	line-height: 1.1;
-	margin-bottom: 50px !important;
+	margin-bottom: 40px !important;
 }
 .heading-two {
-	font-size: 26px;
-	font-family: $clear;
+	font-size: 30px;
+	font-family: $minion;
 	font-weight: 700;
 	color: $text;
 	margin-bottom: 26px;
 }
 .heading-three {
-	font-size: calc($font-size - 1px);
-	font-family: $clear;
+	font-size: 16px;
+	font-family: $minion;
 	color: $text;
 	font-weight: 700;
 	margin-bottom: 10px;
