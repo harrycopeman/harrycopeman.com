@@ -538,17 +538,6 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
-    "\/core\/js\/jquery.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/core\/js\/jquery.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/core\/js\/jquery-ck.js",
-      "fileType" : 64
-    },
     "\/core\/imgs\/work\/mailbox\/help.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -559,6 +548,17 @@
       "outputAbbreviatedPath" : "\/core\/imgs\/work\/mailbox\/help.png",
       "initialSize" : 234174,
       "fileType" : 8192
+    },
+    "\/core\/js\/jquery.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/core\/js\/jquery.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/core\/js\/jquery-ck.js",
+      "fileType" : 64
     },
     "\/core\/imgs\/work\/treetender\/7.png" : {
       "ignoreWasSetByUser" : 0,
