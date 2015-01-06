@@ -12,7 +12,7 @@
   </div>
 
   <div class="container">
-    <p>© 2014 Harry Copeman<br>
+    <p>© 2015 Harry Copeman<br>
     Fonts delivered by <a href="https://typekit.com/" target="_blank">Typekit</a></p>
   </div>
 
