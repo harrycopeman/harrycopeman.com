@@ -1,0 +1,80 @@
+.profile {
+
+
+
+		.left {
+			display: inline;
+			float: left;
+			width: 70%;
+		}
+		.copy {
+			margin-top: 80px;
+			padding-left: 30px;
+			padding-right: 30px;
+
+			
+			
+				p {
+					font-family: $serif;
+					font-size: 22px;
+					line-height: 1.6;
+					color: $text;
+					max-width: 540px;
+					font-weight: 500;
+					margin: auto;
+					height: 500px;
+					margin-bottom: 40px;
+				}
+				strong {
+					opacity: 0.6;
+				}
+				a {
+					color: $me;
+					border-bottom: 3px solid lighten($me,30%);
+					text-decoration: none;
+
+						&:hover {
+							border-bottom: 3px solid $me;
+						}
+				}
+		}
+		.right {
+			display: inline;
+			float: right;
+			width: 30%;
+			background:  url("/_core/imgs/me.png") no-repeat center center; 
+			  -webkit-background-size: cover;
+			  -moz-background-size: cover;
+			  -o-background-size: cover;
+			  background-size: cover;
+		}
+
+
+
+
+		@media screen and (max-width: 760px) {
+
+			.right {
+				background-position: bottom;
+				display: block;
+				width: 100% !important;
+				padding: 0;
+				height: 300px !important;
+			}
+			.left {
+				width: 100%;
+			}
+			.copy {
+				margin-top: 40px;
+
+					p {
+						font-size: 18px;
+					}
+			}
+
+		}
+
+
+}
+
+

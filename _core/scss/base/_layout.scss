@@ -1,0 +1,45 @@
+/* 
+
+
+All things Layout 
+	
+	- Image Widths
+	- Text Widths
+
+-- */
+
+
+.chapters {
+	.side {
+			height: 100%;
+			position: relative;
+			top: 0;
+			width: 50%;
+			-webkit-backface-visibility: hidden;
+			z-index: 100;
+			padding: 80px;
+		}
+		.left {
+			width: 50%;
+			display: inline;
+			float: left;
+		}
+		.right {
+			width: 50%;
+			display: inline;
+			float: right;
+
+			.image {
+				height: 80%;
+				left: 50%;
+				margin-right: -50%;
+				position: absolute;
+				top: 50%;
+				-moz-transform: translate(-50%, -50%);
+				-ms-transform: translate(-50%, -50%);
+				-webkit-transform: translate(-50%, -50%);
+				transform: translate(-50%, -50%);
+				width: 80%;
+			}
+		}
+}
