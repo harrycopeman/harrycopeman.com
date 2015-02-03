@@ -8,8 +8,7 @@
   	<title><?php echo $title; ?></title>
   	<link href='/_core/css/style.css' rel='stylesheet'>
 
-    <script src="//use.typekit.net/vve7mtx.js"></script>
-    <script>try{Typekit.load();}catch(e){}</script>
+    <link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
 
     <script>document.cookie='resolution='+Math.max(screen.width,screen.height)+'; path=/';</script>
 
