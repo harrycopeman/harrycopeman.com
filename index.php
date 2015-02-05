@@ -45,7 +45,7 @@ Previous to this, I freelanced for some incredible teams including Dropbox, wher
 
  I’ve also worked with teams like <a href="https://seatgeek.com/" target="_blank">SeatGeek</a>, and various small startups across the world.<br><br>
 
-Feel free to drop me an <a href="mailto:harry.copeman@gmail.com">email</a>, or tweet me <a href="https://twitter.com/harrycopeman">@harrycopeman</a>.</p>
+Feel free to drop me an <a href="mailto:harry.copeman@gmail.com">email</a>, read my <a href="blog">blog</a>, or tweet me <a href="https://twitter.com/harrycopeman">@harrycopeman</a>.</p>
 			</div>
 		</div>
 

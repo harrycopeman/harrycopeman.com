@@ -26,3 +26,63 @@ All things Typography
 	font-size: 24px;
 	line-height: 1.5;
 }
+p {
+	font-family: $serif;
+	font-size: $font-size;
+	line-height: $line-height;
+	color: $text;
+}
+.page-title {
+	font-family: $serif;
+	color: $text;
+	text-align: center;
+	margin: 80px auto;
+	font-size: 50px;
+	line-height: 1.4;
+}
+.heading-two {
+	font-family: $serif;
+	color: $text;
+	font-size: 28px;
+}
+.heading-three {
+	font-family: $sans;
+	color: lighten($text,10%);
+}
+blockquote {
+	border-left: 2px solid $me;
+	margin: auto 40px !important;
+	padding: 0px 20px 0px;
+	quotes: "\201C""\201D""\2018""\2019";
+	font-size: $font-size;
+	line-height: $line-height;
+	font-family: $serif;
+	color: lighten($text,15%);
+	font-style: normal;
+	line-height: 1.4 !important;
+
+	margin: 30px auto !important;
+
+	p {
+		font-size: 13px;
+		padding-top: 10px;
+		font-family: $sans;
+		text-transform: uppercase;
+		color: lighten($text, 20%);
+	}
+}
+
+
+@media screen and (max-width: $break) {
+
+	p {
+		font-size: 16px;
+	}
+	.page-title {
+		font-size: 36px;
+		margin-top: 50px;
+	}
+	.heading-two {
+		font-size: 24px;
+	}
+}

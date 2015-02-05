@@ -51,6 +51,14 @@
 		}
 
 
+		@media screen and (max-width: 900px) {
+			.left {
+				p {
+					padding-left: 40px;
+					padding-right: 40px;
+				}
+			}
+		}
 
 
 		@media screen and (max-width: 760px) {
@@ -65,13 +73,18 @@
 			}
 			.left {
 				width: 100%;
+
+					p {
+						padding-left: 20px;
+						padding-right: 20px;
+					}
 			}
 			.copy {
 				margin-top: 20px;
 
 					p {
 						font-size: 18px;
-						margin-bottom: 40px;
+						margin-bottom: 70px;
 					}
 			}
 
