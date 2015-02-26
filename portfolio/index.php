@@ -43,6 +43,9 @@ include ("../_include/header.php");
             <p class='caption'><strong>Outria</strong> - <a href="outria">View Case Study</a></p>
           </div>
 
+          <a href="../"><div class="back"></div></a>
+
+
         </div>
         </div>
       </div>

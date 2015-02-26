@@ -1,7 +1,7 @@
 <?php
 $title = "TreeTender - Harry Copeman";
 $id = "case-study";
-include ("../../include/header.php");
+include ("../../_include/header.php");
 ?>
 
 
@@ -16,7 +16,7 @@ include ("../../include/header.php");
           <div class="loop-12">
           <div class='loop-12'>
             <div class='wide-image'>
-             <img src="../../core/imgs/work/treetender/1.png"/>
+             <img src="../../_core/imgs/work/treetender/1.png"/>
             </div>
 
              <h2 class="heading-two">The Brief</h2>
@@ -28,7 +28,7 @@ include ("../../include/header.php");
              <p>I find the best way to design a solution is by first identifying the main pain points. After doing some user research it was clear to see the majority of users would be aged 30-50, with little tech experience. We clearly needed to design something that didn’t complicate things - it should just make sense; no dressing it up bullshit. The first call of action was to get some simple flows together as to how this thing should work. Below are some early sketches.</p>
 
             <div class="wide-image">
-              <img src="../../core/imgs/work/treetender/ux.png"/>
+              <img src="../../_core/imgs/work/treetender/ux.png"/>
               <p class="caption">User flows</a></p>
             </div>
 
@@ -37,7 +37,7 @@ include ("../../include/header.php");
              <p>After creating some basic user flows on pen and paper we then began working on some digital wireframes to piece together the experience. This included various revisions, and many prototypes - allowing us to put ourselves in the users shoes. We also ran a couple of tests on people outside of the project to see what they thought of the experience.</p>
 
              <div class="wide-image">
-              <img src="../../core/imgs/work/treetender/gray.png"/>
+              <img src="../../_core/imgs/work/treetender/gray.png"/>
               <p class="caption">Some early wireframes</a></p>
             </div>
 
@@ -45,7 +45,7 @@ include ("../../include/header.php");
              <p>Each element of TreeTender needed to feel obvious; it was vital we didn’t go over board with designs, we just needed something that the products audience could understand. We created a set of crystal clear icons, info graphics, and a colour palette that would sit nicely with users. Will also did some great work on the branding of TreeTender.</p>
 
              <div class="wide-image">
-              <img src="../../core/imgs/work/treetender/style.png"/>
+              <img src="../../_core/imgs/work/treetender/style.png"/>
               </div>
 
             <h2 class="heading-two">Designing Data</h2>
@@ -79,22 +79,22 @@ include ("../../include/header.php");
              <p>The design process took us through many directions and iterations. Below are just some of the designs we went through on the main dashboard, and the problems we encountered. The main problems where over designing, and complicated things much more than they needed to be.</p>
 
              <div class="wide-image">
-              <img src="../../core/imgs/work/treetender/v1.png"/>
+              <img src="../../_core/imgs/work/treetender/v1.png"/>
               <p class="caption">v1 - No clear labels, only todays data, no comparisons</a></p>
             </div>
 
             <div class="wide-image">
-              <img src="../../core/imgs/work/treetender/v2.png"/>
+              <img src="../../_core/imgs/work/treetender/v2.png"/>
               <p class="caption">v2 - Cluttered data, no main pointers, share too prominent</a></p>
             </div>
 
             <div class="wide-image">
-              <img  src="../../core/imgs/work/treetender/v3.png"/>
+              <img  src="../../_core/imgs/work/treetender/v3.png"/>
               <p class="caption">v3 - Too subtle and over designed</a></p>
             </div>
 
             <div class="wide-image">
-              <img src="../../core/imgs/work/treetender/final.png"/>
+              <img src="../../_core/imgs/work/treetender/final.png"/>
               <p class="caption">The final dashboard</a></p>
             </div>
 
@@ -102,37 +102,37 @@ include ("../../include/header.php");
             <p>Below are all of the final screens submitted to the client. I’m very happy with the product we created, and once developed I’m hoping that TreeTender will change network marketing.</p>
 
             <div class="wide-image">
-              <img src="../../core/imgs/work/treetender/1.png"/>
+              <img src="../../_core/imgs/work/treetender/1.png"/>
               <p class="caption">The main dashboard showing an overview of activity</a></p>
             </div>
 
             <div class="wide-image">
-              <img class="case-image" src="../../core/imgs/work/treetender/6.png"/>
+              <img class="case-image" src="../../_core/imgs/work/treetender/6.png"/>
               <p class="caption">Alerts, to be used as a to-do list</a></p>
             </div>
 
             <div class="wide-image">
-              <img class="case-image" src="../../core/imgs/work/treetender/5.png"/>
+              <img class="case-image" src="../../_core/imgs/work/treetender/5.png"/>
               <p class="caption">A downline comparing how members are doing</a></p>
             </div>
 
             <div class="wide-image">
-              <img class="case-image" src="../../core/imgs/work/treetender/2.png"/>
+              <img class="case-image" src="../../_core/imgs/work/treetender/2.png"/>
               <p class="caption">A social feed and private messaging</a></p>
             </div>
 
             <div class="wide-image">
-              <img class="case-image" src="../../core/imgs/work/treetender/3.png"/>
+              <img class="case-image" src="../../_core/imgs/work/treetender/3.png"/>
               <p class="caption">Travel planning for teams</a></p>
             </div>
 
             <div class="wide-image">
-              <img class="case-image" src="../../core/imgs/work/treetender/7.png"/>
+              <img class="case-image" src="../../_core/imgs/work/treetender/7.png"/>
               <p class="caption">A personal schedule</a></p>
             </div>
 
             <div class="wide-image">
-              <img class="case-image" src="../../core/imgs/work/treetender/4.png"/>
+              <img class="case-image" src="../../_core/imgs/work/treetender/4.png"/>
               <p class="caption">Event Details</a></p>
             </div>
 
@@ -144,4 +144,4 @@ include ("../../include/header.php");
         </div>
 
 
-<?php include ("../../include/footer.php"); ?>
+<?php include ("../../_include/footer.php"); ?>

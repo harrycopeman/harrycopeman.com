@@ -11,30 +11,30 @@
 			margin-top: 80px;
 			padding-left: 30px;
 			padding-right: 30px;
+			max-width: 540px;
+			margin: auto;
+			margin-top: 80px;
+			margin-bottom: 80px;
 
 			
 			
 				p {
-					font-family: $serif;
-					font-size: 22px;
-					line-height: 1.6;
-					color: $text;
-					max-width: 540px;
-					font-weight: 500;
-					margin: auto;
-					height: 500px;
-					margin-bottom: 80px;
+					font-family: $sans;
+					font-size: 18px;
+					line-height: 1.7;
+					color: darken($text,20%);
+					font-weight: normal;
 				}
 				strong {
 					opacity: 0.6;
 				}
 				a {
-					color: $me;
-					border-bottom: 3px solid lighten($me,30%);
+					color: inherit;
+					border-bottom: 1px solid lighten($me,30%);
 					text-decoration: none;
 
 						&:hover {
-							border-bottom: 3px solid $me;
+							border-bottom: 1px solid $me;
 						}
 				}
 		}
@@ -53,7 +53,7 @@
 
 		@media screen and (max-width: 900px) {
 			.left {
-				p {
+				.copy {
 					padding-left: 40px;
 					padding-right: 40px;
 				}
@@ -75,8 +75,8 @@
 				width: 100%;
 
 					p {
-						padding-left: 20px;
-						padding-right: 20px;
+						padding-left: 0px;
+						padding-right: 0px;
 					}
 			}
 			.copy {
@@ -88,6 +88,63 @@
 					}
 			}
 
+		}
+
+
+		.social-icons {
+			margin-top: 60px;
+
+			a {
+			text-decoration: none !important;
+			border-bottom: none !important;
+			}
+
+				li {
+					cursor: pointer;
+					display: inline-block;
+					margin-right: 20px;
+					opacity: 0.7;
+
+						&:hover {
+							opacity: 1;
+						}
+				}
+
+				.medium {
+					  text-indent: -9999px;
+					  width: 20px;
+					  height: 16px;
+					  background: url(/_core/imgs/m.svg);
+					  background-size: 20px 16px;
+				}
+				.twitter {
+					  text-indent: -9999px;
+					  width: 19px;
+					  height: 16px;
+					  background: url(/_core/imgs/twitter.svg);
+					  background-size: 19px 16px;
+				}
+				.fb {
+					  text-indent: -9999px;
+					  width: 8px;
+					  height: 16px;
+					  background: url(/_core/imgs/fb.svg);
+					  background-size: 8px 16px;
+				}
+				.email {
+					  text-indent: -9999px;
+					  width: 16px;
+					  height: 16px;
+					  background: url(/_core/imgs/email.svg);
+					  background-size: 16px 16px;
+				}
+				.ig {
+					  text-indent: -9999px;
+					  width: 16px;
+					  height: 16px;
+					  background: url(/_core/imgs/ig.svg);
+					  background-size: 16px 16px;
+				}
 		}
 
 

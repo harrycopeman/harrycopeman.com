@@ -39,13 +39,23 @@ include ("_include/header.php");
 
 
 
-<br><br>I’m Harry Copeman, a product designer based in Hull, soon to be joining the team at Facebook.<br><br>
+<br><br>I’m Harry Copeman, a product designer based in Hull, soon to be joining the team at <a href="https://www.facebook.com/">Facebook</a> in London.<br><br>
 
-Previous to this, I freelanced for some incredible teams including Dropbox, where I helped them improve the universal experience of <a href="http://www.mailboxapp.com/" target="_blank">Mailbox</a>.<br><br>
+Previous to this, I freelanced for some incredible teams including <a href="https://www.dropbox.com/">Dropbox</a>, where I helped them improve the universal experience of <a href="http://www.mailboxapp.com/" target="_blank">Mailbox</a>; a lightweight tool allowing you to keep on top of your inbox.<br><br>
 
- I’ve also worked with teams like <a href="https://seatgeek.com/" target="_blank">SeatGeek</a>, and various small startups across the world.<br><br>
+ I’ve also worked with teams like <a href="https://seatgeek.com/" target="_blank">SeatGeek</a>, and various small startups across the world. You can see my full portfolio <a href="portfolio">here</a>.<br><br>
 
-Feel free to drop me an <a href="mailto:harry.copeman@gmail.com">email</a>, read my <a href="blog">blog</a>, or tweet me <a href="https://twitter.com/harrycopeman">@harrycopeman</a>.</p>
+In the meantime, I'll be available until June of this year for any interesting projects that you have in mind. Feel free to drop me an <a href="mailto:harry.copeman@gmail.com">email</a> if you'd like to hire me.</p>
+
+<ul class="social-icons">
+	<a href="https://twitter.com/harrycopeman"><li class="twitter"></li></a>
+	<a href="https://www.facebook.com/hrycopeman"><li class="fb"></li></a>
+	<a href="https://instagram.com/harrycopeman/"><li class="ig"></li></a>
+	<a href="mailto:harry.copeman@gmail.com"><li class="email"></li></a>
+	<a href="https://medium.com/@harrycopeman"><li class="medium"></li></a>
+</ul>
+
+
 			</div>
 		</div>
 

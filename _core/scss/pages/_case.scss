@@ -1,16 +1,74 @@
 #desc {
   text-align: center;
-  margin-top: -40px;
+  margin-top: -100px;
   font-weight: 300;
+  margin-bottom: 40px;
 }
+
+
 #case-study {
+  .break {
+    width: 100px;
+    height: 2px;
+    background: lighten($text,50%);
+    margin: 100px auto;
+  }
+  .wide-image {
+    width: 120%;
+    margin-left: -10%;
+    img {
+      margin-top: 20px;
+    }
+    .caption {
+      margin-top: 0px;
+      font-family: $sans;
+      font-size: 14px;
+    }
+
+
+  }
+
+
+
   h2 {
-    margin-bottom: 10px;
+    margin-top: 50px !important;
+    font-size: 22px;
+    font-family: $sans;
+    margin-bottom: -40px;
+    font-weight: 600;
   }
   p {
+    font-size: 18px;
+    margin-top: 50px;
     margin-bottom: 30px !important; 
   }
+  a {
+    color: $me;
+  }
+  .back {
+        display: block;
+        text-indent: -9999px;
+        width: 100px;
+        height: 100px;
+        background: url(../imgs/back.svg) no-repeat center center;
+        background-size: 25px 11px;
+        margin: auto;
+        margin-top: 40px;
+        margin-bottom: 80px;
+        opacity: 0.8;
+
+          &:hover {
+            opacity: 1;
+          }
+  }
+
+
+
 }
+
+
+
+
 .back-project:before {
   width: 100px;
   margin-left: auto; margin-right: auto;
@@ -21,8 +79,8 @@
 }
 .back-project {
   text-align: center;
-  margin-top: 40px;
-  margin-bottom: 20px;
+  margin-top: 100px !important;
+  margin-bottom: 100px !important;
 
    &:hover {
     color: $me;
@@ -34,6 +92,14 @@
       .back-project {
         margin-bottom: 0 !important;
       }
+      .wide-image {
+        width: 100% !important;
+        margin-left: 0 !important;
+      }
+      .break {
+        margin: 60px auto !important;
+      }
+
 }
 
 
