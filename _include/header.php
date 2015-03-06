@@ -10,6 +10,9 @@
 
     <link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
 
+    <script src="//use.typekit.net/vve7mtx.js"></script>
+<script>try{Typekit.load();}catch(e){}</script>
+
     <script>document.cookie='resolution='+Math.max(screen.width,screen.height)+'; path=/';</script>
 
     <script>
