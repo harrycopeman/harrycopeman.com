@@ -47,15 +47,6 @@ Previous to this, I freelanced for some incredible teams including <a href="http
 
 In the meantime, I'll be available until June of this year for any interesting projects that you have in mind. Feel free to drop me an <a href="mailto:harry.copeman@gmail.com">email</a> if you'd like to hire me.</p>
 
-<ul class="social-icons">
-	<a href="https://twitter.com/harrycopeman"><li class="twitter"></li></a>
-	<a href="https://www.facebook.com/hrycopeman"><li class="fb"></li></a>
-	<a href="https://instagram.com/harrycopeman/"><li class="ig"></li></a>
-	<a href="mailto:harry.copeman@gmail.com"><li class="email"></li></a>
-	<a href="https://medium.com/@harrycopeman"><li class="medium"></li></a>
-</ul>
-
-
 			</div>
 		</div>
 
