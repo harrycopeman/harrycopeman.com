@@ -39,13 +39,13 @@ include ("_include/header.php");
 
 
 
-<br><br>I’m Harry Copeman, a product designer based in Hull, soon to be joining the team at <a href="https://www.facebook.com/">Facebook</a> in London.<br><br>
+<br><br>I’m Harry Copeman, a product designer based in Hull, soon to be joining the team at <a href="https://www.facebook.com/">Facebook</a> in London; where I'll be working with the incredible Business Solutions team.<br><br>
 
 Previous to this, I freelanced for some incredible teams including <a href="https://www.dropbox.com/">Dropbox</a>, where I helped them improve the universal experience of <a href="http://www.mailboxapp.com/" target="_blank">Mailbox</a>; a lightweight tool allowing you to keep on top of your inbox.<br><br>
 
  I’ve also worked with teams like <a href="https://seatgeek.com/" target="_blank">SeatGeek</a>, and various small startups across the world. You can see my full portfolio <a href="portfolio">here</a>.<br><br>
 
-In the meantime, I'll be available until June of this year for any interesting projects that you have in mind. Feel free to drop me an <a href="mailto:harry.copeman@gmail.com">email</a> if you'd like to hire me.</p>
+Feel free to drop me an <a href="mailto:harry.copeman@gmail.com">email</a>, or <a href="https://twitter.com/harrycopeman">tweet me</a>.</p>
 
 			</div>
 		</div>
