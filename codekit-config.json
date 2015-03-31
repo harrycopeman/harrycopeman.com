@@ -2,15 +2,6 @@
   "CodeKitInfo" : "This is a CodeKit project configuration file. It is designed to sync project settings across multiple machines. Modifying the contents of this file can be a poor life decision if you don't know what you're doing. This file is not useful unless accompanied by the project that created it in CodeKit. For more information, see: http:\/\/incident57.com\/codekit",
   "creatorBuild" : "8403",
   "files" : {
-    "\/portfolio\/ebt\/index.php" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/portfolio\/ebt\/index.php",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
     "\/_core\/imgs\/work\/ebt\/welcome.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -21,6 +12,15 @@
       "outputAbbreviatedPath" : "\/_core\/imgs\/work\/ebt\/welcome.png",
       "initialSize" : 599388,
       "fileType" : 8192
+    },
+    "\/portfolio\/ebt\/index.php" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/portfolio\/ebt\/index.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     },
     "\/old\/include\/header.php" : {
       "ignoreWasSetByUser" : 0,
@@ -42,6 +42,18 @@
       "initialSize" : 209547,
       "fileType" : 8192
     },
+    "\/old\/core\/scss\/pages\/_resume.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/old\/core\/scss\/pages\/_resume.scss",
+      "outputStyle" : 1,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/_core\/css\/_resume.css",
+      "fileType" : 4,
+      "debugStyle" : 0
+    },
     "\/old\/core\/imgs\/work\/treetender\/final.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -51,17 +63,6 @@
       "processed" : 0,
       "outputAbbreviatedPath" : "\/old\/core\/imgs\/work\/treetender\/final.png",
       "initialSize" : 117358,
-      "fileType" : 8192
-    },
-    "\/_core\/imgs\/work\/ebt\/old.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_core\/imgs\/work\/ebt\/old.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/_core\/imgs\/work\/ebt\/old.png",
-      "initialSize" : 476192,
       "fileType" : 8192
     },
     "\/old\/core\/imgs\/work\/pennypot\/v1.png" : {
@@ -75,17 +76,16 @@
       "initialSize" : 1445715,
       "fileType" : 8192
     },
-    "\/old\/core\/scss\/pages\/_resume.scss" : {
+    "\/_core\/imgs\/work\/ebt\/old.png" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
+      "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/old\/core\/scss\/pages\/_resume.scss",
-      "outputStyle" : 1,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/_core\/css\/_resume.css",
-      "fileType" : 4,
-      "debugStyle" : 0
+      "inputAbbreviatedPath" : "\/_core\/imgs\/work\/ebt\/old.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/_core\/imgs\/work\/ebt\/old.png",
+      "initialSize" : 476192,
+      "fileType" : 8192
     },
     "\/_core\/imgs\/work\/mailbox\/banner.png" : {
       "ignoreWasSetByUser" : 0,
@@ -118,48 +118,6 @@
       "initialSize" : 2672389,
       "fileType" : 8192
     },
-    "\/index.php" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/index.php",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
-    "\/old\/core\/imgs\/work\/bootstrapped\/4.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/old\/core\/imgs\/work\/bootstrapped\/4.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/old\/core\/imgs\/work\/bootstrapped\/4.png",
-      "initialSize" : 2971740,
-      "fileType" : 8192
-    },
-    "\/old\/core\/imgs\/work\/bootstrapped\/1.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/old\/core\/imgs\/work\/bootstrapped\/1.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/old\/core\/imgs\/work\/bootstrapped\/1.png",
-      "initialSize" : 1754386,
-      "fileType" : 8192
-    },
-    "\/old\/core\/imgs\/work\/bootstrapped\/7.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/old\/core\/imgs\/work\/bootstrapped\/7.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/old\/core\/imgs\/work\/bootstrapped\/7.png",
-      "initialSize" : 3994953,
-      "fileType" : 8192
-    },
     "\/_core\/imgs\/work\/pennypot\/swipes3.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -182,6 +140,26 @@
       "initialSize" : 2173280,
       "fileType" : 8192
     },
+    "\/index.php" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/index.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/old\/core\/imgs\/work\/bootstrapped\/4.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/old\/core\/imgs\/work\/bootstrapped\/4.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/old\/core\/imgs\/work\/bootstrapped\/4.png",
+      "initialSize" : 2971740,
+      "fileType" : 8192
+    },
     "\/old\/core\/imgs\/work\/outria\/9.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -191,6 +169,28 @@
       "processed" : 0,
       "outputAbbreviatedPath" : "\/old\/core\/imgs\/work\/outria\/9.png",
       "initialSize" : 404884,
+      "fileType" : 8192
+    },
+    "\/old\/core\/imgs\/work\/bootstrapped\/1.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/old\/core\/imgs\/work\/bootstrapped\/1.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/old\/core\/imgs\/work\/bootstrapped\/1.png",
+      "initialSize" : 1754386,
+      "fileType" : 8192
+    },
+    "\/old\/core\/imgs\/work\/bootstrapped\/7.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/old\/core\/imgs\/work\/bootstrapped\/7.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/old\/core\/imgs\/work\/bootstrapped\/7.png",
+      "initialSize" : 3994953,
       "fileType" : 8192
     },
     "\/old\/portfolio\/popcam\/index.php" : {
@@ -440,16 +440,14 @@
       "initialSize" : 144927,
       "fileType" : 8192
     },
-    "\/old\/core\/imgs\/collection\/physical\/lounge-chair.png" : {
+    "\/blog\/designing-for-people\/index.php" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/old\/core\/imgs\/collection\/physical\/lounge-chair.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/old\/core\/imgs\/collection\/physical\/lounge-chair.png",
-      "initialSize" : 249831,
-      "fileType" : 8192
+      "inputAbbreviatedPath" : "\/blog\/designing-for-people\/index.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     },
     "\/old\/core\/imgs\/work\/outria\/site.png" : {
       "ignoreWasSetByUser" : 0,
@@ -473,14 +471,16 @@
       "initialSize" : 414607,
       "fileType" : 8192
     },
-    "\/blog\/designing-for-people\/index.php" : {
+    "\/old\/core\/imgs\/collection\/physical\/lounge-chair.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/blog\/designing-for-people\/index.php",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
+      "inputAbbreviatedPath" : "\/old\/core\/imgs\/collection\/physical\/lounge-chair.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/old\/core\/imgs\/collection\/physical\/lounge-chair.png",
+      "initialSize" : 249831,
+      "fileType" : 8192
     },
     "\/old\/core\/scss\/common\/_menu.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -539,6 +539,17 @@
       "initialSize" : 121617,
       "fileType" : 8192
     },
+    "\/_core\/imgs\/work\/popcam\/sharing.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_core\/imgs\/work\/popcam\/sharing.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/_core\/imgs\/work\/popcam\/sharing.png",
+      "initialSize" : 1267365,
+      "fileType" : 8192
+    },
     "\/old\/core\/scss\/pages\/_home.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -551,15 +562,24 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/_core\/imgs\/work\/popcam\/sharing.png" : {
+    "\/old\/portfolio\/index.php" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_core\/imgs\/work\/popcam\/sharing.png",
+      "inputAbbreviatedPath" : "\/old\/portfolio\/index.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/old\/core\/imgs\/work\/pennypot\/final.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/old\/core\/imgs\/work\/pennypot\/final.png",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/_core\/imgs\/work\/popcam\/sharing.png",
-      "initialSize" : 1267365,
+      "outputAbbreviatedPath" : "\/old\/core\/imgs\/work\/pennypot\/final.png",
+      "initialSize" : 1760192,
       "fileType" : 8192
     },
     "\/_core\/scss\/base\/_body.scss" : {
@@ -573,26 +593,6 @@
       "outputAbbreviatedPath" : "\/_core\/css\/_body.css",
       "fileType" : 4,
       "debugStyle" : 0
-    },
-    "\/old\/core\/imgs\/work\/pennypot\/final.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/old\/core\/imgs\/work\/pennypot\/final.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/old\/core\/imgs\/work\/pennypot\/final.png",
-      "initialSize" : 1760192,
-      "fileType" : 8192
-    },
-    "\/old\/portfolio\/index.php" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/old\/portfolio\/index.php",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
     },
     "\/old\/core\/imgs\/work\/outria\/flows.png" : {
       "ignoreWasSetByUser" : 0,
@@ -687,6 +687,15 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
+    "\/blog\/never-settle\/index.php" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/blog\/never-settle\/index.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
     "\/_core\/scss\/pages\/_blog.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -699,15 +708,6 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/blog\/never-settle\/index.php" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/blog\/never-settle\/index.php",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
     "\/apple-touch-icon.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -718,6 +718,17 @@
       "outputAbbreviatedPath" : "\/apple-touch-icon.png",
       "initialSize" : 56344,
       "fileType" : 8192
+    },
+    "\/_core\/js\/jquery.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_core\/js\/jquery.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/_core\/js\/jquery-ck.js",
+      "fileType" : 64
     },
     "\/old\/core\/scss\/base\/_layout.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -730,17 +741,6 @@
       "outputAbbreviatedPath" : "\/_core\/css\/_layout.css",
       "fileType" : 4,
       "debugStyle" : 0
-    },
-    "\/_core\/js\/jquery.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_core\/js\/jquery.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/_core\/js\/jquery-ck.js",
-      "fileType" : 64
     },
     "\/old\/core\/imgs\/collection\/lifestyle\/rapha2.png" : {
       "ignoreWasSetByUser" : 0,
@@ -820,17 +820,16 @@
       "initialSize" : 1826466,
       "fileType" : 8192
     },
-    "\/_core\/scss\/style.scss" : {
+    "\/_core\/imgs\/work\/popcam\/details.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_core\/scss\/style.scss",
-      "outputStyle" : 1,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/_core\/css\/style.css",
-      "fileType" : 4,
-      "debugStyle" : 0
+      "inputAbbreviatedPath" : "\/_core\/imgs\/work\/popcam\/details.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/_core\/imgs\/work\/popcam\/details.png",
+      "initialSize" : 670566,
+      "fileType" : 8192
     },
     "\/old\/core\/imgs\/work\/ebt\/old.png" : {
       "ignoreWasSetByUser" : 0,
@@ -843,17 +842,6 @@
       "initialSize" : 476192,
       "fileType" : 8192
     },
-    "\/_core\/imgs\/work\/popcam\/details.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_core\/imgs\/work\/popcam\/details.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/_core\/imgs\/work\/popcam\/details.png",
-      "initialSize" : 670566,
-      "fileType" : 8192
-    },
     "\/_core\/imgs\/me.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -864,6 +852,18 @@
       "outputAbbreviatedPath" : "\/_core\/imgs\/me.png",
       "initialSize" : 968152,
       "fileType" : 8192
+    },
+    "\/_core\/scss\/style.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_core\/scss\/style.scss",
+      "outputStyle" : 1,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/_core\/css\/style.css",
+      "fileType" : 4,
+      "debugStyle" : 0
     },
     "\/old\/core\/imgs\/work\/treetender\/2.png" : {
       "ignoreWasSetByUser" : 0,
@@ -1008,17 +1008,6 @@
       "initialSize" : 4057529,
       "fileType" : 8192
     },
-    "\/_core\/imgs\/work\/treetender\/3.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_core\/imgs\/work\/treetender\/3.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/_core\/imgs\/work\/treetender\/3.png",
-      "initialSize" : 1448954,
-      "fileType" : 8192
-    },
     "\/_core\/imgs\/work\/treetender\/ux.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -1028,6 +1017,17 @@
       "processed" : 0,
       "outputAbbreviatedPath" : "\/_core\/imgs\/work\/treetender\/ux.png",
       "initialSize" : 2833544,
+      "fileType" : 8192
+    },
+    "\/_core\/imgs\/work\/treetender\/3.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_core\/imgs\/work\/treetender\/3.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/_core\/imgs\/work\/treetender\/3.png",
+      "initialSize" : 1448954,
       "fileType" : 8192
     },
     "\/old\/core\/scss\/pages\/_about.scss" : {
@@ -1042,17 +1042,6 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/old\/core\/imgs\/work\/mailbox\/illo.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/old\/core\/imgs\/work\/mailbox\/illo.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/old\/core\/imgs\/work\/mailbox\/illo.png",
-      "initialSize" : 1043475,
-      "fileType" : 8192
-    },
     "\/old\/about\/index.php" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -1061,6 +1050,17 @@
       "inputAbbreviatedPath" : "\/old\/about\/index.php",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
+    },
+    "\/old\/core\/imgs\/work\/mailbox\/designs.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/old\/core\/imgs\/work\/mailbox\/designs.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/old\/core\/imgs\/work\/mailbox\/designs.png",
+      "initialSize" : 405231,
+      "fileType" : 8192
     },
     "\/old\/portfolio\/treetender\/index.php" : {
       "ignoreWasSetByUser" : 0,
@@ -1082,15 +1082,15 @@
       "initialSize" : 384134,
       "fileType" : 8192
     },
-    "\/old\/core\/imgs\/work\/mailbox\/designs.png" : {
+    "\/old\/core\/imgs\/work\/mailbox\/illo.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/old\/core\/imgs\/work\/mailbox\/designs.png",
+      "inputAbbreviatedPath" : "\/old\/core\/imgs\/work\/mailbox\/illo.png",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/old\/core\/imgs\/work\/mailbox\/designs.png",
-      "initialSize" : 405231,
+      "outputAbbreviatedPath" : "\/old\/core\/imgs\/work\/mailbox\/illo.png",
+      "initialSize" : 1043475,
       "fileType" : 8192
     },
     "\/old\/index.php" : {
@@ -1122,17 +1122,6 @@
       "outputAbbreviatedPath" : "\/old\/core\/js\/jquery-ck.js",
       "fileType" : 64
     },
-    "\/old\/core\/imgs\/work\/popcam\/banner.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/old\/core\/imgs\/work\/popcam\/banner.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/old\/core\/imgs\/work\/popcam\/banner.png",
-      "initialSize" : 2022639,
-      "fileType" : 8192
-    },
     "\/old\/core\/imgs\/work\/mailbox\/code.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -1142,6 +1131,17 @@
       "processed" : 0,
       "outputAbbreviatedPath" : "\/old\/core\/imgs\/work\/mailbox\/code.png",
       "initialSize" : 2672389,
+      "fileType" : 8192
+    },
+    "\/old\/core\/imgs\/work\/popcam\/banner.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/old\/core\/imgs\/work\/popcam\/banner.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/old\/core\/imgs\/work\/popcam\/banner.png",
+      "initialSize" : 2022639,
       "fileType" : 8192
     },
     "\/old\/core\/imgs\/work\/pennypot\/1.png" : {
@@ -1200,6 +1200,17 @@
       "initialSize" : 569421,
       "fileType" : 8192
     },
+    "\/old\/core\/imgs\/work\/outria\/banner.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/old\/core\/imgs\/work\/outria\/banner.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/old\/core\/imgs\/work\/outria\/banner.png",
+      "initialSize" : 2216502,
+      "fileType" : 8192
+    },
     "\/_core\/imgs\/work\/treetender\/banner.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -1220,17 +1231,6 @@
       "processed" : 0,
       "outputAbbreviatedPath" : "\/old\/core\/imgs\/work\/ebt\/style.png",
       "initialSize" : 9732,
-      "fileType" : 8192
-    },
-    "\/old\/core\/imgs\/work\/outria\/banner.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/old\/core\/imgs\/work\/outria\/banner.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/old\/core\/imgs\/work\/outria\/banner.png",
-      "initialSize" : 2216502,
       "fileType" : 8192
     },
     "\/_core\/imgs\/work\/pennypot\/swipes.png" : {
@@ -1352,14 +1352,16 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
-    "\/old\/blog\/a-new-venture\/index.php" : {
+    "\/_core\/imgs\/work\/pennypot\/swipes1.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/old\/blog\/a-new-venture\/index.php",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
+      "inputAbbreviatedPath" : "\/_core\/imgs\/work\/pennypot\/swipes1.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/_core\/imgs\/work\/pennypot\/swipes1.png",
+      "initialSize" : 414607,
+      "fileType" : 8192
     },
     "\/_core\/scss\/base\/_vars.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -1384,14 +1386,17 @@
       "initialSize" : 4564461,
       "fileType" : 8192
     },
-    "\/old\/portfolio\/ebt\/index.php" : {
+    "\/old\/core\/scss\/pages\/_work.scss" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/old\/portfolio\/ebt\/index.php",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
+      "inputAbbreviatedPath" : "\/old\/core\/scss\/pages\/_work.scss",
+      "outputStyle" : 1,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/_core\/css\/_work.css",
+      "fileType" : 4,
+      "debugStyle" : 0
     },
     "\/portfolio\/mailbox\/index.php" : {
       "ignoreWasSetByUser" : 0,
@@ -1399,6 +1404,26 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/portfolio\/mailbox\/index.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/old\/core\/imgs\/work\/treetender\/v3.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/old\/core\/imgs\/work\/treetender\/v3.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/old\/core\/imgs\/work\/treetender\/v3.png",
+      "initialSize" : 106439,
+      "fileType" : 8192
+    },
+    "\/old\/portfolio\/ebt\/index.php" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/old\/portfolio\/ebt\/index.php",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
@@ -1414,26 +1439,24 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/favicon.png" : {
+    "\/old\/blog\/a-new-venture\/index.php" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/favicon.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/favicon.png",
-      "initialSize" : 1230,
-      "fileType" : 8192
+      "inputAbbreviatedPath" : "\/old\/blog\/a-new-venture\/index.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     },
-    "\/old\/core\/imgs\/work\/treetender\/v3.png" : {
+    "\/_core\/imgs\/work\/mailbox\/flows.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/old\/core\/imgs\/work\/treetender\/v3.png",
+      "inputAbbreviatedPath" : "\/_core\/imgs\/work\/mailbox\/flows.png",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/old\/core\/imgs\/work\/treetender\/v3.png",
-      "initialSize" : 106439,
+      "outputAbbreviatedPath" : "\/_core\/imgs\/work\/mailbox\/flows.png",
+      "initialSize" : 3453623,
       "fileType" : 8192
     },
     "\/old\/core\/imgs\/work\/mailbox\/help.png" : {
@@ -1447,29 +1470,6 @@
       "initialSize" : 234174,
       "fileType" : 8192
     },
-    "\/_core\/imgs\/work\/mailbox\/flows.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_core\/imgs\/work\/mailbox\/flows.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/_core\/imgs\/work\/mailbox\/flows.png",
-      "initialSize" : 3453623,
-      "fileType" : 8192
-    },
-    "\/old\/core\/scss\/style.scss" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/old\/core\/scss\/style.scss",
-      "outputStyle" : 1,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/_core\/css\/style.css",
-      "fileType" : 4,
-      "debugStyle" : 0
-    },
     "\/old\/core\/imgs\/fog.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -1481,15 +1481,15 @@
       "initialSize" : 722414,
       "fileType" : 8192
     },
-    "\/_core\/imgs\/work\/pennypot\/swipes1.png" : {
+    "\/favicon.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_core\/imgs\/work\/pennypot\/swipes1.png",
+      "inputAbbreviatedPath" : "\/favicon.png",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/_core\/imgs\/work\/pennypot\/swipes1.png",
-      "initialSize" : 414607,
+      "outputAbbreviatedPath" : "\/favicon.png",
+      "initialSize" : 1230,
       "fileType" : 8192
     },
     "\/old\/core\/imgs\/work\/popcam\/icons.png" : {
@@ -1503,15 +1503,15 @@
       "initialSize" : 93408,
       "fileType" : 8192
     },
-    "\/old\/core\/scss\/pages\/_work.scss" : {
+    "\/old\/core\/scss\/style.scss" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
+      "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/old\/core\/scss\/pages\/_work.scss",
+      "inputAbbreviatedPath" : "\/old\/core\/scss\/style.scss",
       "outputStyle" : 1,
       "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/_core\/css\/_work.css",
+      "outputAbbreviatedPath" : "\/_core\/css\/style.css",
       "fileType" : 4,
       "debugStyle" : 0
     },
@@ -1547,17 +1547,6 @@
       "initialSize" : 2146953,
       "fileType" : 8192
     },
-    "\/old\/core\/imgs\/work\/ebt\/internal2.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/old\/core\/imgs\/work\/ebt\/internal2.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/old\/core\/imgs\/work\/ebt\/internal2.png",
-      "initialSize" : 569421,
-      "fileType" : 8192
-    },
     "\/old\/core\/imgs\/work\/mailbox\/icons.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -1567,6 +1556,17 @@
       "processed" : 0,
       "outputAbbreviatedPath" : "\/old\/core\/imgs\/work\/mailbox\/icons.png",
       "initialSize" : 49268,
+      "fileType" : 8192
+    },
+    "\/old\/core\/imgs\/work\/ebt\/internal2.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/old\/core\/imgs\/work\/ebt\/internal2.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/old\/core\/imgs\/work\/ebt\/internal2.png",
+      "initialSize" : 569421,
       "fileType" : 8192
     },
     "\/_core\/imgs\/blog\/kettle.png" : {
@@ -1646,17 +1646,6 @@
       "initialSize" : 710673,
       "fileType" : 8192
     },
-    "\/_core\/imgs\/work\/outria\/1.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_core\/imgs\/work\/outria\/1.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/_core\/imgs\/work\/outria\/1.png",
-      "initialSize" : 947851,
-      "fileType" : 8192
-    },
     "\/old\/core\/imgs\/work\/bootstrapped\/cover.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -1680,15 +1669,15 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/_core\/imgs\/work\/popcam\/purchase.png" : {
+    "\/_core\/imgs\/work\/outria\/1.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_core\/imgs\/work\/popcam\/purchase.png",
+      "inputAbbreviatedPath" : "\/_core\/imgs\/work\/outria\/1.png",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/_core\/imgs\/work\/popcam\/purchase.png",
-      "initialSize" : 1272176,
+      "outputAbbreviatedPath" : "\/_core\/imgs\/work\/outria\/1.png",
+      "initialSize" : 947851,
       "fileType" : 8192
     },
     "\/old\/core\/imgs\/work\/popcam\/purchase.png" : {
@@ -1699,6 +1688,17 @@
       "inputAbbreviatedPath" : "\/old\/core\/imgs\/work\/popcam\/purchase.png",
       "processed" : 0,
       "outputAbbreviatedPath" : "\/old\/core\/imgs\/work\/popcam\/purchase.png",
+      "initialSize" : 1272176,
+      "fileType" : 8192
+    },
+    "\/_core\/imgs\/work\/popcam\/purchase.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_core\/imgs\/work\/popcam\/purchase.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/_core\/imgs\/work\/popcam\/purchase.png",
       "initialSize" : 1272176,
       "fileType" : 8192
     },
@@ -1868,17 +1868,6 @@
       "initialSize" : 760143,
       "fileType" : 8192
     },
-    "\/_core\/imgs\/work\/mailbox\/mailbox.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_core\/imgs\/work\/mailbox\/mailbox.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/_core\/imgs\/work\/mailbox\/mailbox.png",
-      "initialSize" : 3049302,
-      "fileType" : 8192
-    },
     "\/_core\/scss\/common\/_menu.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -1890,6 +1879,17 @@
       "outputAbbreviatedPath" : "\/_core\/css\/_menu.css",
       "fileType" : 4,
       "debugStyle" : 0
+    },
+    "\/_core\/imgs\/work\/mailbox\/mailbox.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_core\/imgs\/work\/mailbox\/mailbox.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/_core\/imgs\/work\/mailbox\/mailbox.png",
+      "initialSize" : 3049302,
+      "fileType" : 8192
     },
     "\/_include\/header.php" : {
       "ignoreWasSetByUser" : 0,
@@ -2022,6 +2022,15 @@
       "initialSize" : 804294,
       "fileType" : 8192
     },
+    "\/old\/blog\/never-settle\/index.php" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/old\/blog\/never-settle\/index.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
     "\/old\/apple-touch-icon.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -2032,15 +2041,6 @@
       "outputAbbreviatedPath" : "\/old\/apple-touch-icon.png",
       "initialSize" : 56344,
       "fileType" : 8192
-    },
-    "\/old\/blog\/never-settle\/index.php" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/old\/blog\/never-settle\/index.php",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
     },
     "\/_core\/imgs\/work\/pennypot\/1.png" : {
       "ignoreWasSetByUser" : 0,
@@ -2064,6 +2064,15 @@
       "initialSize" : 470191,
       "fileType" : 8192
     },
+    "\/portfolio\/pennypot\/index.php" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/portfolio\/pennypot\/index.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
     "\/_core\/imgs\/work\/mailbox\/designs.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -2074,15 +2083,6 @@
       "outputAbbreviatedPath" : "\/_core\/imgs\/work\/mailbox\/designs.png",
       "initialSize" : 405231,
       "fileType" : 8192
-    },
-    "\/portfolio\/pennypot\/index.php" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/portfolio\/pennypot\/index.php",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
     },
     "\/_core\/scss\/base\/_typography.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -2096,17 +2096,6 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/old\/core\/imgs\/work\/pennypot\/onboarding.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/old\/core\/imgs\/work\/pennypot\/onboarding.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/old\/core\/imgs\/work\/pennypot\/onboarding.png",
-      "initialSize" : 470191,
-      "fileType" : 8192
-    },
     "\/_core\/imgs\/work\/ebt\/banner.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -2116,6 +2105,17 @@
       "processed" : 0,
       "outputAbbreviatedPath" : "\/_core\/imgs\/work\/ebt\/banner.png",
       "initialSize" : 1109185,
+      "fileType" : 8192
+    },
+    "\/old\/core\/imgs\/work\/pennypot\/onboarding.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/old\/core\/imgs\/work\/pennypot\/onboarding.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/old\/core\/imgs\/work\/pennypot\/onboarding.png",
+      "initialSize" : 470191,
       "fileType" : 8192
     },
     "\/_core\/imgs\/work\/treetender\/final.png" : {
@@ -2160,15 +2160,15 @@
       "initialSize" : 65114,
       "fileType" : 8192
     },
-    "\/old\/core\/imgs\/work\/mailbox\/flows.png" : {
+    "\/old\/core\/imgs\/blog\/kettle.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/old\/core\/imgs\/work\/mailbox\/flows.png",
+      "inputAbbreviatedPath" : "\/old\/core\/imgs\/blog\/kettle.png",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/old\/core\/imgs\/work\/mailbox\/flows.png",
-      "initialSize" : 3453623,
+      "outputAbbreviatedPath" : "\/old\/core\/imgs\/blog\/kettle.png",
+      "initialSize" : 26122,
       "fileType" : 8192
     },
     "\/_core\/imgs\/work\/ebt\/states.png" : {
@@ -2204,15 +2204,15 @@
       "initialSize" : 900171,
       "fileType" : 8192
     },
-    "\/old\/core\/imgs\/blog\/kettle.png" : {
+    "\/old\/core\/imgs\/work\/mailbox\/flows.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/old\/core\/imgs\/blog\/kettle.png",
+      "inputAbbreviatedPath" : "\/old\/core\/imgs\/work\/mailbox\/flows.png",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/old\/core\/imgs\/blog\/kettle.png",
-      "initialSize" : 26122,
+      "outputAbbreviatedPath" : "\/old\/core\/imgs\/work\/mailbox\/flows.png",
+      "initialSize" : 3453623,
       "fileType" : 8192
     },
     "\/_core\/imgs\/work\/outria\/9.png" : {
