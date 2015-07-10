@@ -1,0 +1,182 @@
+.city-header {
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover; 
+
+		h1 {
+			margin-top: 220px;
+			font-family: $sans;
+			text-align: center;
+			font-size: 60px;
+			font-weight: 500;
+			margin-bottom: 200px;
+		}
+		#black {
+			color: $text;
+		}
+}
+
+
+.item {
+	margin-bottom: -20px;
+
+
+		.item-name {
+			font-family: $sans;
+			color: $text;
+			font-size: 28px;
+			margin-bottom: 5px;
+			font-weight: 500;
+			color: white;
+			position: absolute;
+			bottom: 68px;
+			left: 30px;
+		}
+		ul {
+			position: absolute;
+			bottom: 16px;
+			left: 30px;
+				li {
+					margin-right: 40px;
+					font-size: 16px;
+					font-family: $serif;
+					color: white;
+					font-style: italic;
+				}
+				a {
+					text-decoration: none;
+				}
+				.link-icon {
+					background-image: url(../imgs/link.svg);
+					background-position: left center;
+					background-repeat: no-repeat;
+					padding-top: 0px;
+					padding-left: 26px; /* Or size of icon + spacing */
+				}
+				.location-icon {
+					background-image: url(../imgs/location.svg);
+					background-position: left center;
+					background-repeat: no-repeat;
+					padding-top: 0px;
+					padding-left: 26px; /* Or size of icon + spacing */
+				}
+				a:hover {
+					opacity: 0.7;
+				}
+		}
+		.more {
+			display: none;
+			font-family: $sans;
+			color: white;
+			text-decoration: none;
+			font-size: 18px;
+			position: absolute;
+			right: 40px;
+			bottom: 24px;
+			border-bottom: 2px solid $brand;
+		}
+		.location {
+			opacity: 0.9;
+		}
+		.black:before {
+			  -moz-transition: opacity 300ms ease-in-out;
+  			-o-transition: opacity 300ms ease-in-out;
+  			-webkit-transition: opacity 300ms ease-in-out;
+  			transition: opacity 300ms ease-in-out;
+			background-image: linear-gradient(-180deg, rgba(0,0,0,0.00) 43%, #000000 100%);
+		}
+
+
+
+
+
+
+
+
+}
+
+
+
+.controls {
+	margin: 40px auto 80px !important;
+
+
+		.label {
+			font-family: $serif;
+			font-style: italic;
+			color: $light-text;
+			font-size: 12px;
+			margin-bottom: -5px;
+
+		}
+		p {
+			font-family: $serif;
+			color: $text;
+			font-size: 18px;
+
+				&:hover {
+					opacity: 0.7;
+				}
+		}
+		a {
+			text-decoration: none;
+		}
+		#right {
+			text-align: right;
+		}
+		.label:hover {
+		opacity: 1;
+		}
+}
+
+.location {
+	cursor: pointer;
+	width:100%;
+	height:460px;
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+	background: center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.overlay {
+
+	position: relative;
+}
+
+.overlay:before{
+ position: absolute;
+		  content:" ";
+		  top:0;
+		  left:0;
+		  width:100%;
+		  height:100%;
+		  display: block;
+		  z-index:0;
+		  opacity: .4;
+}
+.overlay:hover:before{
+		  display: block;
+		  opacity: .7;
+}
+
+
+.location * {
+		    position: relative;
+		    /* hack */
+		    -webkit-transition: opacity .5s ease-in;
+       -moz-transition: opacity .5s ease-in;
+         -o-transition: opacity .5s ease-in;
+        -ms-transition: opacity .5s ease-in;
+            transition: opacity .5s ease-in;
+		}
+
+
+
+.invisible {
+    opacity: .2;
+}
