@@ -39,9 +39,9 @@ include ("_include/header.php");
 
 
 
-<br><br>I’m Harry Copeman, a product designer based in Hull, soon to be joining the team at <a href="https://www.facebook.com/">Facebook</a> in London; where I'll be working with the incredible Business Solutions team.<br><br>
+<br><br>I’m Harry Copeman, a product designer at <a href="https://www.facebook.com/">Facebook</a> working out of London.<br><br>
 
-Previous to this, I freelanced for various teams including <a href="https://www.dropbox.com/">Dropbox</a>, where I helped them improve the universal experience of <a href="http://www.mailboxapp.com/" target="_blank">Mailbox</a>; a lightweight tool allowing you to keep on top of your inbox.<br><br>
+I've also helped <a href="https://www.dropbox.com/">Dropbox</a> improve the universal experience of <a href="https://www.mailboxapp.com/">Mailbox</a>, I've worked with <a href="https://seatgeek.com/" target="_blank">SeatGeek</a> to simplify their application, and I've supported <a href="http://www.switchapp.com">Switch</a> as they give people jobs. <br><br>
 
  I’ve also worked with teams like <a href="https://seatgeek.com/" target="_blank">SeatGeek</a>, <a href="http://www.switchapp.com">Switch</a>, and various small startups across the world. Alongside this, I like to run a couple of side project, such as <a href="http://coffeeguides.co">Coffee Guides</a>. You can see my full portfolio <a href="portfolio">here</a>.<br><br>
 
