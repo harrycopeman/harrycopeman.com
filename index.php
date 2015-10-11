@@ -39,7 +39,7 @@ include ("_include/header.php");
 
 
 
-<br><br>I’m Harry Copeman, a product designer at <a href="https://www.facebook.com/">Facebook</a> working out of London.<br><br>
+<br><br>I’m Harry Copeman, a product designer at <a href="https://www.facebook.com/">Facebook</a>, working out of London.<br><br>
 
 I've also helped <a href="https://www.dropbox.com/">Dropbox</a> improve the universal experience of <a href="https://www.mailboxapp.com/">Mailbox</a>, I've worked with <a href="https://seatgeek.com/" target="_blank">SeatGeek</a> to simplify their application, and I've supported <a href="http://www.switchapp.com">Switch</a> as they give people jobs. <br><br>
 
