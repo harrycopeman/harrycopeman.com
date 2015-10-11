@@ -14,6 +14,17 @@ include ("../_include/header.php");
 
 
           <div class="wide-image">
+            <a href="http://www.facebook.com/"><img src="../_core/imgs/work/facebook.png" alt="Facebook"/></a>
+            <p class='caption'><strong>Facebook</strong> - <a href="http://www.facebook.com/">View Website</a></p>
+          </div>
+
+
+          <div class="wide-image">
+            <a href="http://www.switchapp.com/"><img src="../_core/imgs/work/switch.png" alt="Switch"/></a>
+            <p class='caption'><strong>Switch</strong> - <a href="http://www.switchapp.com/">View Website</a></p>
+          </div>
+
+          <div class="wide-image">
             <a href="mailbox"><img src="../_core/imgs/work/mailbox/banner.png" alt="Mailbox"/></a>
             <p class='caption'><strong>Mailbox Help</strong> - <a href="mailbox">View Case Study</a></p>
           </div>
