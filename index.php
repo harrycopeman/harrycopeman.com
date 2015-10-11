@@ -43,7 +43,7 @@ include ("_include/header.php");
 
 I've also helped <a href="https://www.dropbox.com/">Dropbox</a> improve the universal experience of <a href="https://www.mailboxapp.com/">Mailbox</a>, I've worked with <a href="https://seatgeek.com/" target="_blank">SeatGeek</a> to simplify their application, and I've supported <a href="http://www.switchapp.com">Switch</a> as they give people jobs. <br><br>
 
- I’ve also worked with teams like <a href="https://seatgeek.com/" target="_blank">SeatGeek</a>, <a href="http://www.switchapp.com">Switch</a>, and various small startups across the world. Alongside this, I like to run a couple of side project, such as <a href="http://coffeeguides.co">Coffee Guides</a>. You can see my full portfolio <a href="portfolio">here</a>.<br><br>
+On the side, I like to run a couple of projects such as <a href="http://coffeeguides.co/">Coffee Guides</a>. You can see my full portfolio <a href="http://harrycopeman.com/portfolio/">here</a>.<br><br>
 
 Feel free to drop me an <a href="mailto:harry.copeman@gmail.com">email</a>, or <a href="https://twitter.com/harrycopeman">tweet me</a>.</p>
 
