@@ -66,7 +66,7 @@ include ("_include/header.php");
 
 			<div class="job" id="switch">
 				<h1>Switch</h1>
-				<p>Working on the business team, solving problems and creating solutions for clients across the world.</p>
+				<p>Design lead for the re-think of Switch accross several platforms, including hiring efforts and a rebrand.</p>
 			</div>
 
 
