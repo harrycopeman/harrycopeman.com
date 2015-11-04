@@ -1,23 +1,46 @@
-// Randomize 404
-var images = ['../imgs/404/one.gif', '../imgs/404/two.gif', '../imgs/404/three.gif', '../imgs/404/four.gif', '../imgs/404/five.gif'];
+/*jslint browser: true */
+/*global $ */
 
-$('.lost-image').css({'background-image': 'url(../imgs/404/' + images[Math.floor(Math.random() * images.length)] + ')'});
+(function () {
+    'use strict';
 
+    var invisibleClassName = 'invisible',
+        scrollWait = 10;
 
+    function isInvisible(el) {
+        var wh = $(window).height(),
+            wt = $(window).scrollTop(),
+            eh = $(el).height(),
+            et = $(el).offset().top;
+        return ((wh + wt) <= et || wt >= (et + eh));
+    }
 
+    function checkVisibleAll(elements) {
+        elements.each(function () {
+            $(this)[(isInvisible(this) ? 'add' : 'remove') + 'Class'](invisibleClassName);
+        });
+    }
 
+    $.fn.visible = function () {
+        var elements = this,
+            scrollTimer = null;
 
+        // Don't check too often
+        function scrolled() {
+            clearTimeout(scrollTimer);
+            scrollTimer = setTimeout(function () {
+                checkVisibleAll(elements);
+            }, scrollWait);
+        }
 
-$(document).ready(function(){
-resizeDiv();
-});
+        // Onload
+        checkVisibleAll(elements);
 
-window.onresize = function(event) {
-resizeDiv();
-}
+        $(window).bind("scroll resize", scrolled);
+        return this;
+    };
+}());
 
-function resizeDiv() {
-vpw = $(window).width();
-vph = $(window).height();
-$(".right").css({"height": vph + "px"});
-}
+$('.location:odd').visible();
+$('.location:even').visible();
+

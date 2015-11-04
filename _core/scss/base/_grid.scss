@@ -22,23 +22,14 @@ img {
     min-width:260px;
     max-width: $width;
     margin: 0 auto;
-
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
-
-@media (max-width: $break) {
+@media (max-width: 970px) {
   .span {
-    padding-left: 0;
     padding-right: 0;
+    padding-left: 0;
   }
-}
-
-.spancase {
-    width:100%;
-    min-width:260px;
-    max-width:880px;
-    margin: 0 auto;
 }
 
 /*Clears Childern Elements*/
@@ -60,8 +51,9 @@ img {
 /*Floats and Pads*/
 
 [class*='loop'] {
+  position: relative;
   float: left;
-  padding: 12px;
+  padding: 0px;
 }
 
 
@@ -109,4 +101,17 @@ img {
         width:100%;
     }
 }
-
+/*
+.item .span {
+    width:100%;
+    min-width:260px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+*/
+.controls .span {
+    width:100%;
+    min-width:80%;
+    max-width: 0px;
+    margin: 0 auto;
+}

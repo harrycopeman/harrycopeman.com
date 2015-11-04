@@ -5,6 +5,17 @@
 	background:$select; /* Firefox */
 }
 body {
-	background-color: #fff;
+	background-color: #F3F3F3;
 }
 
+.about-intro {
+
+		h1 {
+			margin-top: 220px;
+			font-family: $sans;
+			text-align: center;
+			font-size: 60px;
+			font-weight: 500;
+			margin-bottom: 150px;
+		}
+}
