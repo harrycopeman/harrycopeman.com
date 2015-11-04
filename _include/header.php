@@ -8,8 +8,8 @@
   	<title><?php echo $title; ?></title>
   	<link href='/_core/css/style.css' rel='stylesheet'>
 
-    <script src="//use.typekit.net/hng2psp.js"></script>
-    <script>try{Typekit.load();}catch(e){}</script>
+    <script src="https://use.typekit.net/vve7mtx.js"></script>
+	<script>try{Typekit.load({ async: true });}catch(e){}</script>
 
     </script>
 
