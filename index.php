@@ -56,7 +56,7 @@ include ("_include/header.php");
 
 			<div class="job" id="coffee">
 				<h1>Coffee Guides</h1>
-				<p>A personal project, helping people to find the best coffee spots in their city - <a href="coffeeguides.co">coffeeguides.co</a></p>
+				<p>A personal project, helping people to find the best coffee spots in their city - <a href="http://coffeeguides.co/">coffeeguides.co</a></p>
 			</div>
 
 			<div class="job" id="seatgeek">
