@@ -39,14 +39,19 @@ include ("_include/header.php");
 
 				</h1>
 
-				<p><a href="https://twitter.com/harrycopeman">Twitter</a> / <a href="https://instagram.com/harrycopeman/">Photography</a> / <a href="mailto:harry.copeman@gmail.com">Email</a></p>
+				<p><a href="https://twitter.com/harrycopeman">Twitter</a> / <a href="mailto:harry.copeman@gmail.com">Email</a></p>
 			</div>
 
 
 
 			<div class="job" id="facebook">
 				<h1>Facebook</h1>
-				<p>Working on the business team, solving problems and creating solutions for clients across the world.</p>
+				<p>Solving problems and creating solutions for businesses across the world.</p>
+			</div>
+
+			<div class="job" id="facebook-resource">
+				<h1>Facebook Design Resources</h1>
+				<p>Free design resources - <a href="https://facebook.github.io/design/devices.html">design.facebook.com/devices</a></p>
 			</div>
 
 			<div class="job" id="mailbox">
@@ -66,7 +71,7 @@ include ("_include/header.php");
 
 			<div class="job" id="switch">
 				<h1>Switch</h1>
-				<p>Design lead for the re-think of Switch accross several platforms, including hiring efforts and a rebrand.</p>
+				<p>Director for the re-think of Switch accross several platforms, included hiring efforts and a rebrand.</p>
 			</div>
 
 

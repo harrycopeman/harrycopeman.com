@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1"/>
     <link rel="shortcut icon" href="/favicon.png"/>
+    <link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet' type='text/css'>
 
   	<title><?php echo $title; ?></title>
   	<link href='/_core/css/style.css' rel='stylesheet'>
