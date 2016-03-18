@@ -7,9 +7,7 @@ include ("_include/header.php");
 	<div class="span">
 		<div class="loop-12">
 
-			<div class="intro">
-				<h1>
-					<strong>
+				<p>
 						<script language="JavaScript"> 
 						var myDate = new Date(); 
 						  
@@ -33,46 +31,19 @@ include ("_include/header.php");
 						    document.write("Hello!"); 
 						} 
 						</script>
-					</strong>
 
-						I’m Harry Copeman, a product designer at Facebook.
+						I'm Harry, a product designer. <br><br>
+						My job is to help both small and large companies identify problems, and solve them through new products or ventures. This means I spend a lot of my time researching, prototyping and testing my designs. I also like to ask why a lot, to ensure that products are been built to the right standards and for the right reasons.<br><br></p>
 
-				</h1>
+						<h2>Work</h2>
+						<p>I'm currently at <a href="https://www.facebook.com/">Facebook</a> London where I design tools for businesses in Emerging Markets. I also help to build internal and external <a href="https://facebook.github.io/design/devices.html">design resources</a> for teams and individuals. Previous to this, I contracted for a variety of companies including <a href="https://www.dropbox.com/">Dropbox</a>, <a href="http://www.mailboxapp.com/">Mailbox</a>, <a href="https://seatgeek.com/">SeatGeek</a> and <a href="http://switchapp.com/">Switch</a>.<br><br>
+						I also enjoy scratching my own itches, which is why I'm building <a href="http://twocards.co/">TwoCards</a>, a simple way to send invoices and get paid on time.<br><br></p>
 
-				<p><a href="https://twitter.com/harrycopeman">Twitter</a> / <a href="mailto:harry.copeman@gmail.com">Email</a></p>
-			</div>
+						<h2>Contact</h2>
+						<p>I'm always looking to grab a coffee with others. You can find me on <a href="https://twitter.com/harrycopeman">Twitter</a>, or email me on <a href="mailto:harry.copeman@gmail.com">harry.copeman@gmail.com</a>.</p>
 
 
 
-			<div class="job" id="facebook">
-				<h1>Facebook</h1>
-				<p>Solving problems and creating solutions for businesses across the world.</p>
-			</div>
-
-			<div class="job" id="facebook-resource">
-				<h1>Facebook Design Resources</h1>
-				<p>Free design resources - <a href="https://facebook.github.io/design/devices.html">design.facebook.com/devices</a></p>
-			</div>
-
-			<div class="job" id="mailbox">
-				<h1>Mailbox / Dropbox</h1>
-				<p>Helping launch Mailbox for Mac, including a site redesign and a set of user walkthroughs.</p>
-			</div>
-
-			<div class="job" id="coffee">
-				<h1>Coffee Guides</h1>
-				<p>A personal project, helping people to find the best coffee spots in their city - <a href="http://coffeeguides.co/">coffeeguides.co</a></p>
-			</div>
-
-			<div class="job" id="seatgeek">
-				<h1>SeatGeek</h1>
-				<p>Improving the experience for new users, to give them a better overall journey through the proccess.</p>
-			</div>
-
-			<div class="job" id="switch">
-				<h1>Switch</h1>
-				<p>Director for the re-think of Switch accross several platforms, included hiring efforts and a rebrand.</p>
-			</div>
 
 
 
