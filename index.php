@@ -37,7 +37,7 @@ include ("_include/header.php");
 
 						<h2>Work</h2>
 						<p>I'm currently at <a href="https://www.facebook.com/">Facebook</a> London where I design tools for businesses in Emerging Markets. I also help to build internal and external <a href="https://facebook.github.io/design/devices.html">design resources</a> for teams and individuals. Previous to this, I contracted for a variety of companies including <a href="https://www.dropbox.com/">Dropbox</a>, <a href="http://www.mailboxapp.com/">Mailbox</a>, <a href="https://seatgeek.com/">SeatGeek</a> and <a href="http://switchapp.com/">Switch</a>.<br><br>
-						I also enjoy scratching my own itches, which is why I'm building <a href="http://twocards.co/">TwoCards</a>, a simple way to send invoices and get paid on time.<br><br></p>
+						I also enjoy scratching my own itches, which is why I'm building <a href="https://twocards.co/">TwoCards</a>, a simple way to send invoices and get paid on time.<br><br></p>
 
 						<h2>Contact</h2>
 						<p>I'm always looking to grab a coffee with others. You can find me on <a href="https://twitter.com/harrycopeman">Twitter</a>, or email me on <a href="mailto:harry.copeman@gmail.com">harry.copeman@gmail.com</a>.</p>
