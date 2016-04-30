@@ -42,7 +42,7 @@ include ("_include/header.php");
 						<h2>Recognition</h2>
 						<p>2012 - D&AD New Blood Award Winner<br>
 						2015 - Net Awards Young Designer of the Year nominee<br>
-						2015 - Digital Awards Young Person of the Year nominee</p>
+						2015 - Digital Awards Young Person of the Year nominee<br><br></p>
 
 						<h2>Contact</h2>
 						<p>I'm always looking to grab a coffee with others. You can find me on <a href="https://twitter.com/harrycopeman">Twitter</a>, or email me on <a href="mailto:harry.copeman@gmail.com">harry.copeman@gmail.com</a>.</p>
