@@ -33,11 +33,16 @@ include ("_include/header.php");
 						</script>
 
 						I'm Harry, a product designer. <br><br>
-						My job is to help both small and large companies identify problems, and solve them through new products or ventures. This means I spend a lot of my time researching, prototyping and testing my designs. I also like to ask why a lot, to ensure that products are been built to the right standards and for the right reasons.<br><br></p>
+						My job is to help both small and large companies identify problems, and solve them through new products or ventures. This means I spend a lot of my time researching, prototyping and testing. I also like to ask why a lot, to ensure that products are been built to high standards and for the right reasons.<br><br></p>
 
 						<h2>Work</h2>
 						<p>I'm currently at <a href="https://www.facebook.com/">Facebook</a> London where I design tools for businesses in Emerging Markets. I also help to build internal and external <a href="https://facebook.github.io/design/devices.html">design resources</a> for teams and individuals. Previous to this, I contracted for a variety of companies including <a href="https://www.dropbox.com/">Dropbox</a>, <a href="http://www.mailboxapp.com/">Mailbox</a>, <a href="https://seatgeek.com/">SeatGeek</a> and <a href="http://switchapp.com/">Switch</a>.<br><br>
 						I also enjoy scratching my own itches, which is why I'm building <a href="https://twocards.co/">TwoCards</a>, a simple way to send invoices and get paid on time.<br><br></p>
+
+						<h2>Recognition</h2>
+						<p>2012 - D&AD New Blood Award Winner<br>
+						2015 - Net Awards Young Designer of the Year nominee<br>
+						2015 - Digital Awards Young Person of the Year nominee</p>
 
 						<h2>Contact</h2>
 						<p>I'm always looking to grab a coffee with others. You can find me on <a href="https://twitter.com/harrycopeman">Twitter</a>, or email me on <a href="mailto:harry.copeman@gmail.com">harry.copeman@gmail.com</a>.</p>
