@@ -2612,7 +2612,8 @@ footer {
       color: #9399A6; }
 
 .case-study {
-  margin-top: 80px; }
+  margin-top: 80px;
+  margin-bottom: 80px; }
   .case-study img, .case-study video {
     margin-bottom: 40px; }
   .case-study p, .case-study h2 {

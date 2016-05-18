@@ -110,6 +110,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/_core\/imgs\/work\/mailbox\/3.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 85915,
+		"inputAbbreviatedPath": "\/_core\/imgs\/work\/mailbox\/3.png",
+		"outputAbbreviatedPath": "\/_core\/imgs\/work\/mailbox\/3.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/_core\/imgs\/work\/mailbox\/code.png": {
 		"fileType": 32768,
 		"ignore": 0,
