@@ -14,7 +14,7 @@ include ("../_include/header.php");
               <p class='description'>Design tools for businesses in Emerging Markets. </p>
 
               <a href="design-resources"><img src="../../_core/imgs/work/watches.png" alt="Watches"/></a>
-              <p class='caption'>Facebook Resources</p>
+              <a href="design-resources"><p class='caption'>Facebook Resources</p></a>
               <p class='description'>Providing designers with the tools they need.</p>
 
               <a href="http://coffeeguides.co/"><img src="../_core/imgs/work/coffee.png"/></a>
@@ -36,7 +36,7 @@ include ("../_include/header.php");
 
           <div class="loop-6">
 
-              <a href="mailbox"><img src="../_core/imgs/work/mailbox.png" alt="Facebook"/></a>
+              <a href="mailbox"><img src="../_core/imgs/work/mailbox.png" alt="Mailbox"/></a>
               <a href="mailbox"><p class='caption'>Mailbox Help</p></a>
               <p class='description'>Leading the re-design of the Mailbox help site.</p>
 
@@ -44,8 +44,8 @@ include ("../_include/header.php");
               <p class='caption'>TwoCards</p>
               <p class='description'>The simple way to send invoices and get paid on time.</p>
 
-              <a href="http://www.facebook.com/"><img src="../_core/imgs/work/switch.png"/></a>
-              <p class='caption'>Switch</p>
+              <a href="http://www.switchapp.com/"><img src="../_core/imgs/work/switch.png"/></a>
+              <a href="http://www.switchapp.com/"><p class='caption'>Switch</p></a>
               <p class='description'>Leading the re-design of a job search app.</p>
 
 
