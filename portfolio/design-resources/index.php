@@ -14,15 +14,12 @@ include ("../../_include/header.php");
               <h2>Period</h2>
               <p>2016</p>
               <h2>Website</h2>
-              <p>facebook.design/devices</p>
-              <h2>About</h2>
-              <p>2016</p>
+              <p><a href="http://facebook.design/devices">facebook.design/devices</a></p>
             </div>
           </div>
 
           <div class="loop-8">
             <img src="../../_core/imgs/work/design-resources/3.png" alt="Facebook"/>
-            <img src="../../_core/imgs/work/design-resources/4.png" alt="Facebook"/>
             <img src="../../_core/imgs/work/design-resources/5.png" alt="Facebook"/>
             <img src="../../_core/imgs/work/design-resources/6.png" alt="Facebook"/>
           </div>

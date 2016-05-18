@@ -16,7 +16,7 @@ include ("../../_include/header.php");
               <h2>Delivery</h2>
               <p>Website Design & Development</p>
               <h2>Website</h2>
-              <p>mailboxapp.com</p>
+              <p><a href="http://mailboxapp.com/">mailboxapp.com</a></p>
             </div>
           </div>
 
@@ -53,7 +53,6 @@ include ("../../_include/header.php");
 
             <p>With the help of <a target='_blank' href='https://twitter.com/kevinewe\'>Kevin</a> I also put the code together for the new help section. By using AJAX we make it easy for the user operations team to add further languages down the line. The rest of the site was HTML, CSS and JavaScript.</p>
 
-            <img src="../../_core/imgs/work/mailbox/code.png"/>
        
           </div>
 
