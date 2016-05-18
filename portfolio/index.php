@@ -11,7 +11,7 @@ include ("../_include/header.php");
 
               <img src="../_core/imgs/work/facebook.png" alt="Facebook"/>
               <p class='caption'>Facebook</p>
-              <p class='description'>Design tools for businesses in Emerging Markets. </p>
+              <p class='description'>Design tools for businesses. </p>
 
               <a href="design-resources"><img src="../../_core/imgs/work/watches.png" alt="Watches"/></a>
               <a href="design-resources"><p class='caption'>Facebook Resources</p></a>
