@@ -21,10 +21,21 @@ include ("../../_include/header.php");
           </div>
 
           <div class="loop-8">
-            <p>I worked with the team at Mailbox to lead a re-do of the website and help guides in preperation for the launch of Mailbox for Mac. Alongside product ideas and wireframes, I worked on some high fidelity prototypes and built the website.</p>
+
             <img src="../../_core/imgs/work/mailbox/help.png"/>
-            <img src="../../_core/imgs/work/mailbox/2.png"/>
-            <p>This website re-design included a lot of work with the talented illustration team at Dropbox, where we walked on a series of icons to help guide users through the site.</p>
+            <p>My role was to lead the re-design and re-development of the Mailbox help section, to help accommodate for their new desktop application; and to allow for further language support. I also had the opportunity to help the team out with illustrations and user guides.<br><br>With the launch of Mailbox for Mac imminent, the site needed to support the needs of users looking to get familiar with the application. There was also some issues regarding device priorities. The first point of action was to identify how users would flow through the site. Initially, we worked from some very rough user flows, to agree on how users should navigate through the site.</p>
+            <img src="../../_core/imgs/work/mailbox/sketches.png"/>
+
+            <p>Further sketches also lead to some quick HTML & JS prototypes. The two videos below demonstrate some early ideas for the 'Tips + Tricks' and 'Getting Started' sections. We needed a way to cut down on long articles, and instead create an intuitive experience. Scroll indicators seemed like a smart solution as they allow users to quickly point to a section if they wished.</p>
+
+            <video width="100%" controls>
+              <source src="../../_core/video/slideshow.mp4" type="video/mp4">
+              <source src="../../_core/video/slideshow.ogg" type="video/ogg">
+             Your browser does not support the video tag.
+            </video>
+
+
+              <p>It was time to start piecing together our final designs. With some help from Ryan Putman on this amazing set of icons, we had a page to be pretty excited about. We also brought the sites other pages up to scratch with the help section.</p>
 
             <img src="../../_core/imgs/work/mailbox/icons.png"/>
             <img src="../../_core/imgs/work/mailbox/illo.png"/>
