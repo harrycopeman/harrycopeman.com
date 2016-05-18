@@ -20,13 +20,21 @@ include ("../../_include/header.php");
 
           <div class="loop-8">
             <p>Switch makes finding a job easier. I was brought in as a contractor to re-think the entire user experience throughout the website and application. I also oversaw hiring efforts.</p>
-            <img src="../../_core/imgs/work/switch/1.png"/>
+            <img src="../../_core/imgs/work/switch/ios1.png"/>
 
             <video width="100%" controls>
               <source src="../../_core/video/switch1.mp4" type="video/mp4">
               <source src="../../_core/video/switch1.ogg" type="video/ogg">
              Your browser does not support the video tag.
             </video>
+
+            <p>Before my contract was up, I was given the oppurtunity to sprint on an Apple Watch app.</p>
+            <img src="../../_core/imgs/work/switch/watch1.png"/>
+            <img src="../../_core/imgs/work/switch/watch2.png"/>
+            <img src="../../_core/imgs/work/switch/watch3.png"/>
+
+
+
 
             <img src="../../_core/imgs/work/switch/2.png"/>
             <img src="../../_core/imgs/work/switch/3.png"/>
