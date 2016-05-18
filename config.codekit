@@ -1,6 +1,6 @@
 {
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
-"creatorBuild": "19076",
+"creatorBuild": "19127",
 "files": {
 	"\/_core\/css\/style.css": {
 		"fileType": 16,
@@ -11,9 +11,174 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/_core\/imgs\/work\/design-resources\/2.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.50078e+06,
+		"inputAbbreviatedPath": "\/_core\/imgs\/work\/design-resources\/2.png",
+		"outputAbbreviatedPath": "\/_core\/imgs\/work\/design-resources\/2.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_core\/imgs\/work\/design-resources\/3.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5.57881e+06,
+		"inputAbbreviatedPath": "\/_core\/imgs\/work\/design-resources\/3.png",
+		"outputAbbreviatedPath": "\/_core\/imgs\/work\/design-resources\/3.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_core\/imgs\/work\/design-resources\/4.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.50708e+07,
+		"inputAbbreviatedPath": "\/_core\/imgs\/work\/design-resources\/4.png",
+		"outputAbbreviatedPath": "\/_core\/imgs\/work\/design-resources\/4.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_core\/imgs\/work\/design-resources\/5.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 803434,
+		"inputAbbreviatedPath": "\/_core\/imgs\/work\/design-resources\/5.png",
+		"outputAbbreviatedPath": "\/_core\/imgs\/work\/design-resources\/5.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_core\/imgs\/work\/design-resources\/6.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3.51746e+06,
+		"inputAbbreviatedPath": "\/_core\/imgs\/work\/design-resources\/6.png",
+		"outputAbbreviatedPath": "\/_core\/imgs\/work\/design-resources\/6.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_core\/imgs\/work\/facebook.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 18127,
+		"inputAbbreviatedPath": "\/_core\/imgs\/work\/facebook.png",
+		"outputAbbreviatedPath": "\/_core\/imgs\/work\/facebook.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_core\/imgs\/work\/mailbox.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 95306,
+		"inputAbbreviatedPath": "\/_core\/imgs\/work\/mailbox.png",
+		"outputAbbreviatedPath": "\/_core\/imgs\/work\/mailbox.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_core\/imgs\/work\/mailbox\/2.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 231556,
+		"inputAbbreviatedPath": "\/_core\/imgs\/work\/mailbox\/2.png",
+		"outputAbbreviatedPath": "\/_core\/imgs\/work\/mailbox\/2.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_core\/imgs\/work\/mailbox\/code.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2.67239e+06,
+		"inputAbbreviatedPath": "\/_core\/imgs\/work\/mailbox\/code.png",
+		"outputAbbreviatedPath": "\/_core\/imgs\/work\/mailbox\/code.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_core\/imgs\/work\/mailbox\/help.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 234174,
+		"inputAbbreviatedPath": "\/_core\/imgs\/work\/mailbox\/help.png",
+		"outputAbbreviatedPath": "\/_core\/imgs\/work\/mailbox\/help.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_core\/imgs\/work\/mailbox\/icons.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 49268,
+		"inputAbbreviatedPath": "\/_core\/imgs\/work\/mailbox\/icons.png",
+		"outputAbbreviatedPath": "\/_core\/imgs\/work\/mailbox\/icons.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_core\/imgs\/work\/mailbox\/illo.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.04348e+06,
+		"inputAbbreviatedPath": "\/_core\/imgs\/work\/mailbox\/illo.png",
+		"outputAbbreviatedPath": "\/_core\/imgs\/work\/mailbox\/illo.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_core\/imgs\/work\/mailbox\/sketches.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4.56446e+06,
+		"inputAbbreviatedPath": "\/_core\/imgs\/work\/mailbox\/sketches.png",
+		"outputAbbreviatedPath": "\/_core\/imgs\/work\/mailbox\/sketches.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_core\/imgs\/work\/twocards.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 87173,
+		"inputAbbreviatedPath": "\/_core\/imgs\/work\/twocards.png",
+		"outputAbbreviatedPath": "\/_core\/imgs\/work\/twocards.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_core\/imgs\/work\/watches.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 194417,
+		"inputAbbreviatedPath": "\/_core\/imgs\/work\/watches.png",
+		"outputAbbreviatedPath": "\/_core\/imgs\/work\/watches.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/_core\/js\/jquery-ck.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_core\/js\/jquery-ck.js",
 		"outputAbbreviatedPath": "\/_core\/js\/min\/jquery-ck-min.js",
@@ -24,7 +189,7 @@
 		},
 	"\/_core\/js\/jquery.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_core\/js\/jquery.js",
 		"outputAbbreviatedPath": "\/_core\/js\/min\/jquery-min.js",
@@ -177,38 +342,6 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/_core\/scss\/pages\/_about.scss": {
-		"createSourceMap": 0,
-		"debugStyle": 0,
-		"decimalPrecision": 10,
-		"fileType": 4,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_core\/scss\/pages\/_about.scss",
-		"outputAbbreviatedPath": "\/_core\/css\/_about.css",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 2,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
-		"useLibsass": 0
-		},
-	"\/_core\/scss\/pages\/_city.scss": {
-		"createSourceMap": 0,
-		"debugStyle": 0,
-		"decimalPrecision": 10,
-		"fileType": 4,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_core\/scss\/pages\/_city.scss",
-		"outputAbbreviatedPath": "\/_core\/css\/_city.css",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 2,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
-		"useLibsass": 0
-		},
 	"\/_core\/scss\/pages\/_home.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -225,12 +358,37 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/_core\/scss\/pages\/_work.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_core\/scss\/pages\/_work.scss",
+		"outputAbbreviatedPath": "\/_core\/css\/_work.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/_core\/scss\/style.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_core\/scss\/style.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/_core\/scss\/style.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_core\/scss\/style.scss",
 		"outputAbbreviatedPath": "\/_core\/css\/style.css",
@@ -301,7 +459,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 2220,
+		"initialSize": 2962,
 		"inputAbbreviatedPath": "\/favicon.png",
 		"outputAbbreviatedPath": "\/favicon.png",
 		"outputPathIsOutsideProject": 0,
@@ -316,6 +474,33 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/portfolio\/design-resources\/index.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/portfolio\/design-resources\/index.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/portfolio\/index.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/portfolio\/index.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/portfolio\/mailbox\/index.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/portfolio\/mailbox\/index.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		}
 	},
 "hooks": [
@@ -326,7 +511,7 @@
 "projectAttributes": {
 	"bowerAbbreviatedPath": "",
 	"displayValue": "harrycopeman.com",
-	"displayValueWasSetByUser": 0,
+	"displayValueWasSetByUser": 1,
 	"iconImageName": "\/apple-touch-icon.png"
 	},
 "projectSettings": {
@@ -420,8 +605,16 @@
 			"active": 0,
 			"flagValue": -1
 			},
+		"no_nested_string_interpolation": {
+			"active": 1,
+			"flagValue": -1
+			},
 		"no_plusplus": {
 			"active": 0,
+			"flagValue": -1
+			},
+		"no_private_function_fat_arrows": {
+			"active": 1,
 			"flagValue": -1
 			},
 		"no_stand_alone_at": {
@@ -430,6 +623,10 @@
 			},
 		"no_tabs": {
 			"active": 1,
+			"flagValue": -1
+			},
+		"no_this": {
+			"active": 0,
 			"flagValue": -1
 			},
 		"no_throwing_strings": {

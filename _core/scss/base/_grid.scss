@@ -13,6 +13,8 @@
 img {
     width:100%;
     height:auto;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 /*Container*/
@@ -21,15 +23,25 @@ img {
     width:100%;
     min-width:260px;
     max-width: $width;
-    margin: 0 auto;
+    margin: auto;
     padding-left: 40px;
     padding-right: 40px;
 }
-@media (max-width: 970px) {
+
+
+
+
+.case-study, .portfolio {
+
   .span {
-    padding-right: 0;
-    padding-left: 0;
+    width:100%;
+    min-width:260px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
   }
+
 }
 
 /*Clears Childern Elements*/

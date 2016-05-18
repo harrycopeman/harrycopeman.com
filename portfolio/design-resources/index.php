@@ -1,0 +1,34 @@
+<?php
+$title = "Facebook Design Resources - Harry Copeman";
+include ("../../_include/header.php");
+?>
+
+    <div class="case-study">
+      <div class="span">
+        <div class='loop-12'>
+
+          <div class="loop-4">
+            <div class="fixed">
+              <h2>Client</h2>
+              <p>Facebook</p>
+              <h2>Period</h2>
+              <p>2016</p>
+              <h2>Website</h2>
+              <p>facebook.design/devices</p>
+              <h2>About</h2>
+              <p>2016</p>
+            </div>
+          </div>
+
+          <div class="loop-8">
+            <img src="../../_core/imgs/work/design-resources/3.png" alt="Facebook"/>
+            <img src="../../_core/imgs/work/design-resources/4.png" alt="Facebook"/>
+            <img src="../../_core/imgs/work/design-resources/5.png" alt="Facebook"/>
+            <img src="../../_core/imgs/work/design-resources/6.png" alt="Facebook"/>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+<?php include ("../_include/footer.php"); ?>

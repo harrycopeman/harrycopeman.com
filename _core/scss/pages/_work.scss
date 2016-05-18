@@ -1,0 +1,51 @@
+.portfolio {
+	margin-top: 80px;
+
+
+	a {
+		text-decoration: none;
+		border-bottom: 0px !important;
+	}
+
+	p {
+		font-family: $sans;
+		color: $text;
+		font-size: 16px;
+	}
+	.caption {
+		text-decoration: underline;
+	}
+	.description {
+		margin-bottom: 60px;
+	}
+
+}
+
+
+.case-study {
+	margin-top: 80px;
+
+
+
+	img {
+		margin-bottom: 40px;
+	}
+
+	p,h2 {
+		font-size: 18px;
+		font-family: $sans;
+		font-weight: 400;
+	}
+	h2 {
+		margin-bottom: 0px;
+		color: $light-text;
+	}
+	.loop-8  {
+
+		p {
+			margin-bottom: 40px;
+		}
+
+	}
+
+}
