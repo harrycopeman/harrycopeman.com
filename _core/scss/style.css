@@ -2593,7 +2593,8 @@ footer {
   margin-bottom: 100px; }
 
 .portfolio {
-  margin-top: 80px; }
+  margin-top: 80px;
+  margin-bottom: 120px; }
   .portfolio a {
     text-decoration: none;
     border-bottom: 0px !important; }
@@ -2605,6 +2606,10 @@ footer {
     text-decoration: underline; }
   .portfolio .description {
     margin-bottom: 60px; }
+  .portfolio .otherclients {
+    margin-top: 100px; }
+    .portfolio .otherclients .title {
+      color: #9399A6; }
 
 .case-study {
   margin-top: 80px; }

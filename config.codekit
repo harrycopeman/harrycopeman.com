@@ -11,6 +11,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/_core\/imgs\/work\/coffee.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.09364e+06,
+		"inputAbbreviatedPath": "\/_core\/imgs\/work\/coffee.png",
+		"outputAbbreviatedPath": "\/_core\/imgs\/work\/coffee.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/_core\/imgs\/work\/design-resources\/2.png": {
 		"fileType": 32768,
 		"ignore": 0,

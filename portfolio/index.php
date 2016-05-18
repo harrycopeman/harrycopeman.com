@@ -17,9 +17,18 @@ include ("../_include/header.php");
               <p class='caption'>Facebook Resources</p>
               <p class='description'>Providing designers with the tools they need.</p>
 
-              <a href="http://www.facebook.com/"><img src="../_core/imgs/work/facebook.png" alt="Facebook"/></a>
-              <p class='caption'>TreeTender</p>
-              <p class='description'>Desiging a tool to make network marketing easy.</p>
+              <a href="http://coffeeguides.co/"><img src="../_core/imgs/work/coffee.png"/></a>
+              <a href="http://coffeeguides.co/"><p class='caption'>Coffee Guides</p></a>
+              <p class='description'>Find the best coffee spots in your city.</p>
+
+
+
+              <div class="otherclients">
+                <p class="title">Other Clients</p>
+                <p>Dropbox<br>SeatGeek<br>EUFA<br>Startup Weekend<br>Hope & Glory<br>C4DI</p>
+              </div>
+
+
 
 
 
@@ -41,11 +50,16 @@ include ("../_include/header.php");
 
 
 
+
+
           </div>
 
 
 
         </div>
+
+
+
         </div>
       </div>
     </div>

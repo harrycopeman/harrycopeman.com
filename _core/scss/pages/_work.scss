@@ -1,5 +1,6 @@
 .portfolio {
 	margin-top: 80px;
+	margin-bottom: 120px;
 
 
 	a {
@@ -18,8 +19,20 @@
 	.description {
 		margin-bottom: 60px;
 	}
+	.otherclients {
+			margin-top: 100px;
+
+
+				.title {
+					color: $light-text;
+				}
+	}
+
 
 }
+
+
+
 
 
 .case-study {
@@ -47,5 +60,6 @@
 		}
 
 	}
+
 
 }
