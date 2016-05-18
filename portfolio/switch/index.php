@@ -19,7 +19,7 @@ include ("../../_include/header.php");
           </div>
 
           <div class="loop-8">
-            <p>Switch makes finding a job easier. I was brought in as a contractor to re-think the entire user experience throughout the website and application. I also oversaw hiring efforts.</p>
+            <p>Switch makes finding a job easier. I was brought in as a contractor to re-think the entire user experience throughout the website and applications. I also oversaw hiring efforts.</p>
             <img src="../../_core/imgs/work/switch/ios1.png"/>
 
             <img src="../../_core/imgs/work/switch/watch1.png"/>
