@@ -19,6 +19,8 @@ include ("../../_include/header.php");
           </div>
 
           <div class="loop-8">
+            <p>I was heavily involved in an internal project at Facebook with the goal was of providing designers with the tools they need every day. The majority of my work went into these Watches that you see below.
+</p>
             <img src="../../_core/imgs/work/design-resources/3.png" alt="Facebook"/>
             <img src="../../_core/imgs/work/design-resources/5.png" alt="Facebook"/>
             <img src="../../_core/imgs/work/design-resources/6.png" alt="Facebook"/>
