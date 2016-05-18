@@ -41,8 +41,8 @@ include ("../_include/header.php");
               <p class='caption'>TwoCards</p>
               <p class='description'>The simple way to send invoices and get paid on time.</p>
 
-              <a href="http://www.switchapp.com/"><img src="../_core/imgs/work/switch.png"/></a>
-              <a href="http://www.switchapp.com/"><p class='caption'>Switch</p></a>
+              <a href="switch"><img src="../_core/imgs/work/switch.png"/></a>
+              <a href="switch"><p class='caption'>Switch</p></a>
               <p class='description'>Leading the re-design of a job search app.</p>
 
 

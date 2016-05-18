@@ -187,6 +187,61 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/_core\/imgs\/work\/switch\/1.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 487170,
+		"inputAbbreviatedPath": "\/_core\/imgs\/work\/switch\/1.png",
+		"outputAbbreviatedPath": "\/_core\/imgs\/work\/switch\/1.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_core\/imgs\/work\/switch\/2.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 142697,
+		"inputAbbreviatedPath": "\/_core\/imgs\/work\/switch\/2.png",
+		"outputAbbreviatedPath": "\/_core\/imgs\/work\/switch\/2.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_core\/imgs\/work\/switch\/3.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 180960,
+		"inputAbbreviatedPath": "\/_core\/imgs\/work\/switch\/3.png",
+		"outputAbbreviatedPath": "\/_core\/imgs\/work\/switch\/3.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_core\/imgs\/work\/switch\/4.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 230499,
+		"inputAbbreviatedPath": "\/_core\/imgs\/work\/switch\/4.png",
+		"outputAbbreviatedPath": "\/_core\/imgs\/work\/switch\/4.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_core\/imgs\/work\/switch\/5.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 179479,
+		"inputAbbreviatedPath": "\/_core\/imgs\/work\/switch\/5.png",
+		"outputAbbreviatedPath": "\/_core\/imgs\/work\/switch\/5.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/_core\/imgs\/work\/twocards.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -608,6 +663,15 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/portfolio\/mailbox\/index.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/portfolio\/switch\/index.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/portfolio\/switch\/index.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
