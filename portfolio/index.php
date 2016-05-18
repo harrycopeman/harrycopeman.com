@@ -23,10 +23,7 @@ include ("../_include/header.php");
 
 
 
-              <div class="otherclients">
-                <p class="title">Other Clients</p>
-                <p>Dropbox<br>SeatGeek<br>EUFA<br>Startup Weekend<br>Hope & Glory<br>C4DI</p>
-              </div>
+             
 
 
 
@@ -58,6 +55,10 @@ include ("../_include/header.php");
 
         </div>
 
+        <div class="otherclients">
+                <p class="title">Other Clients</p>
+                <p>Dropbox<br>SeatGeek<br>EUFA<br>Startup Weekend<br>Hope & Glory<br>C4DI</p>
+              </div>
 
 
         </div>
