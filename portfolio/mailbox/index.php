@@ -26,6 +26,7 @@ include ("../../_include/header.php");
             <img src="../../_core/imgs/work/mailbox/2.png"/>
             <p>This website re-design included a lot of work with the talented illustration team at Dropbox, where we walked on a series of icons to help guide users through the site.</p>
 
+            <img src="../../_core/imgs/work/mailbox/icons.png"/>
             <img src="../../_core/imgs/work/mailbox/illo.png"/>
        
           </div>

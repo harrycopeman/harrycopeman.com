@@ -154,6 +154,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/_core\/imgs\/work\/switch.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 142338,
+		"inputAbbreviatedPath": "\/_core\/imgs\/work\/switch.png",
+		"outputAbbreviatedPath": "\/_core\/imgs\/work\/switch.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/_core\/imgs\/work\/twocards.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -161,6 +172,83 @@
 		"initialSize": 87173,
 		"inputAbbreviatedPath": "\/_core\/imgs\/work\/twocards.png",
 		"outputAbbreviatedPath": "\/_core\/imgs\/work\/twocards.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_core\/imgs\/work\/twocards\/1.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 91494,
+		"inputAbbreviatedPath": "\/_core\/imgs\/work\/twocards\/1.png",
+		"outputAbbreviatedPath": "\/_core\/imgs\/work\/twocards\/1.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_core\/imgs\/work\/twocards\/2.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 172104,
+		"inputAbbreviatedPath": "\/_core\/imgs\/work\/twocards\/2.png",
+		"outputAbbreviatedPath": "\/_core\/imgs\/work\/twocards\/2.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_core\/imgs\/work\/twocards\/3.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 182056,
+		"inputAbbreviatedPath": "\/_core\/imgs\/work\/twocards\/3.png",
+		"outputAbbreviatedPath": "\/_core\/imgs\/work\/twocards\/3.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_core\/imgs\/work\/twocards\/4.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 260603,
+		"inputAbbreviatedPath": "\/_core\/imgs\/work\/twocards\/4.png",
+		"outputAbbreviatedPath": "\/_core\/imgs\/work\/twocards\/4.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_core\/imgs\/work\/twocards\/5.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 149858,
+		"inputAbbreviatedPath": "\/_core\/imgs\/work\/twocards\/5.png",
+		"outputAbbreviatedPath": "\/_core\/imgs\/work\/twocards\/5.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_core\/imgs\/work\/twocards\/6.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 196238,
+		"inputAbbreviatedPath": "\/_core\/imgs\/work\/twocards\/6.png",
+		"outputAbbreviatedPath": "\/_core\/imgs\/work\/twocards\/6.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_core\/imgs\/work\/twocards\/Dashboard.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 232290,
+		"inputAbbreviatedPath": "\/_core\/imgs\/work\/twocards\/Dashboard.png",
+		"outputAbbreviatedPath": "\/_core\/imgs\/work\/twocards\/Dashboard.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -498,6 +586,15 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/portfolio\/mailbox\/index.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/portfolio\/twocards\/index.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/portfolio\/twocards\/index.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0

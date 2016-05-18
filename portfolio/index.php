@@ -14,16 +14,13 @@ include ("../_include/header.php");
               <p class='description'>Design tools for businesses in Emerging Markets. </p>
 
               <a href="design-resources"><img src="../../_core/imgs/work/watches.png" alt="Watches"/></a>
-              <p class='caption'>Facebook Design Resources</p>
-              <p class='description'>Description</p>
-
-              <a href="http://www.facebook.com/"><img src="../_core/imgs/work/facebook.png" alt="Facebook"/></a>
-              <p class='caption'>Pennypot</p>
-              <p class='description'>Description</p>
+              <p class='caption'>Facebook Resources</p>
+              <p class='description'>Providing designers with the tools they need.</p>
 
               <a href="http://www.facebook.com/"><img src="../_core/imgs/work/facebook.png" alt="Facebook"/></a>
               <p class='caption'>TreeTender</p>
-              <p class='description'>Description</p>
+              <p class='description'>Desiging a tool to make network marketing easy.</p>
+
 
 
           </div>
@@ -34,17 +31,14 @@ include ("../_include/header.php");
               <a href="mailbox"><p class='caption'>Mailbox Help</p></a>
               <p class='description'>Leading the re-design of the Mailbox help site.</p>
 
-              <a href="http://www.facebook.com/"><img src="../_core/imgs/work/twocards.png" alt="Facebook"/></a>
+              <a href="twocards"><img src="../_core/imgs/work/twocards.png"/></a>
               <p class='caption'>TwoCards</p>
-              <p class='description'>Description</p>
+              <p class='description'>The simple way to send invoices and get paid on time.</p>
 
-              <a href="http://www.facebook.com/"><img src="../_core/imgs/work/facebook.png" alt="Facebook"/></a>
+              <a href="http://www.facebook.com/"><img src="../_core/imgs/work/switch.png"/></a>
               <p class='caption'>Switch</p>
-              <p class='description'>Description</p>
+              <p class='description'>Leading the re-design of a job search app.</p>
 
-              <a href="http://www.facebook.com/"><img src="../_core/imgs/work/facebook.png" alt="Facebook"/></a>
-              <p class='caption'>EBT</p>
-              <p class='description'>Description</p>
 
 
           </div>
