@@ -33,7 +33,7 @@ include ("_include/header.php");
 						</script>
 
 						I'm Harry, a product designer. <br><br>
-						My job is to help both small and large companies identify problems, and solve them through new products or ventures. This means I spend a lot of my time researching, prototyping and testing. I also like to ask why a lot, to ensure that products are been built to high standards and for the right reasons.<br><br>
+						My job is to help both small and large companies identify problems, and solve them through new products or ventures. This means I spend a lot of my time researching, prototyping and testing. I also like to ask why a lot, to ensure that products are built to high standards and for the right reasons.<br><br>
 						Away from the screen you can find me out on my bike or drinking coffee.</p>
 
 						<h2>Work</h2>
