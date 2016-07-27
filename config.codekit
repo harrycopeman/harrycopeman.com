@@ -242,6 +242,50 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/_core\/imgs\/work\/switch\/ios1.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 576857,
+		"inputAbbreviatedPath": "\/_core\/imgs\/work\/switch\/ios1.png",
+		"outputAbbreviatedPath": "\/_core\/imgs\/work\/switch\/ios1.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_core\/imgs\/work\/switch\/watch1.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 164005,
+		"inputAbbreviatedPath": "\/_core\/imgs\/work\/switch\/watch1.png",
+		"outputAbbreviatedPath": "\/_core\/imgs\/work\/switch\/watch1.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_core\/imgs\/work\/switch\/watch2.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 179546,
+		"inputAbbreviatedPath": "\/_core\/imgs\/work\/switch\/watch2.png",
+		"outputAbbreviatedPath": "\/_core\/imgs\/work\/switch\/watch2.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_core\/imgs\/work\/switch\/watch3.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 109115,
+		"inputAbbreviatedPath": "\/_core\/imgs\/work\/switch\/watch3.png",
+		"outputAbbreviatedPath": "\/_core\/imgs\/work\/switch\/watch3.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/_core\/imgs\/work\/twocards.png": {
 		"fileType": 32768,
 		"ignore": 0,
