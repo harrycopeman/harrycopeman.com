@@ -11,14 +11,22 @@ All things Typography
 -- */
 
 
-p, h2 {
+p {
 	font-size: 20px;
+	line-height: 1.5;
+	font-family: $serif;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+h1 {
+	font-size: 30px;
 	line-height: 1.5;
 	font-family: $sans;
 	padding-left: 20px;
 	padding-right: 20px;
+	padding-bottom: 30px;
 }
-h2 {
+h1 {
 	font-weight: 700;
 	margin-bottom: 10px;
 	margin-top: 30px;
@@ -26,8 +34,8 @@ h2 {
 a {
 	color: inherit;
 	text-decoration: none;
-	border-bottom: 4px solid #FDE4E9;
+	border-bottom: 1px solid #fff;
 }
 a:hover {
-	color: #F27490;
+	color: #1be1ae;
 }

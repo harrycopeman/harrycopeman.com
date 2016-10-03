@@ -54,7 +54,8 @@ table {
   /* Firefox */ }
 
 body {
-  background-color: #F8F5EF; }
+  background-color: #141823;
+  color: #fff; }
 
 /*!
 Animate.css - http://daneden.me/animate
@@ -2498,14 +2499,22 @@ All things Typography
 
 
 -- */
-p, h2 {
+p {
   font-size: 20px;
   line-height: 1.5;
-  font-family: "acumin-pro", "helvetica", sans-serif;
+  font-family: "leitura-news", serif;
   padding-left: 20px;
   padding-right: 20px; }
 
-h2 {
+h1 {
+  font-size: 30px;
+  line-height: 1.5;
+  font-family: "acumin-pro", "helvetica", sans-serif;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 30px; }
+
+h1 {
   font-weight: 700;
   margin-bottom: 10px;
   margin-top: 30px; }
@@ -2513,10 +2522,10 @@ h2 {
 a {
   color: inherit;
   text-decoration: none;
-  border-bottom: 4px solid #FDE4E9; }
+  border-bottom: 1px solid #fff; }
 
 a:hover {
-  color: #F27490; }
+  color: #1be1ae; }
 
 /* 
 
