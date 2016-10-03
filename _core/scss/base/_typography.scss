@@ -15,17 +15,24 @@ p {
 	font-size: 20px;
 	line-height: 1.5;
 	font-family: $serif;
-	padding-left: 20px;
-	padding-right: 20px;
+	padding-left: 14px;
+	padding-right: 14px;
 }
 h1 {
 	font-size: 30px;
 	line-height: 1.5;
 	font-family: $sans;
-	padding-left: 20px;
-	padding-right: 20px;
+	padding-left: 14px;
+	padding-right: 14px;
 	padding-bottom: 30px;
 }
+
+@media only screen and (max-width : $break) {
+	h1 {
+		font-size: 20px;
+	}
+}
+
 h1 {
 	font-weight: 700;
 	margin-bottom: 10px;

@@ -2503,17 +2503,20 @@ p {
   font-size: 20px;
   line-height: 1.5;
   font-family: "leitura-news", serif;
-  padding-left: 20px;
-  padding-right: 20px; }
+  padding-left: 14px;
+  padding-right: 14px; }
 
 h1 {
   font-size: 30px;
   line-height: 1.5;
   font-family: "acumin-pro", "helvetica", sans-serif;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 14px;
+  padding-right: 14px;
   padding-bottom: 30px; }
 
+@media only screen and (max-width: 800px) {
+  h1 {
+    font-size: 20px; } }
 h1 {
   font-weight: 700;
   margin-bottom: 10px;
@@ -2537,71 +2540,13 @@ All things Layout
 	- Text Widths
 
 -- */
-.navigation {
-  position: absolute;
-  width: 100%;
-  z-index: 5;
-  background: rgba(247, 245, 243, 0.75);
-  height: 80px; }
-  .navigation h1 {
-    cursor: pointer;
-    color: white;
-    font-family: "acumin-pro", "helvetica", sans-serif;
-    font-size: 20px;
-    position: absolute;
-    left: 40px;
-    top: 20px; }
-  .navigation ul {
-    position: absolute;
-    right: 30px;
-    top: 20px; }
-    .navigation ul li {
-      display: inline-block;
-      color: white;
-      font-family: "acumin-pro", "helvetica", sans-serif;
-      font-size: 20px;
-      padding-left: 20px;
-      padding-right: 20px; }
-
-.dark h1, .dark li {
-  color: #32393B !important; }
-
-@media only screen and (max-width: 800px) {
-  .navigation {
-    height: 80px; }
-    .navigation ul {
-      right: 14px; }
-      .navigation ul li {
-        font-size: 16px;
-        padding-top: 4px; }
-    .navigation h1 {
-      left: 30px;
-      border-bottom: none; } }
-footer {
-  margin-top: 60px;
-  height: 60px;
-  background: #F7F5F3; }
-  footer ul {
-    text-align: center; }
-  footer li {
-    display: inline-block;
-    padding-right: 20px;
-    padding-left: 20px;
-    font-family: "acumin-pro", "helvetica", sans-serif;
-    color: #9399A6;
-    font-size: 13px;
-    margin-top: 18px; }
-  footer a {
-    color: inherit;
-    border-bottom: 1px solid #DBBA88;
-    text-decoration: none; }
-    footer a:hover {
-      color: #32393B; }
-
 .full {
   margin-top: 100px;
   margin-bottom: 100px; }
 
+@media only screen and (max-width: 800px) {
+  .full {
+    margin-top: 60px; } }
 .portfolio {
   margin-top: 80px;
   margin-bottom: 120px; }
