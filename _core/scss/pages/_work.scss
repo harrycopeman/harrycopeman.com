@@ -7,11 +7,18 @@
 		text-decoration: none;
 		border-bottom: 0px !important;
 	}
+	a:hover {
+	color: #022F9C;
+	border-bottom: 1px solid #022F9C;
+	}
+
 
 	p {
-		font-family: $sans;
+		font-family: $serif;
 		color: $text;
 		font-size: 16px;
+		padding-left: 20px;
+		padding-right: 20px;
 	}
 	.caption {
 		text-decoration: underline;
@@ -47,7 +54,7 @@
 
 	p,h2 {
 		font-size: 18px;
-		font-family: $sans;
+		font-family: $serif;
 		font-weight: 400;
 	}
 	h2 {

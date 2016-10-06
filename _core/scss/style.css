@@ -54,8 +54,16 @@ table {
   /* Firefox */ }
 
 body {
-  background-color: #141823;
+  background-color: #fff; }
+
+#black {
+  background-color: #411DBB;
   color: #fff; }
+  #black a {
+    border-bottom: 1px solid #ff6666; }
+  #black a:hover {
+    color: #5C31F1;
+    border-bottom: 1px solid #5C31F1 !important; }
 
 /*!
 Animate.css - http://daneden.me/animate
@@ -2500,23 +2508,20 @@ All things Typography
 
 -- */
 p {
-  font-size: 20px;
-  line-height: 1.5;
-  font-family: "leitura-news", serif;
-  padding-left: 14px;
-  padding-right: 14px; }
+  font-size: 24px;
+  line-height: 1.4;
+  font-family: "ff-meta-serif-web-pro", serif; }
 
 h1 {
   font-size: 30px;
   line-height: 1.5;
   font-family: "acumin-pro", "helvetica", sans-serif;
-  padding-left: 14px;
-  padding-right: 14px;
   padding-bottom: 30px; }
 
-@media only screen and (max-width: 800px) {
-  h1 {
-    font-size: 20px; } }
+h2 {
+  font-size: 20px;
+  font-family: Consolas, "source-code-pro", monospace, sans-serif; }
+
 h1 {
   font-weight: 700;
   margin-bottom: 10px;
@@ -2528,9 +2533,20 @@ a {
   border-bottom: 1px solid #fff; }
 
 a:hover {
-  color: #1be1ae;
-  border-bottom: 1px solid #1be1ae; }
+  color: #022F9C;
+  border-bottom: 1px solid #022F9C; }
 
+@media only screen and (max-width: 800px) {
+  h1 {
+    font-size: 20px; }
+
+  p {
+    font-size: 16px;
+    padding-left: 0px;
+    padding-right: 0px; }
+
+  h2 {
+    font-size: 16px; } }
 /* 
 
 
@@ -2541,22 +2557,32 @@ All things Layout
 
 -- */
 .full {
-  margin-top: 100px;
-  margin-bottom: 100px; }
+  margin-top: 140px;
+  margin-bottom: 140px; }
+  .full p {
+    margin-bottom: 100px; }
 
 @media only screen and (max-width: 800px) {
   .full {
-    margin-top: 60px; } }
+    margin-top: 60px;
+    margin-bottom: 60px; }
+    .full p {
+      margin-bottom: 40px; } }
 .portfolio {
   margin-top: 80px;
   margin-bottom: 120px; }
   .portfolio a {
     text-decoration: none;
     border-bottom: 0px !important; }
+  .portfolio a:hover {
+    color: #022F9C;
+    border-bottom: 1px solid #022F9C; }
   .portfolio p {
-    font-family: "acumin-pro", "helvetica", sans-serif;
+    font-family: "ff-meta-serif-web-pro", serif;
     color: #32393B;
-    font-size: 16px; }
+    font-size: 16px;
+    padding-left: 20px;
+    padding-right: 20px; }
   .portfolio .caption {
     text-decoration: underline; }
   .portfolio .description {
@@ -2573,7 +2599,7 @@ All things Layout
     margin-bottom: 40px; }
   .case-study p, .case-study h2 {
     font-size: 18px;
-    font-family: "acumin-pro", "helvetica", sans-serif;
+    font-family: "ff-meta-serif-web-pro", serif;
     font-weight: 400; }
   .case-study h2 {
     margin-bottom: 0px;

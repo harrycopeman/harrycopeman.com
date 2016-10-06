@@ -5,7 +5,18 @@
 	background:$select; /* Firefox */
 }
 body {
-	background-color: #141823;
-	color: #fff;
+	background-color: #fff;
 }
+#black {
+	background-color: #411DBB;
+	color: #fff;
 
+		a {
+			border-bottom: 1px solid #ff6666;
+		}
+		a:hover {
+			color: #5C31F1;
+			border-bottom: 1px solid #5C31F1 !important;
+		}
+
+}

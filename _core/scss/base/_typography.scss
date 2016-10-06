@@ -12,27 +12,20 @@ All things Typography
 
 
 p {
-	font-size: 20px;
-	line-height: 1.5;
+	font-size: 24px;
+	line-height: 1.4;
 	font-family: $serif;
-	padding-left: 14px;
-	padding-right: 14px;
 }
 h1 {
 	font-size: 30px;
 	line-height: 1.5;
 	font-family: $sans;
-	padding-left: 14px;
-	padding-right: 14px;
 	padding-bottom: 30px;
 }
-
-@media only screen and (max-width : $break) {
-	h1 {
-		font-size: 20px;
-	}
+h2 {
+	font-size: 20px;
+	font-family: $mono;
 }
-
 h1 {
 	font-weight: 700;
 	margin-bottom: 10px;
@@ -44,6 +37,22 @@ a {
 	border-bottom: 1px solid #fff;
 }
 a:hover {
-	color: #1be1ae;
-	border-bottom: 1px solid #1be1ae;
+	color: #022F9C;
+	border-bottom: 1px solid #022F9C;
+}
+
+
+
+@media only screen and (max-width : $break) {
+	h1 {
+		font-size: 20px;
+	}
+	p {
+		font-size: 16px;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	h2 {
+		font-size: 16px;
+	}
 }
