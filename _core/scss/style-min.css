@@ -45,6 +45,10 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+::-moz-selection {
+  background: #e4e5ec;
+  /* Safari */ }
+
 ::selection {
   background: #e4e5ec;
   /* Safari */ }
@@ -59,19 +63,19 @@ body {
 #black {
   background-color: #25262B;
   color: #fff; }
-  #black a {
-    border-bottom: 1px solid #ff6666; }
-  #black a:hover {
-    color: #5C31F1;
-    border-bottom: 1px solid #5C31F1 !important; }
+
+#black a {
+  border-bottom: 1px solid #ff6666; }
+
+#black a:hover {
+  color: #5C31F1;
+  border-bottom: 1px solid #5C31F1 !important; }
 
 *,
 *:after,
 *:before {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
 /*Helps With Images*/
@@ -166,6 +170,7 @@ img {
   .loop-11,
   .loop-12 {
     width: 100%; } }
+
 /*
 .item .span {
     width:100%;
@@ -223,14 +228,13 @@ a:hover {
 @media only screen and (max-width: 800px) {
   h1 {
     font-size: 20px; }
-
   p {
     font-size: 16px;
     padding-left: 0px;
     padding-right: 0px; }
-
   h2 {
     font-size: 16px; } }
+
 /* 
 
 
@@ -243,52 +247,65 @@ All things Layout
 .full {
   margin-top: 140px;
   margin-bottom: 140px; }
-  .full p {
-    margin-bottom: 100px; }
+
+.full p {
+  margin-bottom: 100px; }
 
 @media only screen and (max-width: 800px) {
   .full {
     margin-top: 60px;
     margin-bottom: 60px; }
-    .full p {
-      margin-bottom: 40px; } }
+  .full p {
+    margin-bottom: 40px; } }
+
 .portfolio {
   margin-top: 80px;
   margin-bottom: 120px; }
-  .portfolio a {
-    text-decoration: none;
-    border-bottom: 0px !important; }
-  .portfolio a:hover {
-    color: #022F9C;
-    border-bottom: 1px solid #022F9C; }
-  .portfolio p {
-    font-family: "ff-meta-serif-web-pro", serif;
-    color: #32393B;
-    font-size: 16px;
-    padding-left: 20px;
-    padding-right: 20px; }
-  .portfolio .caption {
-    text-decoration: underline; }
-  .portfolio .description {
-    margin-bottom: 60px; }
-  .portfolio .otherclients {
-    margin-top: 100px; }
-    .portfolio .otherclients .title {
-      color: #9399A6; }
+
+.portfolio a {
+  text-decoration: none;
+  border-bottom: 0px !important; }
+
+.portfolio a:hover {
+  color: #022F9C;
+  border-bottom: 1px solid #022F9C; }
+
+.portfolio p {
+  font-family: "ff-meta-serif-web-pro", serif;
+  color: #32393B;
+  font-size: 16px;
+  padding-left: 20px;
+  padding-right: 20px; }
+
+.portfolio .caption {
+  text-decoration: underline; }
+
+.portfolio .description {
+  margin-bottom: 60px; }
+
+.portfolio .otherclients {
+  margin-top: 100px; }
+
+.portfolio .otherclients .title {
+  color: #9399A6; }
 
 .case-study {
   margin-top: 80px;
   margin-bottom: 80px; }
-  .case-study img, .case-study video {
-    margin-bottom: 40px; }
-  .case-study p, .case-study h2 {
-    font-size: 18px;
-    font-family: "ff-meta-serif-web-pro", serif;
-    font-weight: 400; }
-  .case-study h2 {
-    margin-bottom: 0px;
-    color: #9399A6; }
-  .case-study .loop-8 p {
-    margin-bottom: 40px !important; }
 
-/*# sourceMappingURL=style.css.map */
+.case-study img, .case-study video {
+  margin-bottom: 40px; }
+
+.case-study p, .case-study h2 {
+  font-size: 18px;
+  font-family: "ff-meta-serif-web-pro", serif;
+  font-weight: 400; }
+
+.case-study h2 {
+  margin-bottom: 0px;
+  color: #9399A6; }
+
+.case-study .loop-8 p {
+  margin-bottom: 40px !important; }
+
+/*# sourceMappingURL=style-min.css.map */

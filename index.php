@@ -10,13 +10,15 @@ include ("_include/header.php");
 
 
 
-				<h2>👋<br><br>I'm Harry - a product designer living in London, designing and prototyping good things with good people.<br><br>
+				<h2>👋<br><br>Hey, I'm Harry - a product designer living in London, designing and prototyping good things with good people.<br><br>
+
+				I’m currently leading design at <a href="https://farewill.com/">Farewill</a>, a weird and wonderful company trying to change the way people prepare for and deal with death.<br><br>
 				
-				I'm currently working at <a href="https://www.facebook.com/">Facebook</a> where I've spent over a year designing tools to help small businesses succeed. I've also designed and supported <a href="https://facebook.github.io/origami/">internal</a> and <a href="http://facebook.design/">external</a> design tools that look to improve designers workflows.<br><br>
+				Previous to that, I worked at <a href="https://facebook.com/">Facebook</a> London, where I spent almost two years designing tools to help small businesses succeed. At Facebook I also designed and supported internal and external design tools that looked to improve workflows.<br><br>
 
-				Previous to my time at Facebook, I freelanced for various companies including <a href="https://www.dropbox.com/">Dropbox</a>, where I designed and built part of the <a href="http://www.mailboxapp.com/">Mailbox</a> website to help them scale across new platforms. Other teams that I've worked with include <a href="https://seatgeek.com/">SeatGeek</a> and Switch.<br><br>
+				Before joining Facebook, I freelanced for various companies including <a href="https://dropbox.com/">Dropbox</a>, where I designed and built part of the Mailbox website to help them scale across new platforms. Other teams I've worked with include SeatGeek and Switch.<br><br>
 
-				In 2012 I managed to win the D&AD New Blood Award, and in 2015 I was nominated for the Net Awards Young Designer of the Year.<br><br>
+				In 2012 I won the D&AD New Blood Award, and in 2015 I was nominated for the Net Awards Young Designer of the Year.<br><br>
 
 				If you want to chat about design, bikes, or anything else then drop me an email.<br><br>
 

@@ -7,7 +7,7 @@
     <link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet' type='text/css'>
 
   	<title><?php echo $title; ?></title>
-  	<link href='/_core/scss/style.css' rel='stylesheet'>
+  	<link href='/_core/scss/style-min.css' rel='stylesheet'>
 
     <script src="https://use.typekit.net/vve7mtx.js"></script>
 	<script>try{Typekit.load({ async: true });}catch(e){}</script>

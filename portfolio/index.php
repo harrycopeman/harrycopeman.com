@@ -1,6 +1,6 @@
 <?php
-$title = "Portfolio - Harry Copeman";
-include ("../_include/header.php");
+$title = "Portfolio - Harry Copeman"
+include ("/include/header.php");
 ?>
 
     <div class="portfolio">
