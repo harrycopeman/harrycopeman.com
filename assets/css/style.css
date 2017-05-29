@@ -1,10 +1,4 @@
-@font-face {
-  font-family: 'Akkurat';
-  src: url(../fonts/Akkurat.eot);
-  /* IE9 Compat Modes */
-  src: url(../fonts/Akkurat.eot?#iefix) format("embedded-opentype"), url(../fonts/Akkurat.woff) format("woff"), url(../fonts/Akkurat.ttf) format("truetype"); }
-* {
-  box-sizing: border-box; }
+
 
 
 *,
@@ -106,7 +100,7 @@ img, video {
 body {
   background: #000;
   color: #fff;
-  font-family: "franklin-gothic-urw";
+  font-family: "franklin-gothic-urw", sans-serif;
   line-height: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
