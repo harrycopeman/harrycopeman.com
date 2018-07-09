@@ -12,7 +12,7 @@
 }
 
 ::selection {
-  background: #000;
+  background: transparent;
   color: white; 
 }
 
@@ -26,7 +26,7 @@ img, video {
 .span {
     width:100%;
     min-width:260px;
-    max-width: 1200px;
+    max-width: 1100px;
     margin: auto;
 }
 /*Clears Childern Elements*/
@@ -98,8 +98,8 @@ img, video {
 
 
 body {
-  background: #000;
-  color: #fff;
+  background: #0A261D;
+  color: #93ECD3;
   font-family: "franklin-gothic-urw", sans-serif;
   line-height: 100%;
   -webkit-font-smoothing: antialiased;
@@ -107,11 +107,11 @@ body {
   overflow-x: hidden;
   transition: all 0.4s ease-in-out;
   word-wrap: break-word; 
-  padding: 100px 0 100px 0;
+  padding: 80px 0 80px 0;
 }
 @media screen and (max-width: 600px) {
   body{
-      padding: 40px 0 40px 0;
+      padding: 10px 0 0px 0;
     }
 }
 .case-study{
@@ -119,8 +119,14 @@ body {
   color: #333333;
 }
 p {
-  font-size: 20px;
+  font-size: 34px;
   line-height: 1.5;
+  max-width: 800px;
+}
+@media screen and (max-width: 700px) {
+  p{
+              font-size: 24px;
+            }
 }
 h1 {
   font-size: 30px;
@@ -135,6 +141,7 @@ h2 {
 }
 a {
   color: inherit;
+  text-decoration: none;
 }
 strong {
   font-weight: inherit;
@@ -145,10 +152,9 @@ strong {
    -moz-transition: .2s ease-in-out;
    -webkit-transition: .2s ease-in-out;
   text-decoration: none;
-  border-bottom: 1px solid gray;
+  color: white;
 }
 .homepage a:hover {
-  border-bottom: 1px solid white;
 }
 #work img, {
   transition: .2s ease-in-out;
@@ -257,3 +263,9 @@ strong {
     }
 
   }
+
+
+
+a #one {
+  color: red;
+}
