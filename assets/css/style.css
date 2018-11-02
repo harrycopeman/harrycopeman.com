@@ -116,10 +116,15 @@ body {
 }
 .homepage {
   background: #0A261D;
-  color: #93ECD3;
+  color: white;
 }
 .homepage p {
-  font-size: 34px;
+  margin-left: 100px;
+  padding-right: 20px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-size: 26px;
+  max-width: 740px;
 }
 .case-study{
   background: white;
@@ -132,7 +137,11 @@ p {
 }
 @media screen and (max-width: 700px) {
   .homepage p{
-              font-size: 24px;
+              font-size: 20px;
+              margin-left: 0px;
+              margin-right: 0;
+              padding-left: 20px;
+              padding-right: 20px;
             }
 }
 h1 {
@@ -159,9 +168,10 @@ strong {
    -moz-transition: .2s ease-in-out;
    -webkit-transition: .2s ease-in-out;
   text-decoration: none;
-  color: white;
+  border-bottom: 1px solid #5CA18D;
 }
 .homepage a:hover {
+   cursor: url(../img/cursor.png), auto;
 }
 #work img, {
   transition: .2s ease-in-out;
