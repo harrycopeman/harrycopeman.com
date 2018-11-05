@@ -200,8 +200,8 @@ p {
   text-decoration: none;
   border-bottom: 1px solid #5CA18D;
 }
-.homepage a:hover {
-   cursor: pointer;
+.work-item:hover {
+   cursor: url(../img/cursor.svg), auto;
 }
 
 
