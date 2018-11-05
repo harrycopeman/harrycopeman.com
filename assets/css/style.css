@@ -16,7 +16,6 @@
   color: white; 
 }
 
-
 /*Helps With Images*/
 img, video {
     width:100%;
@@ -107,7 +106,7 @@ body {
   overflow-x: hidden;
   transition: all 0.4s ease-in-out;
   word-wrap: break-word; 
-  padding: 80px 0 80px 0;
+  padding: 50px 0 50px 0;
 }
 @media screen and (max-width: 600px) {
   body{
@@ -115,26 +114,76 @@ body {
     }
 }
 .homepage {
-  background: #0A261D;
-  color: white;
+  background: white;
+  color: black;
 }
 .homepage p {
-  margin-left: 100px;
-  padding-right: 20px;
-  margin-top: 20px;
-  margin-bottom: 30px;
-  font-size: 26px;
-  max-width: 740px;
+  position: fixed;
+  max-width: 700px;
+  padding-right: 50px;
+  padding-left: 20px;
+  font-size: 24px;
 }
-.case-study{
-  background: white;
-  color: #333333;
+
+
+.work-items {
+  margin-top: 200px;
 }
+.work-item {
+  border-radius: 0px;
+  padding: 20px;
+}
+.work-item h3 {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.work-item h4 {
+  font-size: 15px;
+  opacity: 0.6;
+  font-weight: 300;
+}
+
+
+#kron .work-item {
+  margin-top: 180px;
+  width: 80%;
+  color: #092B21;
+}
+#kron .work-item:hover {
+  background: #E9F8F4;
+}
+
+#mailbox .work-item{  
+  width: 90%; 
+  float: right;
+  color: #0B3D52;
+}
+#mailbox .work-item:hover {
+  background: #EAF6FB;
+}
+
+#tagging{  
+  width: 90%; 
+  float: right;
+  color: #421708;
+}
+#tagging:hover {
+  background: #FFF6F3;
+}
+
+
+#twocards {
+  padding-left: 60px;
+  margin-top: 50px;
+}
+
 p {
   font-size: 18px;
   line-height: 1.5;
-  max-width: 800px;
 }
+
 @media screen and (max-width: 700px) {
   .homepage p{
               font-size: 20px;
@@ -143,6 +192,29 @@ p {
               padding-left: 20px;
               padding-right: 20px;
             }
+}
+.homepage a {
+  transition: .2s ease-in-out;
+   -moz-transition: .2s ease-in-out;
+   -webkit-transition: .2s ease-in-out;
+  text-decoration: none;
+  border-bottom: 1px solid #5CA18D;
+}
+.homepage a:hover {
+   cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+.case-study{
+  background: white;
+  color: #333333;
 }
 h1 {
   font-size: 30px;
@@ -163,16 +235,7 @@ strong {
   font-weight: inherit;
   color: #A0A0A0;
 }
-.homepage a {
-  transition: .2s ease-in-out;
-   -moz-transition: .2s ease-in-out;
-   -webkit-transition: .2s ease-in-out;
-  text-decoration: none;
-  border-bottom: 1px solid #5CA18D;
-}
-.homepage a:hover {
-   cursor: url(../img/cursor.png), auto;
-}
+
 #work img, {
   transition: .2s ease-in-out;
    -moz-transition: .2s ease-in-out;
