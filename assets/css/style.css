@@ -1,5 +1,9 @@
 
-
+@font-face {
+  font-family: 'UntitledSans';
+  src: url('../fonts/UntitledSansWeb-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/UntitledSansWeb-Regular.woff') format('woff'); /* Pretty Modern Browsers */
+}
 
 *,
 *:after,
@@ -99,7 +103,7 @@ img, video {
 body {
   background: #0A261D;
   color: white;
-  font-family: "franklin-gothic-urw", sans-serif;
+  font-family: "UntitledSans", sans-serif;
   line-height: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -117,10 +121,14 @@ body {
   background: white;
   color: black;
 }
-.homepage p {
+
+
+.fixed-text p {
   position: fixed;
-  max-width: 700px;
+  max-width: 800px;
   padding-right: 50px;
+  left: 50%;
+  margin-left: -400px;
   padding-left: 20px;
   font-size: 24px;
 }
@@ -154,12 +162,12 @@ body {
   background: #E9F8F4;
 }
 
-#mailbox .work-item{  
+#farewill .work-item{  
   width: 90%; 
   float: right;
   color: #0B3D52;
 }
-#mailbox .work-item:hover {
+#farewill .work-item:hover {
   background: #EAF6FB;
 }
 
@@ -172,11 +180,28 @@ body {
   background: #FFF6F3;
 }
 
-
-#twocards {
-  padding-left: 60px;
-  margin-top: 50px;
+#mailbox .work-item{  
+  width: 90%; 
+  float: right;
+  color: #0B3D52;
 }
+#mailbox .work-item:hover {
+  background: #EAF6FB;
+}
+
+#twocards .work-item{  
+  margin-top: 220px;
+  width: 70%; 
+  float: right;
+  color: #0B3D52;
+}
+#twocards .work-item:hover {
+  background: #EAF6FB;
+}
+
+
+
+
 
 p {
   font-size: 18px;
