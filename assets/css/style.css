@@ -143,6 +143,9 @@ body {
   background: white;
   color: black;
 }
+.fix-this {
+
+}
 .left-hand-side p {
   font-size: 20px;
   line-height: 1.4;
@@ -188,10 +191,10 @@ body {
 #farewill .work-item{  
   width: 100%; 
   float: right;
-  color: #0B3D52;
+  color: #07124D;
 }
 #farewill .work-item:hover {
-  background: #EAF6FB;
+  background: #F9F6E6;
 }
 
 #tagging{  
@@ -235,14 +238,14 @@ p {
               padding-right: 20px;
             }
 }
-.homepage a {
-  transition: .2s ease-in-out;
-   -moz-transition: .2s ease-in-out;
-   -webkit-transition: .2s ease-in-out;
+.left-hand-side a {
   text-decoration: none;
-  border-bottom: 1px solid #5CA18D;
+  color: #4F565E;
 }
 .work-item:hover {
+   cursor: url(../img/cursor.svg), auto;
+}
+.work-item a:hover {
    cursor: url(../img/cursor.svg), auto;
 }
 
@@ -294,8 +297,9 @@ strong {
   margin-bottom: 10px;
 }
 #case-intro {
-  margin-top: 0px;
+  margin-top: 80px;
   margin-bottom: 80px;
+  text-align: center;
 }
 @media screen and (max-width: 600px) {
   #case-intro{
