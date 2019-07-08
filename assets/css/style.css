@@ -135,7 +135,7 @@ body {
   color: black;
 }
 .left-hand-side {
-  width: 40%;
+  width: 45%;
   position: fixed;
   top: 0;
   padding: 60px;
@@ -143,23 +143,20 @@ body {
   background: white;
   color: black;
 }
-.fix-this {
-
-}
 .left-hand-side p {
-  font-size: 20px;
+  font-size: 26px;
   line-height: 1.4;
   font-weight: 400;
 }
 .left-hand-side h1 {
-  font-size: 28px;
+  font-size: 40px;
   line-height: 1.4;
   font-weight: 500;
   margin-bottom: 30px;
 }
 
 .right-hand-side  {
-  width: 60%;
+  width: 55%;
   float: right;
   margin-top: 14px;
 }
@@ -239,9 +236,16 @@ p {
             }
 }
 .left-hand-side a {
-  text-decoration: none;
-  color: #4F565E;
+  text-decoration: underline;
+  color: inherit;
 }
+a:hover {
+   cursor: url(../img/cursor.svg), auto;
+}
+.work-item a:hover {
+   cursor: url(../img/cursor.svg), auto;
+}
+
 .work-item:hover {
    cursor: url(../img/cursor.svg), auto;
 }
@@ -263,7 +267,7 @@ p {
 }
 h1 {
   font-size: 30px;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 1.4;
 }
 h2 {
