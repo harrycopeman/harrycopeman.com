@@ -8,11 +8,6 @@
           box-sizing: border-box
 }
 
-::selection {
-  background: transparent;
-  color: white; 
-}
-
 
 html {
     height: 100%;
@@ -116,7 +111,7 @@ img, video {
 
 
 body {
-  background: #0A261D;
+  background: #E8E9E5;
   color: white;
   font-family: neue-haas-unica, sans-serif;
   line-height: 100%;
@@ -124,6 +119,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
   word-wrap: break-word; 
+  color: #1B1D1B;
 }
 @media screen and (max-width: 600px) {
   body{
@@ -131,271 +127,126 @@ body {
     }
 }
 .homepage {
-  background: white;
-  color: black;
+  padding: 100px;
+  font-weight: 300;
 }
-.left-hand-side {
-  width: 45%;
-  position: fixed;
-  top: 0;
-  padding: 60px;
-  height: 100%;
-  background: white;
-  color: black;
-}
-.left-hand-side p {
+p {
+  max-width: 660px;
   font-size: 26px;
   line-height: 1.4;
-  font-weight: 400;
 }
-.left-hand-side h1 {
+h1 {
+  max-width: 660px;
+  font-weight: 300;
   font-size: 40px;
-  line-height: 1.4;
-  font-weight: 500;
+  line-height: 1.25;
   margin-bottom: 30px;
 }
 
-.right-hand-side  {
-  width: 55%;
-  float: right;
-  margin-top: 14px;
-}
-.work-item {
-  border-radius: 0px;
-  padding: 20px;
-}
-.work-item h3 {
-  margin-top: 15px;
-  margin-bottom: 10px;
-  font-size: 18px;
-  font-weight: 600;
-}
-.work-item h4 {
-  font-size: 15px;
-  opacity: 0.6;
-  font-weight: 300;
-}
-
-
-#kron .work-item {
-  color: #092B21;
-}
-
-#kron .work-item:hover {
-  background: #E9F8F4;
-}
-
-#farewill .work-item{  
-  width: 100%; 
-  float: right;
-  color: #07124D;
-}
-#farewill .work-item:hover {
-  background: #F9F6E6;
-}
-
-#tagging{  
-  width: 100%; 
-  float: right;
-  color: #5E3C31;
-}
-#tagging:hover {
-  background: #FFF6F3;
-}
-
-#mailbox .work-item{  
-  color: #0B3D52;
-}
-#mailbox .work-item:hover {
-  background: #EAF6FB;
-}
-
-#twocards .work-item{  
-  color: #0B3D52;
-}
-#twocards .work-item:hover {
-  background: #EAF6FB;
-}
-
-
-
-
-
-p {
-  font-size: 18px;
-  line-height: 1.5;
-}
-
-@media screen and (max-width: 700px) {
-  .homepage p{
-              font-size: 20px;
-              margin-left: 0px;
-              margin-right: 0;
-              padding-left: 20px;
-              padding-right: 20px;
-            }
-}
-.left-hand-side a {
-  text-decoration: underline;
-  color: inherit;
-}
-a:hover {
-   cursor: url(../img/cursor.svg), auto;
-}
-.work-item a:hover {
-   cursor: url(../img/cursor.svg), auto;
-}
-
-.work-item:hover {
-   cursor: url(../img/cursor.svg), auto;
-}
-.work-item a:hover {
-   cursor: url(../img/cursor.svg), auto;
-}
-
-
-
-
-
-
-
-
-
-.case-study{
-  background: white;
-  color: #333333;
-}
-h1 {
-  font-size: 30px;
-  font-weight: 500;
-  line-height: 1.4;
-}
-h2 {
-  font-size: 24px;
-  font-weight: 700;
-  margin-top: 50px;
-  margin-bottom: 14px;
-}
+  
 a {
   color: inherit;
-  text-decoration: none;
+  text-decoration: underline;
 }
 strong {
   font-weight: inherit;
   color: #A0A0A0;
 }
 
-#work img, {
-  transition: .2s ease-in-out;
-   -moz-transition: .2s ease-in-out;
-   -webkit-transition: .2s ease-in-out;
-  margin-bottom: 14px;
+
+
+
+
+a img { 
+  display:none;
 }
-#work img:hover {
-  transition: .2s ease-in-out;
-   -moz-transition: .2s ease-in-out;
-   -webkit-transition: .2s ease-in-out;
-  opacity: .9;
+
+a:hover .one { 
+  position: fixed;
+  width: 400px;
+  display:block;
+  right: 30%;
+  top: 20%;
+  z-index: -1;
 }
-.work-page img {
-  margin-bottom: 10px;
+
+a:hover .two { 
+  position: fixed;
+  width: 400px;
+  display:block;
+  right: 20%;
+  top: 30%;
+  z-index: -1;
+  overflow: hidden;
+
 }
-#case-intro {
-  margin-top: 80px;
-  margin-bottom: 80px;
-  text-align: center;
+
+a:hover .three { 
+  position: fixed;
+  width: 500px;
+  display:block;
+  right: 10%;
+  top: 50%;
+  z-index: -1;
 }
-@media screen and (max-width: 600px) {
-  #case-intro{
-      margin-bottom: 10px;
-    }
+
+
+a:hover .here { 
+  position: fixed;
+  width: 240px;
+  display:block;
+  right: 40%;
+  top: 20%;
+  z-index: -1;
 }
-.case-study img, video {
-  margin-top: 40px;
-  margin-bottom: 40px;
+
+
+a:hover .fb { 
+  position: fixed;
+  width: 600px;
+  display:block;
+  right: 20%;
+  bottom: 5%;
+  z-index: -1;
 }
-#case-banner {
-  background: #F1F2F2;
-  width: 100%;
-  margin-bottom: 40px;
+
+
+a:hover .linkedin { 
+  position: fixed;
+  width: 300px;
+  display:block;
+  right: 10%;
+  bottom: 40%;
+  z-index: -1;
 }
-.case-image-wrap {
-  max-width: 800px;
-  margin: auto;
-  padding: 0 20px 0 20px;
+
+a:hover .email { 
+  position: fixed;
+  width: 250px;
+  display:block;
+  right: 30%;
+  bottom: 20%;
+  z-index: -1;
 }
-.caption {
-  font-size: 14px;
-  text-align: center;
-  margin-top: -40px;
-  margin-bottom: 40px;
-  color: #767676;
-}
-.lead-video {
-    width: 100%;
-    height: 800px;
-    background: #F1F2F2;
-    position: relative;
-    text-align: center;
-    margin-top: 40px;
-    margin-bottom: 40px;
-}
-@media screen and (max-width: 900px) {
-  .lead-video{
-              display: none;
+
+
+@media screen and (max-width: 800px) {
+  a:hover img{
+              display: none !important;
             }
 }
-.lead-video video {
-      position: absolute;
-      margin: 0;
-      left: 50%;
-      top: 50%;
-        transform: translate(-49.8%, -49.8%);
-        max-width: 14.7%;
-        max-width: 259px;
-    }
-.lead-video img {
-      width: 50%;
-      max-width: 482px;
-      position: absolute;
-      bottom: 0px;
-      margin: 0;
-      left: 50%;
-        transform: translate(-54.4%);
-    }
-.mobile-lead {
-    display: none;
-    width: 100%;
-    height: auto;
-    background: #F1F2F2;
-    position: relative;
-    text-align: center;
-}
-.mobile-lead img {
-  margin-bottom: 0;
-}
 
-@media screen and (max-width: 900px) {
-  .mobile-lead { 
-              display: block;
+
+
+@media screen and (max-width: 800px) {
+  .homepage{
+              padding: 20px;
             }
-          }
 
-.mobile-lead .image-wrapper {
-      max-width: 482px;
-      margin: auto;
-      padding-left: 20px;
-      padding-right: 20px;
-    }
-.mobile-lead img {
-      margin-top: 90px;
-      width: 100%;
-    }
-
+  h1 {
+    font-size: 34px;
   }
-
-
-
-a #one {
-  color: red;
+  p {
+    font-size: 22px;
+  }
 }
