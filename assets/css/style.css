@@ -220,14 +220,6 @@ a:hover .linkedin {
   z-index: -1;
 }
 
-a:hover .email { 
-  position: fixed;
-  width: 250px;
-  display:block;
-  right: 30%;
-  bottom: 20%;
-  z-index: -1;
-}
 
 
 @media screen and (max-width: 800px) {
