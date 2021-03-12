@@ -109,11 +109,20 @@ img, video {
 }
 
 
+@font-face {
+  font-family: Maison;
+  src: url(../font/MaisonNeue-Book.ttf);
+}
+
+@font-face {
+  font-family: MaisonMed;
+  src: url(../font/MaisonNeue-Medium.ttf);
+}
+
 
 body {
-  background: #E8E9E5;
-  color: white;
-  font-family: neue-haas-unica, sans-serif;
+  background: white;
+  font-family: Maison, sans-serif;
   line-height: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -127,20 +136,20 @@ body {
     }
 }
 .homepage {
-  padding: 100px;
+  padding: 80px;
   font-weight: 300;
+  max-width: 700px;
 }
 p {
-  max-width: 660px;
-  font-size: 26px;
+  font-size: 18px;
   line-height: 1.4;
 }
 h1 {
-  max-width: 660px;
-  font-weight: 300;
-  font-size: 40px;
+  font-family: MaisonMed, sans-serif;
+  font-size: 20px;
   line-height: 1.25;
-  margin-bottom: 30px;
+  letter-spacing: -0.5px;
+  margin-bottom: 20px;
 }
 
   
@@ -174,8 +183,8 @@ a:hover .two {
   position: fixed;
   width: 400px;
   display:block;
-  right: 20%;
-  top: 30%;
+  right: 10%;
+  top: 20%;
   z-index: -1;
   overflow: hidden;
 
@@ -186,7 +195,7 @@ a:hover .three {
   width: 500px;
   display:block;
   right: 10%;
-  top: 50%;
+  top: 40%;
   z-index: -1;
 }
 
@@ -201,6 +210,7 @@ a:hover .here {
 }
 
 
+
 a:hover .fb { 
   position: fixed;
   width: 600px;
@@ -211,12 +221,13 @@ a:hover .fb {
 }
 
 
+
 a:hover .linkedin { 
   position: fixed;
   width: 300px;
   display:block;
   right: 10%;
-  bottom: 40%;
+  bottom: 10%;
   z-index: -1;
 }
 
@@ -226,19 +237,23 @@ a:hover .linkedin {
   a:hover img{
               display: none !important;
             }
+
+  .fb {
+    text-decoration: none !important;
+  }
 }
 
 
 
 @media screen and (max-width: 800px) {
   .homepage{
-              padding: 20px;
+              padding: 24px;
             }
 
   h1 {
-    font-size: 34px;
+    font-size: 22px;
   }
   p {
-    font-size: 22px;
+    font-size: 16px;
   }
 }
