@@ -75,7 +75,7 @@ body {
 
 
 p {
-  font-size: 28px;
+  font-size: 34px;
   line-height: 1.5;
 }
 span {
@@ -86,14 +86,29 @@ span {
   
 a {
   color: inherit;
-  text-decoration: underline;
+  text-decoration: none;
 }
 strong {
   font-weight: inherit;
-  color: #A0A0A0;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.09);
+  border-radius: 9px;
+  padding: 0px 8px 0px 8px;
+  white-space: nowrap;
+  transition: all .2s ease-in-out;
 }
 
+strong img {
+  height: 26px;
+  width: 26px;
+  border-radius: 4px;
+  margin-right: 8px;
+}
 
+strong:hover {
+  cursor: pointer;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+ }
 
 ul {
   margin-top: 60px;
@@ -102,7 +117,7 @@ ul {
 li {
   cursor: pointer;
   list-style: none;
-  font-size: 28px;
+  font-size: 24px;
   margin-bottom: 30px;
   cursor: url('../img/cursor-white.png'), auto;
     cursor: -webkit-image-set(
@@ -115,22 +130,8 @@ li a {
     text-decoration: none;
 }
 
-a:hover {
-    opacity: 0.8;
-}
 
-@media screen and (max-width: 800px) {
-  .homepage{
-              padding: 24px;
-            }
 
-  h1 {
-    font-size: 22px;
-  }
-  p, li{
-    font-size: 24px;
-  }
-}
 
 
 ::selection {
@@ -151,7 +152,7 @@ a:hover {
 
 .left {
     flex-basis: auto;
-    width: 50%;
+    width: 40%;
     padding: 3rem;
 
 }
@@ -159,16 +160,19 @@ a:hover {
 .right {
     order: 1;
     padding: 3rem;
-    width: 50%;
+    width: 60%;
 }
 
 .fixed {
-  width: 45%;
-  max-width: 800px;
+  width: 35%;
   position: fixed;
   pointer-events: none;
 }
 
+
+.right a {
+  text-decoration: underline;
+}
 
 a {
   pointer-events: auto;
@@ -181,9 +185,32 @@ a {
 }
 
 
+@media screen and (max-width: 1400px) {
+.left {
+    flex-basis: auto;
+    width: 50%;
+    padding: 3rem;
 
+}
 
-@media screen and (max-width: 1200px) {
+p {
+  font-size: 28px;
+}
+
+.right {
+    order: 1;
+    padding: 3rem;
+    width: 50%;
+}
+
+.fixed {
+  width: 45%;
+  position: fixed;
+  pointer-events: none;
+}
+}
+
+@media screen and (max-width: 1000px) {
 
   .right{
     display: none;
@@ -202,6 +229,22 @@ a {
     width: 100%;
   }
 
+}
 
 
+@media screen and (max-width: 800px) {
+  .homepage{
+              padding: 24px;
+            }
+
+  h1 {
+    font-size: 22px;
+  }
+  p, li{
+    font-size: 24px;
+  }
+  strong img{
+    height: 18px;
+    width: 18px;
+  }
 }
