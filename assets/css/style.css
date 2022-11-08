@@ -12,8 +12,22 @@
 html {
     height: 100%;
     overflow: hidden;
+    cursor: url('../img/cursor.png'), auto;
+    cursor: -webkit-image-set(
+      url('../img/cursor.png') 1x,
+      url('../img/cursor@2x.png') 2x
+    ), auto;
+
 }
 
+
+a {
+  cursor: url('../img/cursor.png'), auto;
+    cursor: -webkit-image-set(
+      url('../img/cursor.png') 1x,
+      url('../img/cursor@2x.png') 2x
+    ), auto;
+}
 
 body {
     position: absolute;
@@ -29,84 +43,6 @@ img, video {
     width:100%;
     height:auto;
 }
-/*Container*/
-.span {
-    width:100%;
-    min-width:260px;
-    max-width: 1100px;
-    margin: auto;
-}
-
-.right-span {
-    width:60%;
-    min-width:260px;
-    max-width: 1500px;
-    margin: auto;
-}
-/*Clears Childern Elements*/
-.span:after {
-  content: "";
-  display: table;
-  clear: both
-}
-.spancase:after {
-  content: "";
-  display: table;
-  clear: both
-}
-/*Floats and Pads*/
-[class*='loop'] {
-  position: relative;
-  float: left;
-  padding: 20px;
-}
-/*The Grid*/
-.loop-1 {width: 9.1%;}
-
-.loop-2 {width: 20%;}
-
-.loop-3 {width: 25%;}
-
-.loop-4 {width: 33.3%;}
-
-.loop-5 {width: 41.6%;}
-
-.loop-6 {width: 50%;}
-
-.loop-7 {width: 58.3%;}
-
-.loop-8 {width: 66.6%;}
-
-.loop-9 {width: 75%;}
-
-.loop-10 {width: 83.3%;}
-
-.loop-11 {width: 90.9%;}
-
-.loop-12 {width: 100%;}
-
-@media (max-width: 700px) {
-    .loop-1,
-    .loop-2,
-    .loop-3,
-    .loop-4,
-    .loop-5,
-    .loop-6,
-    .loop-7,
-    .loop-8,
-    .loop-9,
-    .loop-10,
-    .loop-11,
-    .loop-12 {
-        width:100%;
-    }
-}
-.controls .span {
-    width:100%;
-    min-width:80%;
-    max-width: 0px;
-    margin: 0 auto;
-}
 
 
 @font-face {
@@ -119,10 +55,15 @@ img, video {
   src: url(../font/MaisonNeue-Medium.ttf);
 }
 
+@font-face {
+  font-family: Manrope;
+  src: url(../font/Manrope-Regular.ttf);
+}
+
 
 body {
   background: white;
-  font-family: Maison, sans-serif;
+  font-family: Manrope, Maison, sans-serif;
   line-height: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -130,28 +71,18 @@ body {
   word-wrap: break-word; 
   color: #1B1D1B;
 }
-@media screen and (max-width: 600px) {
-  body{
-      padding: 10px 0 0px 0;
-    }
-}
-.homepage {
-  padding: 80px;
-  font-weight: 300;
-  max-width: 700px;
-}
-p {
-  font-size: 18px;
-  line-height: 1.4;
-}
-h1 {
-  font-family: MaisonMed, sans-serif;
-  font-size: 20px;
-  line-height: 1.25;
-  letter-spacing: -0.5px;
-  margin-bottom: 20px;
-}
 
+
+
+p {
+  font-size: 28px;
+  line-height: 1.5;
+}
+span {
+  font-size: 14px;
+  opacity: 0.7;
+  padding-left: 4px;
+}
   
 a {
   color: inherit;
@@ -164,86 +95,29 @@ strong {
 
 
 
-
-
-a img { 
-  display:none;
+ul {
+  margin-top: 60px;
 }
 
-a:hover .one { 
-  position: fixed;
-  width: 400px;
-  display:block;
-  right: 30%;
-  top: 20%;
-  z-index: -1;
+li {
+  cursor: pointer;
+  list-style: none;
+  font-size: 28px;
+  margin-bottom: 30px;
+  cursor: url('../img/cursor-white.png'), auto;
+    cursor: -webkit-image-set(
+      url('../img/cursor-white.png') 1x,
+      url('../img/cursor-white@2x.png') 2x
+    ), auto;
 }
 
-a:hover .two { 
-  position: fixed;
-  width: 400px;
-  display:block;
-  right: 10%;
-  top: 20%;
-  z-index: -1;
-  overflow: hidden;
-
+li a {
+    text-decoration: none;
 }
 
-a:hover .three { 
-  position: fixed;
-  width: 500px;
-  display:block;
-  right: 10%;
-  top: 40%;
-  z-index: -1;
+a:hover {
+    opacity: 0.8;
 }
-
-
-a:hover .here { 
-  position: fixed;
-  width: 240px;
-  display:block;
-  right: 40%;
-  top: 20%;
-  z-index: -1;
-}
-
-
-
-a:hover .fb { 
-  position: fixed;
-  width: 600px;
-  display:block;
-  right: 20%;
-  bottom: 5%;
-  z-index: -1;
-}
-
-
-
-a:hover .linkedin { 
-  position: fixed;
-  width: 300px;
-  display:block;
-  right: 10%;
-  bottom: 10%;
-  z-index: -1;
-}
-
-
-
-@media screen and (max-width: 800px) {
-  a:hover img{
-              display: none !important;
-            }
-
-  .fb {
-    text-decoration: none !important;
-  }
-}
-
-
 
 @media screen and (max-width: 800px) {
   .homepage{
@@ -253,7 +127,81 @@ a:hover .linkedin {
   h1 {
     font-size: 22px;
   }
-  p {
-    font-size: 16px;
+  p, li{
+    font-size: 24px;
   }
+}
+
+
+::selection {
+  background: #F8FFA7; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #F8FFA7; /* Gecko Browsers */
+}
+
+
+.flexbox {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+
+
+.left {
+    flex-basis: auto;
+    width: 50%;
+    padding: 3rem;
+
+}
+
+.right {
+    order: 1;
+    padding: 3rem;
+    width: 50%;
+}
+
+.fixed {
+  width: 45%;
+  max-width: 800px;
+  position: fixed;
+  pointer-events: none;
+}
+
+
+a {
+  pointer-events: auto;
+}
+
+.caption {
+  padding-bottom: 30px;
+  font-size: 14px;
+  white-space: pre;
+}
+
+
+
+
+@media screen and (max-width: 1200px) {
+
+  .right{
+    display: none;
+  }
+
+  .left {
+    pointer-events: auto;
+    width: 100%;
+    padding: 20px;
+    padding-bottom: 40px;
+    overflow: scroll;
+  }
+
+  .fixed {
+    position: relative;
+    width: 100%;
+  }
+
+
+
 }
