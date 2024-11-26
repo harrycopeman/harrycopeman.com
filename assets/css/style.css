@@ -159,6 +159,7 @@ li a {
     padding: 3rem;
     width: 60%;
     padding-bottom: 100px;
+    overflow: wrap;
 }
 
 .fixed {
@@ -179,7 +180,6 @@ a {
 .caption {
   margin-bottom: 30px;
   font-size: 14px;
-  white-space: pre;
 }
 
 .caption a {
