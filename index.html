@@ -99,6 +99,7 @@
   </div>
 </div>
 
+<script src="https://unpkg.com/@react-spring/web@9.7.3/dist/index.min.js"></script>
 <script>
 // Set left section height
 function updateLeftHeight() {
@@ -130,6 +131,15 @@ let animationFrame;
 let velocity = 0;
 let lastX;
 let lastTime;
+let currentScroll = 0;
+let targetScroll = 0;
+
+// Spring configuration
+const springConfig = {
+  tension: 150,  // Reduced tension for smoother movement
+  friction: 20,  // Reduced friction for more momentum
+  mass: 1
+};
 
 // Mouse events
 carousel.addEventListener('mousedown', (e) => {
@@ -150,17 +160,18 @@ carousel.addEventListener('mouseleave', () => {
 carousel.addEventListener('mouseup', () => {
   isDragging = false;
   
-  // Apply momentum scrolling
+  // Apply continuous momentum scrolling
   if (Math.abs(velocity) > 0.5) {
-    const momentum = () => {
-      velocity *= 0.95; // Decay factor
+    const animate = () => {
+      velocity *= 0.95; // Gentle deceleration
       carousel.scrollLeft -= velocity;
       
-      if (Math.abs(velocity) > 0.5) {
-        requestAnimationFrame(momentum);
+      if (Math.abs(velocity) > 0.1) {
+        requestAnimationFrame(animate);
       }
     };
-    requestAnimationFrame(momentum);
+    
+    requestAnimationFrame(animate);
   }
 });
 
@@ -169,13 +180,13 @@ carousel.addEventListener('mousemove', (e) => {
   e.preventDefault();
   
   const x = e.pageX - carousel.offsetLeft;
-  const walk = (x - startX) * 1.5; // Increased multiplier for more responsive feel
+  const walk = (x - startX) * 1.5;
   
   // Calculate velocity
   const currentTime = performance.now();
   const deltaTime = currentTime - lastTime;
   if (deltaTime > 0) {
-    velocity = (e.pageX - lastX) / deltaTime * 16; // Normalize to roughly 60fps
+    velocity = (e.pageX - lastX) / deltaTime * 16;
   }
   lastX = e.pageX;
   lastTime = currentTime;
@@ -183,7 +194,7 @@ carousel.addEventListener('mousemove', (e) => {
   carousel.scrollLeft = scrollLeft - walk;
 });
 
-// Touch events with momentum
+// Touch events with continuous momentum
 carousel.addEventListener('touchstart', (e) => {
   isDragging = true;
   startX = e.touches[0].pageX - carousel.offsetLeft;
@@ -197,17 +208,18 @@ carousel.addEventListener('touchstart', (e) => {
 carousel.addEventListener('touchend', () => {
   isDragging = false;
   
-  // Apply momentum scrolling
+  // Apply continuous momentum scrolling
   if (Math.abs(velocity) > 0.5) {
-    const momentum = () => {
-      velocity *= 0.95; // Decay factor
+    const animate = () => {
+      velocity *= 0.95; // Gentle deceleration
       carousel.scrollLeft -= velocity;
       
-      if (Math.abs(velocity) > 0.5) {
-        requestAnimationFrame(momentum);
+      if (Math.abs(velocity) > 0.1) {
+        requestAnimationFrame(animate);
       }
     };
-    requestAnimationFrame(momentum);
+    
+    requestAnimationFrame(animate);
   }
 });
 
