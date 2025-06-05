@@ -308,7 +308,7 @@ li a {
     transform: scale(0.9);
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1300px) {
     .fixed {
         flex-direction: column;
         gap: 20px;
