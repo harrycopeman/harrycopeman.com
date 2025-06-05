@@ -471,3 +471,16 @@ li a {
   display: block;
 }
 
+@media screen and (max-width: 768px) {
+  .slideshow-progress {
+    top: 12px;
+    left: 12px;
+    right: 12px;
+    gap: 4px;
+  }
+  
+  .progress-pill {
+    height: 2px;
+  }
+}
+
