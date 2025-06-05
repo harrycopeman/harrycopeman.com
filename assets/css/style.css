@@ -181,6 +181,8 @@ li a {
     margin-left: 50%;
     transform: translateX(-50%);
     color: #4D4D4D;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .fixed a {
@@ -318,9 +320,11 @@ li a {
 
     .bio-content {
         flex: 0 0 auto;
-        max-width: 100%;
+        width: 100%;
+        max-width: 600px;
         margin-left: 0;
         transform: none;
+        padding-right: 20px;
     }
 }
 
