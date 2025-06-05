@@ -107,8 +107,17 @@ function updateLeftHeight() {
   document.documentElement.style.setProperty('--left-height', leftHeight + 'px');
 }
 
-// Update on load and resize
-window.addEventListener('load', updateLeftHeight);
+// Calculate height immediately
+updateLeftHeight();
+
+// Add loaded class after a small delay to ensure height is set
+window.addEventListener('load', () => {
+  // Small delay to ensure height calculation is complete
+  requestAnimationFrame(() => {
+    document.querySelector('.flexbox').classList.add('loaded');
+  });
+});
+
 window.addEventListener('resize', updateLeftHeight);
 
 // Carousel drag functionality
