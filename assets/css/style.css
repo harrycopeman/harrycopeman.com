@@ -238,6 +238,11 @@ li a {
     flex: 0 0 auto;
 }
 
+.right .caption .date {
+    color: #A2A2A2;
+    margin-right: 6px;
+}
+
 .right .caption a {
     display: inline-block;
     margin-right: 8px;
