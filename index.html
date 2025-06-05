@@ -28,8 +28,17 @@
 
   <div class="right">
     <div>
-      <div class="media-container">
-        <img src="assets/img/bb-office.jpeg">
+      <div class="media-container slideshow-container">
+        <div class="slideshow-progress">
+          <div class="progress-pill"></div>
+          <div class="progress-pill"></div>
+          <div class="progress-pill"></div>
+        </div>
+        <div class="slideshow">
+          <img src="assets/img/bb-office.jpeg" class="slide active">
+          <img src="assets/img/bb-2.jpg" class="slide">
+          <img src="assets/img/bb-3.jpg" class="slide">
+        </div>
         <p class="caption"><span class="date">2020</span>Founded the London office for Bakken & Bæck</p>
       </div>
     </div>
@@ -243,6 +252,95 @@ carousel.addEventListener('touchmove', (e) => {
 // Prevent default drag behavior for images
 document.querySelectorAll('.right img, .right video').forEach(element => {
   element.addEventListener('dragstart', (e) => e.preventDefault());
+});
+
+// Slideshow functionality
+const slideshowContainer = document.querySelector('.slideshow-container');
+const slides = slideshowContainer.querySelectorAll('.slide');
+const progressPills = slideshowContainer.querySelectorAll('.progress-pill');
+let currentSlideIndex = 0;
+let slideshowInterval;
+
+// Change this value to adjust how long each slide is shown
+// 1000 = 1 second, 2000 = 2 seconds, 3000 = 3 seconds, etc.
+const SLIDE_DURATION = 2500;
+
+function resetProgressPills() {
+  progressPills.forEach(pill => {
+    pill.classList.remove('active', 'completed');
+    // Force a reflow
+    void pill.offsetWidth;
+  });
+}
+
+function showSlide(index) {
+  // Hide all slides
+  slides.forEach(slide => slide.classList.remove('active'));
+  
+  // Reset all progress pills
+  resetProgressPills();
+  
+  // Show current slide
+  slides[index].classList.add('active');
+  
+  // Mark previous pills as completed
+  for (let i = 0; i < index; i++) {
+    progressPills[i].classList.add('completed');
+  }
+  
+  // Start animation for current pill
+  requestAnimationFrame(() => {
+    progressPills[index].classList.add('active');
+  });
+  
+  // Clear any existing interval
+  if (slideshowInterval) {
+    clearInterval(slideshowInterval);
+  }
+  
+  // Start new interval
+  slideshowInterval = setInterval(() => {
+    // Mark current pill as completed
+    progressPills[currentSlideIndex].classList.remove('active');
+    progressPills[currentSlideIndex].classList.add('completed');
+    
+    currentSlideIndex = (currentSlideIndex + 1) % slides.length;
+    showSlide(currentSlideIndex);
+  }, SLIDE_DURATION);
+}
+
+// Start slideshow
+showSlide(0);
+
+// Pause slideshow on hover
+slideshowContainer.addEventListener('mouseenter', () => {
+  if (slideshowInterval) {
+    clearInterval(slideshowInterval);
+  }
+  // Pause the animation by removing the active class
+  progressPills[currentSlideIndex].classList.remove('active');
+});
+
+slideshowContainer.addEventListener('mouseleave', () => {
+  // Resume the animation
+  showSlide(currentSlideIndex);
+});
+
+// Add click navigation
+slideshowContainer.addEventListener('click', (e) => {
+  const rect = slideshowContainer.getBoundingClientRect();
+  const x = e.clientX - rect.left;
+  const halfWidth = rect.width / 2;
+  
+  if (x < halfWidth) {
+    // Click on left side - previous slide
+    currentSlideIndex = (currentSlideIndex - 1 + slides.length) % slides.length;
+  } else {
+    // Click on right side - next slide
+    currentSlideIndex = (currentSlideIndex + 1) % slides.length;
+  }
+  
+  showSlide(currentSlideIndex);
 });
 </script>
 </body>

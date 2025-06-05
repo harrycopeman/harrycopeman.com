@@ -390,3 +390,84 @@ li a {
     }
 }
 
+/* Slideshow Styles */
+.slideshow-container {
+  position: relative;
+  width: auto;
+  height: calc(100vh - var(--left-height) - 80px);
+  display: inline-block;
+}
+
+.slideshow-progress {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  z-index: 10;
+}
+
+.progress-pill {
+  flex: 1;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 2px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress-pill::after {
+  content: '';
+  display: block;
+  height: 100%;
+  width: 0;
+  background: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: none;
+}
+
+.progress-pill.completed::after {
+  width: 100%;
+}
+
+.progress-pill.active::after {
+  width: 100%;
+  transition: width 2.5s linear;
+}
+
+.slideshow {
+  position: relative;
+  width: auto;
+  height: 100%;
+  display: inline-block;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: 100%;
+  opacity: 0;
+  object-fit: cover;
+  border-radius: 6px;
+  display: block;
+}
+
+.slide.active {
+  opacity: 1;
+  position: relative;
+}
+
+/* Force all slides to match the container size */
+.slideshow img {
+  width: auto !important;
+  height: 100% !important;
+  object-fit: cover;
+  border-radius: 6px;
+  display: block;
+}
+
