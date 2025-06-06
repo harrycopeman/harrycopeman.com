@@ -371,30 +371,54 @@ li a {
     html, body {
         overflow: auto;
         height: auto;
+        cursor: default;
     }
     
     .flexbox {
         height: auto;
         overflow: visible;
+        min-height: 100vh;
     }
     
     .left {
         padding: 15px 15px;
+        position: relative;
+        height: auto;
     }
     
     .right {
         padding: 0 15px 15px 15px;
+        overflow-x: auto;
+        overflow-y: visible;
+        height: auto;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
     }
     
     .right > div {
         width: 320px !important;
         margin-right: 20px;
+        display: inline-block;
+        vertical-align: top;
     }
     
+    .media-container {
+        width: 320px !important;
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
     .media-container img,
     .media-container video {
         height: 350px;
         object-fit: cover;
+    }
+
+    .media-container .caption {
+        margin-top: 8px;
+        width: 100%;
+        display: block;
+        white-space: normal;
     }
 
     .slideshow-container {
@@ -418,26 +442,6 @@ li a {
         width: 320px !important;
         height: 320px !important;
         max-width: 320px !important;
-    }
-
-    .media-container {
-        width: 320px !important;
-        display: flex !important;
-        flex-direction: column !important;
-    }
-
-    .media-container .caption {
-        margin-top: 8px;
-        width: 100%;
-        display: block;
-        white-space: normal;
-    }
-
-    .slideshow-progress {
-        top: 8px;
-        left: 8px;
-        right: 8px;
-        gap: 4px;
     }
 }
 
