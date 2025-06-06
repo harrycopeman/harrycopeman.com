@@ -484,7 +484,6 @@ li a {
   position: absolute;
   top: 0;
   left: 0;
-  transition: none;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
 }
@@ -494,9 +493,18 @@ li a {
 }
 
 .progress-pill.active::after {
-  width: 100%;
-  transition: width 2.5s linear;
-  -webkit-transition: width 2.5s linear;
+  animation: progress 2.5s linear forwards;
+  -webkit-animation: progress 2.5s linear forwards;
+}
+
+@keyframes progress {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@-webkit-keyframes progress {
+  from { width: 0; }
+  to { width: 100%; }
 }
 
 .slideshow {

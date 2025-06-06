@@ -319,13 +319,23 @@ slideshowContainer.addEventListener('mouseenter', () => {
   if (slideshowInterval) {
     clearInterval(slideshowInterval);
   }
-  // Pause the animation by removing the active class
-  progressPills[currentSlideIndex].classList.remove('active');
+  // Pause the animation
+  progressPills[currentSlideIndex].style.animationPlayState = 'paused';
 });
 
 slideshowContainer.addEventListener('mouseleave', () => {
   // Resume the animation
-  showSlide(currentSlideIndex);
+  progressPills[currentSlideIndex].style.animationPlayState = 'running';
+  
+  // Set up the next interval
+  slideshowInterval = setTimeout(() => {
+    // Mark current pill as completed
+    progressPills[currentSlideIndex].classList.remove('active');
+    progressPills[currentSlideIndex].classList.add('completed');
+    
+    currentSlideIndex = (currentSlideIndex + 1) % slides.length;
+    showSlide(currentSlideIndex);
+  }, SLIDE_DURATION);
 });
 
 // Add click navigation
