@@ -363,9 +363,9 @@ slideshowContainer.addEventListener('click', (e) => {
   showSlide(currentSlideIndex);
 });
 </script>
-<script src="https://unpkg.com/@vercel/speed-insights"></script>
 <script>
-  injectSpeedInsights();
+  window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
 </script>
+<script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>
