@@ -270,17 +270,29 @@ const SLIDE_DURATION = 2500;
 function resetProgressPills() {
   progressPills.forEach(pill => {
     pill.classList.remove('active', 'completed');
-    // Force a reflow
+    pill.style.animationPlayState = 'running';
+    // Force a reflow to ensure animations are reset
     void pill.offsetWidth;
   });
 }
 
 function showSlide(index) {
+  // Clear any existing interval
+  if (slideshowInterval) {
+    clearInterval(slideshowInterval);
+    slideshowInterval = null;
+  }
+
+  // Reset all progress pills
+  progressPills.forEach(pill => {
+    pill.classList.remove('active', 'completed');
+    pill.style.animationPlayState = 'running';
+    // Force a reflow to ensure animations are reset
+    void pill.offsetWidth;
+  });
+  
   // Hide all slides
   slides.forEach(slide => slide.classList.remove('active'));
-  
-  // Reset all progress pills
-  resetProgressPills();
   
   // Show current slide
   slides[index].classList.add('active');
@@ -295,13 +307,8 @@ function showSlide(index) {
     progressPills[index].classList.add('active');
   });
   
-  // Clear any existing interval
-  if (slideshowInterval) {
-    clearInterval(slideshowInterval);
-  }
-  
   // Start new interval
-  slideshowInterval = setInterval(() => {
+  slideshowInterval = setTimeout(() => {
     // Mark current pill as completed
     progressPills[currentSlideIndex].classList.remove('active');
     progressPills[currentSlideIndex].classList.add('completed');
@@ -318,6 +325,7 @@ showSlide(0);
 slideshowContainer.addEventListener('mouseenter', () => {
   if (slideshowInterval) {
     clearInterval(slideshowInterval);
+    slideshowInterval = null;
   }
   // Pause the animation
   progressPills[currentSlideIndex].style.animationPlayState = 'paused';
