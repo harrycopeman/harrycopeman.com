@@ -215,6 +215,11 @@ li a {
     display: flex;
     align-items: flex-start;
     height: calc(100vh - var(--left-height));
+    will-change: transform;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+    -webkit-font-smoothing: antialiased;
 }
 
 .right::-webkit-scrollbar {
@@ -227,6 +232,8 @@ li a {
     vertical-align: top;
     will-change: transform;
     height: auto;
+    transform: translateZ(0);
+    backface-visibility: hidden;
 }
 
 .right img, 
@@ -237,6 +244,9 @@ li a {
     max-width: 80vw;
     object-fit: cover;
     border-radius: 6px;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    will-change: transform;
 }
 
 .right .caption {

@@ -145,20 +145,63 @@ let lastX;
 let lastTime;
 let currentScroll = 0;
 let targetScroll = 0;
+let isAnimating = false;
 
 // Spring configuration
 const springConfig = {
-  tension: 150,  // Reduced tension for smoother movement
-  friction: 20,  // Reduced friction for more momentum
+  tension: 150,
+  friction: 20,
   mass: 1
 };
+
+// Helper function to get the current scroll position
+function getScrollPosition() {
+  return carousel.scrollLeft;
+}
+
+// Helper function to set scroll position with transform
+function setScrollPosition(position) {
+  carousel.scrollLeft = position;
+}
+
+// Smooth animation function
+function animateScroll(targetPosition) {
+  if (isAnimating) return;
+  isAnimating = true;
+
+  const startPosition = getScrollPosition();
+  const distance = targetPosition - startPosition;
+  const startTime = performance.now();
+  const duration = 500; // Increased duration for smoother deceleration
+
+  function easeOutCubic(t) {
+    return 1 - Math.pow(1 - t, 3);
+  }
+
+  function animate(currentTime) {
+    const elapsed = currentTime - startTime;
+    const progress = Math.min(elapsed / duration, 1);
+    const easedProgress = easeOutCubic(progress);
+    
+    const currentPosition = startPosition + (distance * easedProgress);
+    setScrollPosition(currentPosition);
+
+    if (progress < 1) {
+      requestAnimationFrame(animate);
+    } else {
+      isAnimating = false;
+    }
+  }
+
+  requestAnimationFrame(animate);
+}
 
 // Mouse events
 carousel.addEventListener('mousedown', (e) => {
   e.preventDefault();
   isDragging = true;
   startX = e.pageX - carousel.offsetLeft;
-  scrollLeft = carousel.scrollLeft;
+  scrollLeft = getScrollPosition();
   lastX = e.pageX;
   lastTime = performance.now();
   velocity = 0;
@@ -166,24 +209,26 @@ carousel.addEventListener('mousedown', (e) => {
 });
 
 carousel.addEventListener('mouseleave', () => {
-  isDragging = false;
+  if (isDragging) {
+    isDragging = false;
+    
+    // Apply momentum scrolling without snapping
+    if (Math.abs(velocity) > 0.5) {
+      const targetPosition = getScrollPosition() - (velocity * 50);
+      animateScroll(targetPosition);
+    }
+  }
 });
 
 carousel.addEventListener('mouseup', () => {
-  isDragging = false;
-  
-  // Apply continuous momentum scrolling
-  if (Math.abs(velocity) > 0.5) {
-    const animate = () => {
-      velocity *= 0.95; // Gentle deceleration
-      carousel.scrollLeft -= velocity;
-      
-      if (Math.abs(velocity) > 0.1) {
-        requestAnimationFrame(animate);
-      }
-    };
+  if (isDragging) {
+    isDragging = false;
     
-    requestAnimationFrame(animate);
+    // Apply momentum scrolling without snapping
+    if (Math.abs(velocity) > 0.5) {
+      const targetPosition = getScrollPosition() - (velocity * 50);
+      animateScroll(targetPosition);
+    }
   }
 });
 
@@ -203,14 +248,14 @@ carousel.addEventListener('mousemove', (e) => {
   lastX = e.pageX;
   lastTime = currentTime;
   
-  carousel.scrollLeft = scrollLeft - walk;
+  setScrollPosition(scrollLeft - walk);
 });
 
-// Touch events with continuous momentum
+// Touch events
 carousel.addEventListener('touchstart', (e) => {
   isDragging = true;
   startX = e.touches[0].pageX - carousel.offsetLeft;
-  scrollLeft = carousel.scrollLeft;
+  scrollLeft = getScrollPosition();
   lastX = e.touches[0].pageX;
   lastTime = performance.now();
   velocity = 0;
@@ -218,25 +263,21 @@ carousel.addEventListener('touchstart', (e) => {
 });
 
 carousel.addEventListener('touchend', () => {
-  isDragging = false;
-  
-  // Apply continuous momentum scrolling
-  if (Math.abs(velocity) > 0.5) {
-    const animate = () => {
-      velocity *= 0.95; // Gentle deceleration
-      carousel.scrollLeft -= velocity;
-      
-      if (Math.abs(velocity) > 0.1) {
-        requestAnimationFrame(animate);
-      }
-    };
+  if (isDragging) {
+    isDragging = false;
     
-    requestAnimationFrame(animate);
+    // Apply momentum scrolling
+    if (Math.abs(velocity) > 0.5) {
+      const targetPosition = getScrollPosition() - (velocity * 50);
+      animateScroll(targetPosition);
+    }
   }
 });
 
 carousel.addEventListener('touchmove', (e) => {
   if (!isDragging) return;
+  e.preventDefault();
+  
   const x = e.touches[0].pageX - carousel.offsetLeft;
   const walk = (x - startX) * 1.5;
   
@@ -249,13 +290,19 @@ carousel.addEventListener('touchmove', (e) => {
   lastX = e.touches[0].pageX;
   lastTime = currentTime;
   
-  carousel.scrollLeft = scrollLeft - walk;
+  setScrollPosition(scrollLeft - walk);
 });
 
 // Prevent default drag behavior for images
 document.querySelectorAll('.right img, .right video').forEach(element => {
   element.addEventListener('dragstart', (e) => e.preventDefault());
 });
+
+// Add hardware acceleration hints
+carousel.style.transform = 'translateZ(0)';
+carousel.style.backfaceVisibility = 'hidden';
+carousel.style.perspective = '1000px';
+carousel.style.willChange = 'transform';
 
 // Slideshow functionality
 const slideshowContainer = document.querySelector('.slideshow-container');
