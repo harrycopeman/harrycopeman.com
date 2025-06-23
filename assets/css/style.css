@@ -12,7 +12,7 @@
 html, body {
     height: 100vh;
     height: 100dvh; /* Dynamic viewport height for iOS */
-    overflow: hidden;
+    overflow: auto;
     cursor: url('../img/cursor.png'), auto;
     cursor: -webkit-image-set(
       url('../img/cursor.png') 1x,
@@ -392,7 +392,6 @@ li a {
     html, body {
         overflow: auto;
         height: auto;
-        height: 100dvh; /* Dynamic viewport height for iOS */
         cursor: default;
         /* Remove safe area padding from body in mobile to let flexbox handle it */
         padding: 0;
@@ -400,12 +399,12 @@ li a {
     
     .flexbox {
         height: auto;
-        height: 100dvh; /* Dynamic viewport height for iOS */
         overflow: visible;
-        min-height: 100vh;
-        min-height: 100dvh;
+        min-height: auto;
         /* Remove safe area padding from flexbox to allow natural scrolling */
         padding: 0;
+        /* Remove flex constraints that prevent scrolling */
+        display: block;
     }
     
     .left {
