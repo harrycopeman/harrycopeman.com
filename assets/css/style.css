@@ -20,6 +20,9 @@ html, body {
     ), auto;
     -webkit-font-smoothing: antialiased;
     -webkit-overflow-scrolling: touch; /* Enable momentum scrolling on iOS */
+    /* Enable backdrop blur support */
+    -webkit-backdrop-filter: blur(0px);
+    backdrop-filter: blur(0px);
 }
 
 body {
@@ -31,6 +34,9 @@ body {
     overflow: auto;
     /* Remove safe area padding from body to prevent scrolling issues */
     /* Safe areas will be handled in individual sections */
+    /* Enable backdrop blur support */
+    -webkit-backdrop-filter: blur(0px);
+    backdrop-filter: blur(0px);
 }
 
 /*Helps With Images*/
@@ -168,6 +174,9 @@ li a {
     transform: translateZ(0);
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+    /* Enable backdrop blur support */
+    -webkit-backdrop-filter: blur(0px);
+    backdrop-filter: blur(0px);
 }
 
 .flexbox.loaded {
@@ -395,6 +404,9 @@ li a {
         cursor: default;
         /* Remove safe area padding from body in mobile to let flexbox handle it */
         padding: 0;
+        /* Ensure backdrop blur support on mobile */
+        -webkit-backdrop-filter: blur(0px);
+        backdrop-filter: blur(0px);
     }
     
     .flexbox {
@@ -405,6 +417,14 @@ li a {
         padding: 0;
         /* Remove flex constraints that prevent scrolling */
         display: block;
+        /* Ensure backdrop blur support on mobile */
+        -webkit-backdrop-filter: blur(0px);
+        backdrop-filter: blur(0px);
+        /* iOS-specific optimizations for blur */
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
     }
     
     .left {
@@ -415,6 +435,9 @@ li a {
         padding-right: calc(15px + env(safe-area-inset-right));
         position: relative;
         height: auto;
+        /* Ensure backdrop blur support */
+        -webkit-backdrop-filter: blur(0px);
+        backdrop-filter: blur(0px);
     }
     
     .right {
@@ -427,6 +450,9 @@ li a {
         height: auto;
         white-space: nowrap;
         -webkit-overflow-scrolling: touch;
+        /* Ensure backdrop blur support */
+        -webkit-backdrop-filter: blur(0px);
+        backdrop-filter: blur(0px);
     }
     
     .right > div {
@@ -613,7 +639,17 @@ a:hover svg path {
 /* iOS-specific optimizations for Safari iOS 26 beta */
 @supports (-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {
   /* Enable backdrop blur support */
+  html, body {
+    -webkit-backdrop-filter: blur(0px);
+    backdrop-filter: blur(0px);
+  }
+  
   .flexbox {
+    -webkit-backdrop-filter: blur(0px);
+    backdrop-filter: blur(0px);
+  }
+  
+  .left, .right {
     -webkit-backdrop-filter: blur(0px);
     backdrop-filter: blur(0px);
   }
@@ -643,10 +679,24 @@ p, a, span, div {
 @supports (-webkit-touch-callout: none) {
   html, body {
     height: -webkit-fill-available;
+    /* Ensure backdrop blur works on iOS */
+    -webkit-backdrop-filter: blur(0px);
+    backdrop-filter: blur(0px);
   }
   
   .flexbox {
     height: -webkit-fill-available;
+    /* Ensure backdrop blur works on iOS */
+    -webkit-backdrop-filter: blur(0px);
+    backdrop-filter: blur(0px);
+  }
+  
+  /* Additional iOS blur optimizations */
+  .left, .right {
+    -webkit-backdrop-filter: blur(0px);
+    backdrop-filter: blur(0px);
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
   }
 }
 
