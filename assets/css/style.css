@@ -186,9 +186,10 @@ li a {
 }
 
 .bio-content {
-    flex: 0 0 600px;
-    margin-left: 40%;
-    transform: translateX(-50%);
+    flex: 1 1 auto;
+    min-width: 0;
+    max-width: 630px;
+    margin: 0 auto;
     color: #4D4D4D;
     word-wrap: break-word;
     overflow-wrap: break-word;
@@ -349,12 +350,12 @@ li a {
     }
 
     .bio-content {
-        flex: 0 0 auto;
+        flex: 1 1 auto;
         width: 100%;
-        max-width: 600px;
-        margin-left: 0;
-        transform: none;
-        padding-right: 20px;
+        max-width: 100%;
+        color: #4D4D4D;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
     }
 
     .right {
@@ -576,5 +577,13 @@ li a {
   .media-container .caption {
     margin-top: 8px;
   }
+}
+
+a svg path {
+  fill: #666 !important;
+}
+
+a:hover svg path {
+  fill: #333 !important;
 }
 
