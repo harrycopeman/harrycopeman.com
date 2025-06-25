@@ -531,7 +531,7 @@ body.dark .about-link-row:hover {
 @media (max-width: 800px) {
 
   .gallery-header h1 {
-    padding-top: 70px;
+    padding-top: 40px;
     font-size: 20px;
   }
 
