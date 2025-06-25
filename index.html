@@ -7,6 +7,13 @@
   <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
   <link rel="stylesheet" href="assets/css/gallery.css">
   <style>
+    body {
+      opacity: 0;
+      transition: opacity 0.6s cubic-bezier(.4,0,.2,1);
+    }
+    body.loaded {
+      opacity: 1;
+    }
     #about-modal {
       opacity: 0;
       pointer-events: none;
@@ -304,17 +311,26 @@ function ensureCenteredAfterMediaLoad() {
         pending++;
         media.addEventListener('load', () => {
           pending--;
-          if (pending === 0) updateCarousel(false);
+          if (pending === 0) {
+            updateCarousel(false);
+            document.body.classList.add('loaded');
+          }
         });
         media.addEventListener('loadeddata', () => {
           pending--;
-          if (pending === 0) updateCarousel(false);
+          if (pending === 0) {
+            updateCarousel(false);
+            document.body.classList.add('loaded');
+          }
         });
       }
     }
   });
   // Fallback: always call after a short delay
-  setTimeout(() => updateCarousel(false), 100);
+  setTimeout(() => {
+    updateCarousel(false);
+    document.body.classList.add('loaded');
+  }, 100);
 }
 
 window.addEventListener('resize', () => updateCarousel(false));
