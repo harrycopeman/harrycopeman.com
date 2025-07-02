@@ -54,7 +54,7 @@ body {
 }
 .gallery-header h1 {
   padding-top: 8vh;
-  font-size: 24px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 400;
   letter-spacing: -0.19px;
@@ -63,7 +63,7 @@ body {
   text-transform: none;
 }
 .gallery-header p {
-  font-size: 18px;
+  font-size: 16px;
   color: #888;
   margin: 0;
   font-weight: 400;
@@ -375,8 +375,8 @@ body.dark .gallery-nav-btn {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: rgba(255,255,255,0.95);
-  backdrop-filter: blur(12px);
+  background: rgba(255,255,255,0.90);
+  backdrop-filter: blur(15px);
   align-items: center;
   justify-content: center;
   font-size: 16px;
@@ -455,6 +455,10 @@ body.dark #about-close:hover {
   line-height: 1.6;
   margin-bottom: 1.5em;
   margin-top: 30px;
+  font-size: 16px;
+  letter-spacing: 0.14px;
+  line-height: 24px;
+  font-feature-settings: "blwf", "cv09", "cv03", "cv04", "cv11";
 }
 body.dark h1 {
   color: #f7f7f7;
