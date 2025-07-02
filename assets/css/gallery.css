@@ -380,6 +380,9 @@ body.dark .gallery-nav-btn {
   align-items: center;
   justify-content: center;
   font-size: 16px;
+  letter-spacing: 0.14px;
+  line-height: 16.8px;
+  font-feature-settings: "blwf", "cv09", "cv03", "cv04", "cv11";
 }
 #about-modal.open {
   opacity: 1;
@@ -407,7 +410,7 @@ body.dark .gallery-nav-btn {
   color: #888;
   cursor: pointer;
   z-index: 10;
-  padding: 8px 12px;
+  padding: 8px 8px;
   transition: border-color 0.2s, color 0.2s;
 }
 #about-close:hover {
