@@ -221,4 +221,24 @@ darkBtn.addEventListener('click', () => {
   document.body.classList.add('dark');
   darkBtn.classList.add('active');
   lightBtn.classList.remove('active');
-}); 
+});
+
+// Add left/right hover cursor logic
+const viewport = document.querySelector('.carousel-viewport');
+if (viewport) {
+  viewport.addEventListener('mousemove', (e) => {
+    const rect = viewport.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const leftZone = rect.width * 0.25;
+    const rightZone = rect.width * 0.75;
+    viewport.classList.remove('left-hover', 'right-hover');
+    if (x < leftZone) {
+      viewport.classList.add('left-hover');
+    } else if (x > rightZone) {
+      viewport.classList.add('right-hover');
+    }
+  });
+  viewport.addEventListener('mouseleave', () => {
+    viewport.classList.remove('left-hover', 'right-hover');
+  });
+} 

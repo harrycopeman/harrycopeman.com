@@ -548,3 +548,12 @@ body.dark .about-link-row:hover {
   }
 
 }
+
+.carousel-viewport.left-hover,
+.carousel-viewport.left-hover * {
+  cursor: w-resize !important;
+}
+.carousel-viewport.right-hover,
+.carousel-viewport.right-hover * {
+  cursor: e-resize !important;
+}
