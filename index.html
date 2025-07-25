@@ -118,45 +118,66 @@ let current = 0;
 function renderSlides() {
   const track = document.querySelector('.carousel-track');
   track.innerHTML = '';
+  
+  // Add duplicate of last slide at the beginning
+  const lastSlide = slides[slides.length - 1];
+  const firstSlideDiv = createSlideElement(lastSlide, slides.length - 1);
+  firstSlideDiv.classList.add('carousel-slide--clone');
+  track.appendChild(firstSlideDiv);
+  
+  // Add all original slides
   slides.forEach((slide, idx) => {
-    const slideDiv = document.createElement('div');
-    slideDiv.className = 'carousel-slide';
-    slideDiv.setAttribute('data-index', idx);
-    let el;
-    if (slide.type === 'image') {
-      el = document.createElement('img');
-      el.src = slide.src;
-      el.alt = slide.alt;
-    } else if (slide.type === 'video') {
-      el = document.createElement('video');
-      el.src = slide.src;
-      el.autoplay = true;
-      el.muted = true;
-      el.loop = true;
-      el.playsInline = true;
-      el.setAttribute('aria-label', slide.alt);
-    }
-    slideDiv.appendChild(el);
-    // Add caption under media
-    const captionDiv = document.createElement('div');
-    captionDiv.className = 'carousel-caption';
-    const yearSpan = document.createElement('span');
-    yearSpan.className = 'gallery-year';
-    yearSpan.textContent = slide.year;
-    const descSpan = document.createElement('span');
-    descSpan.className = 'gallery-desc';
-    descSpan.textContent = slide.caption;
-    captionDiv.appendChild(yearSpan);
-    captionDiv.appendChild(descSpan);
-    slideDiv.appendChild(captionDiv);
+    const slideDiv = createSlideElement(slide, idx);
     track.appendChild(slideDiv);
   });
+  
+  // Add duplicate of first slide at the end
+  const firstSlide = slides[0];
+  const lastSlideDiv = createSlideElement(firstSlide, 0);
+  lastSlideDiv.classList.add('carousel-slide--clone');
+  track.appendChild(lastSlideDiv);
+}
+
+function createSlideElement(slide, idx) {
+  const slideDiv = document.createElement('div');
+  slideDiv.className = 'carousel-slide';
+  slideDiv.setAttribute('data-index', idx);
+  let el;
+  if (slide.type === 'image') {
+    el = document.createElement('img');
+    el.src = slide.src;
+    el.alt = slide.alt;
+  } else if (slide.type === 'video') {
+    el = document.createElement('video');
+    el.src = slide.src;
+    el.autoplay = true;
+    el.muted = true;
+    el.loop = true;
+    el.playsInline = true;
+    el.setAttribute('aria-label', slide.alt);
+  }
+  slideDiv.appendChild(el);
+  // Add caption under media
+  const captionDiv = document.createElement('div');
+  captionDiv.className = 'carousel-caption';
+  const yearSpan = document.createElement('span');
+  yearSpan.className = 'gallery-year';
+  yearSpan.textContent = slide.year;
+  const descSpan = document.createElement('span');
+  descSpan.className = 'gallery-desc';
+  descSpan.textContent = slide.caption;
+  captionDiv.appendChild(yearSpan);
+  captionDiv.appendChild(descSpan);
+  slideDiv.appendChild(captionDiv);
+  return slideDiv;
 }
 
 function updateCarousel(animate = true) {
   const track = document.querySelector('.carousel-track');
   const slidesEls = Array.from(track.children);
-  const slide = slidesEls[current];
+  // Account for the cloned slide at the beginning (index 0 is now the clone)
+  const actualIndex = current + 1; // +1 because we added a clone at the beginning
+  const slide = slidesEls[actualIndex];
   if (!slide) return;
   const viewport = document.querySelector('.carousel-viewport');
   // Calculate the left offset of the slide relative to the track
@@ -219,12 +240,75 @@ function goToSlide(idx, animate = true) {
   centerActiveNavBtn();
 }
 
+function goToSlideSmooth(idx, animate = true) {
+  if (idx === current) return;
+  
+  const track = document.querySelector('.carousel-track');
+  const slidesEls = Array.from(track.children);
+  
+  // Handle smooth infinite loop
+  if (idx === -1) {
+    // Going to "previous" from first slide - go to the clone of last slide
+    current = slides.length - 1;
+    const cloneIndex = 0; // The clone at the beginning
+    const slide = slidesEls[cloneIndex];
+    const viewport = document.querySelector('.carousel-viewport');
+    const slideCenterInTrack = slide.offsetLeft + slide.offsetWidth / 2;
+    const viewportCenterInTrack = viewport.getBoundingClientRect().width / 2;
+    const offset = viewportCenterInTrack - slideCenterInTrack;
+    
+    track.style.transition = animate ? 'transform 0.6s cubic-bezier(.4,0,.2,1)' : 'none';
+    track.style.transform = `translateX(${offset}px)`;
+    
+    // After animation, jump to the real last slide without animation
+    setTimeout(() => {
+      track.style.transition = 'none';
+      current = slides.length - 1;
+      updateCarousel(false);
+      renderNav();
+      centerActiveNavBtn();
+    }, animate ? 600 : 0);
+  } else if (idx === slides.length) {
+    // Going to "next" from last slide - go to the clone of first slide
+    current = 0;
+    const cloneIndex = slidesEls.length - 1; // The clone at the end
+    const slide = slidesEls[cloneIndex];
+    const viewport = document.querySelector('.carousel-viewport');
+    const slideCenterInTrack = slide.offsetLeft + slide.offsetWidth / 2;
+    const viewportCenterInTrack = viewport.getBoundingClientRect().width / 2;
+    const offset = viewportCenterInTrack - slideCenterInTrack;
+    
+    track.style.transition = animate ? 'transform 0.6s cubic-bezier(.4,0,.2,1)' : 'none';
+    track.style.transform = `translateX(${offset}px)`;
+    
+    // After animation, jump to the real first slide without animation
+    setTimeout(() => {
+      track.style.transition = 'none';
+      current = 0;
+      updateCarousel(false);
+      renderNav();
+      centerActiveNavBtn();
+    }, animate ? 600 : 0);
+  } else {
+    // Normal navigation
+    goToSlide(idx, animate);
+  }
+}
+
 // Keyboard navigation
 window.addEventListener('keydown', (e) => {
   if (e.key === 'ArrowLeft') {
-    if (current > 0) goToSlide(current - 1, true);
+    if (current > 0) {
+      goToSlideSmooth(current - 1, true);
+    } else {
+      goToSlideSmooth(-1, true); // Smooth loop to last slide
+    }
   } else if (e.key === 'ArrowRight') {
-    if (current < slides.length - 1) goToSlide(current + 1, true);
+    if (current < slides.length - 1) {
+      goToSlideSmooth(current + 1, true);
+    } else {
+      goToSlideSmooth(slides.length, true); // Smooth loop to first slide
+    }
   }
 });
 
@@ -326,10 +410,18 @@ window.addEventListener('keydown', function(e) {
 });
 
 document.querySelector('.carousel-arrow.left').addEventListener('click', function() {
-  if (current > 0) goToSlide(current - 1, true);
+  if (current > 0) {
+    goToSlideSmooth(current - 1, true);
+  } else {
+    goToSlideSmooth(-1, true); // Smooth loop to last slide
+  }
 });
 document.querySelector('.carousel-arrow.right').addEventListener('click', function() {
-  if (current < slides.length - 1) goToSlide(current + 1, true);
+  if (current < slides.length - 1) {
+    goToSlideSmooth(current + 1, true);
+  } else {
+    goToSlideSmooth(slides.length, true); // Smooth loop to first slide
+  }
 });
 
 const viewport = document.querySelector('.carousel-viewport');
@@ -350,10 +442,18 @@ viewport.addEventListener('click', function(e) {
   const rect = viewport.getBoundingClientRect();
   if (e.clientX - rect.left < rect.width / 2) {
     // Left half: previous slide
-    if (current > 0) goToSlide(current - 1, true);
+    if (current > 0) {
+      goToSlideSmooth(current - 1, true);
+    } else {
+      goToSlideSmooth(-1, true); // Smooth loop to last slide
+    }
   } else {
     // Right half: next slide
-    if (current < slides.length - 1) goToSlide(current + 1, true);
+    if (current < slides.length - 1) {
+      goToSlideSmooth(current + 1, true);
+    } else {
+      goToSlideSmooth(slides.length, true); // Smooth loop to first slide
+    }
   }
   });
   </script>
