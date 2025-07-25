@@ -6,7 +6,6 @@
   <title>Harry Copeman</title>
   <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
   <link rel="stylesheet" href="assets/css/gallery.css">
-  <script defer src="https://speed-insights.vercel.com/script.js"></script>
 </head>
 <body class="loading">
   <header class="gallery-header">
@@ -46,11 +45,6 @@
       </div>
     </div>
   </div>
-  <script defer src="https://speed.vercel.dev/script.js" data-sid="prj_CnWVMuvO3knVoWH1hGXuk91v16EP"></script>
-  <script>
-    window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
-  </script>
-  <script defer src="/_vercel/insights/script.js"></script>
   <script>
 // Slide data from previous implementation
 const slides = [
@@ -361,7 +355,11 @@ viewport.addEventListener('click', function(e) {
     // Right half: next slide
     if (current < slides.length - 1) goToSlide(current + 1, true);
   }
-});
+  });
+  </script>
+  <script type="module">
+    import { injectSpeedInsights } from '@vercel/speed-insights'
+    injectSpeedInsights()
   </script>
 </body>
 </html>
