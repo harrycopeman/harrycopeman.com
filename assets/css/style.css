@@ -33,6 +33,16 @@ body {
     /* Safe areas will be handled in individual sections */
 }
 
+/* Fade-in effect for page load */
+body.loading {
+  opacity: 0;
+  transition: opacity 0.7s ease;
+}
+body {
+  opacity: 1;
+  transition: opacity 0.7s ease;
+}
+
 /*Helps With Images*/
 img, video {
     width:100%;

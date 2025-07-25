@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="assets/css/gallery.css">
   <script defer src="https://speed-insights.vercel.com/script.js"></script>
 </head>
-<body>
+<body class="loading">
   <header class="gallery-header">
     <span class="gallery-time" id="gallery-time"></span>
     <div class="gallery-title-block">
@@ -255,14 +255,14 @@ function ensureCenteredAfterMediaLoad() {
           pending--;
           if (pending === 0) {
             updateCarousel(false);
-            document.body.classList.add('loaded');
+            document.body.classList.remove('loading');
           }
         });
         media.addEventListener('loadeddata', () => {
           pending--;
           if (pending === 0) {
             updateCarousel(false);
-            document.body.classList.add('loaded');
+            document.body.classList.remove('loading');
           }
         });
       }
@@ -271,7 +271,7 @@ function ensureCenteredAfterMediaLoad() {
   // Fallback: always call after a short delay
   setTimeout(() => {
     updateCarousel(false);
-    document.body.classList.add('loaded');
+    document.body.classList.remove('loading');
   }, 100);
 }
 
