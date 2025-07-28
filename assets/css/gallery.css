@@ -81,8 +81,8 @@ body {
 }
 .gallery-time {
   position: fixed;
-  top: 16px;
-  left: 24px;
+  top: 20px;
+  left: 20px;
   font-size: 12px;
   color: #888;
   min-width: 80px;
@@ -92,8 +92,8 @@ body {
 }
 .gallery-theme-toggle {
   position: fixed;
-  top: 16px;
-  right: 24px;
+  top: 20px;
+  right: 20px;
   display: flex;
   gap: 4px;
   z-index: 1000;
