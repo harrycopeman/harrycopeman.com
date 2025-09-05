@@ -548,6 +548,18 @@ body.dark .about-link-row:hover {
   .carousel-arrow--right {
     right: 4px;
   }
+  
+  /* About modal positioning for mobile */
+  #about-modal {
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 30px;
+  }
+  
+  #about-modal-content {
+    transform: translateY(0);
+    margin-top: 0;
+  }
 } 
 
 @media (max-width: 1600px) {
