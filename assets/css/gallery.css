@@ -731,7 +731,7 @@ body.dark .about-link-row:hover {
   
   /* Constrain positioned slides to safe bounds */
   .slide-1, .slide-2, .slide-3, .slide-4, 
-  .slide-5, .slide-6, .slide-7, .slide-8 {
+  .slide-5, .slide-6, .slide-7, .slide-8, .slide-9 {
     max-width: 80vw;
     overflow: hidden;
     box-sizing: border-box;
@@ -766,6 +766,10 @@ body.dark .about-link-row:hover {
   }
   
   .slide-8 {
-    left: -20% !important;
+    left: -10% !important;
+  }
+  
+  .slide-9 {
+    left: -10% !important;
   }
 }
