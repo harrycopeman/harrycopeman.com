@@ -51,7 +51,7 @@ body {
   transition: opacity 0.5s ease-in-out;
 }
 body.dark {
-  background: #181818;
+  background: #0f0f0f;
   color: #f7f7f7;
 }
 body {
@@ -116,7 +116,7 @@ body {
 }
 
 .title-subtitle {
-  transition: opacity 0.3s ease;
+  transition: opacity 0.2s ease;
   opacity: 1;
 }
 
@@ -125,7 +125,7 @@ body {
 }
 
 .title-about-text {
-  transition: opacity 0.6s ease, visibility 0.6s ease;
+  transition: opacity 0.2s ease, visibility 0.2s ease;
   opacity: 0;
   visibility: hidden;
   max-width: 400px !important;
@@ -382,7 +382,7 @@ body.dark .carousel-caption .gallery-desc {
 }
 
 .theme-option:first-of-type {
-  right: 80px;
+  right: 70px;
 }
 
 .theme-option:hover {
@@ -643,7 +643,7 @@ body.dark #about-close:hover {
   display: inline-flex;
   align-items: center;
   gap: 4px;
-  transition: color 0.18s;
+  transition: color 0.2s;
 }
 .about-link-row:hover {
   color: #111;
@@ -651,7 +651,7 @@ body.dark #about-close:hover {
 .about-link-row svg {
   margin-left: 2px;
   vertical-align: middle;
-  transition: transform 0.18s;
+  transition: transform 0.2s;
 }
 .about-link-row:hover svg {
   transform: translateX(2px);
