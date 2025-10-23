@@ -387,17 +387,15 @@ document.getElementById('about-link').addEventListener('click', function(e) {
     modal.classList.add('open');
     titleAboutText.classList.add('visible');
     
-    // Only show subtitle on desktop
-    if (window.innerWidth > 600) {
+    // Show subtitle on both desktop and mobile when about is opened
+    titleSubtitle.classList.remove('hidden');
+    titleSubtitle.classList.add('visible');
+    
+    // Ensure subtitle stays visible even if scroll detection runs
+    setTimeout(function() {
       titleSubtitle.classList.remove('hidden');
       titleSubtitle.classList.add('visible');
-      
-      // Ensure subtitle stays visible even if scroll detection runs
-      setTimeout(function() {
-        titleSubtitle.classList.remove('hidden');
-        titleSubtitle.classList.add('visible');
-      }, 100);
-    }
+    }, 100);
     
     aboutText.textContent = 'Close';
   }
