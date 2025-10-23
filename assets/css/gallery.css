@@ -704,7 +704,7 @@ body.dark .about-link-row:hover {
   
   /* Update contact links positioning for safe area */
   .about-modal-links {
-    bottom: calc(20px + env(safe-area-inset-bottom));
+    bottom: calc(60px + env(safe-area-inset-bottom));
     left: calc(20px + env(safe-area-inset-left));
   }
 } 
