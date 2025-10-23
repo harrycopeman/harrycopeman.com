@@ -684,15 +684,22 @@ body.dark .about-link-row:hover {
   #about-modal {
     align-items: flex-start;
     justify-content: flex-start;
-    /* Add safe area padding for iOS Safari */
-    padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+    /* Ensure modal covers full screen including safe areas */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    /* Use viewport units that include safe areas */
+    height: 100dvh; /* Dynamic viewport height for mobile */
   }
   
   #about-modal-content {
     transform: translateY(0);
     margin-top: 0;
-    /* Add safe area padding to content */
-    padding: 0 16px env(safe-area-inset-bottom) 16px;
+    /* Add safe area padding to content only */
+    padding: env(safe-area-inset-top) 16px env(safe-area-inset-bottom) 16px;
   }
   
   /* Update contact links positioning for safe area */
