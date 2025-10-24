@@ -445,6 +445,8 @@ body.dark .carousel-caption .gallery-desc {
   .carousel-viewport {
     padding: 0;
     height: 100vh;
+    /* Add safe area padding for iOS Safari */
+    padding-bottom: env(safe-area-inset-bottom);
   }
   .carousel-slide {
     flex: 0 0 auto;
@@ -471,7 +473,7 @@ body.dark .carousel-caption .gallery-desc {
   }
   .carousel-track {
     gap: 5vh;
-    padding: 60px 0 30px 0;
+    padding: 60px 0 calc(30px + env(safe-area-inset-bottom)) 0;
   }
   .slide-caption {
     padding: 0;
@@ -699,7 +701,7 @@ body.dark .about-link-row:hover {
     transform: translateY(0);
     margin-top: 0;
     /* Add safe area padding to content only */
-    padding: env(safe-area-inset-top) 16px env(safe-area-inset-bottom) 16px;
+    padding: env(safe-area-inset-top) 16px calc(env(safe-area-inset-bottom) + 20px) 16px;
   }
   
   /* Update contact links positioning for safe area */
