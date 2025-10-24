@@ -31,8 +31,6 @@ html, body {
   transition: background 0.3s, color 0.3s;
   box-sizing: border-box;
   overflow: auto;
-  display: flex;
-  flex-direction: column;
   font-size: var(--base-font-size);
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
@@ -42,7 +40,7 @@ body {
   min-height: 100dvh;                 /* modern browsers (visual viewport) */
   min-height: 100svh;                 /* iOS 15–16 safe fallback */
   min-height: -webkit-fill-available; /* older iOS Safari */
-  padding-bottom: env(safe-area-inset-bottom); /* prevent overlap */
+  padding-bottom: calc(24px + env(safe-area-inset-bottom));
 }
 
 /* Fade-in effect for page load */
@@ -60,24 +58,20 @@ body.dark {
   color: #f7f7f7;
 }
 body {
-  height: 100vh;
-  min-height: 100vh;
-  max-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: stretch;
-  overflow: auto;
-  padding-bottom: 0;
-  /* font-size and font-weight inherited from html */
+  height: auto;
+  min-height: 100dvh;
+  min-height: 100svh;
+  min-height: -webkit-fill-available;
+  padding-top: 80px; /* Space for fixed header */
+  padding-bottom: calc(24px + env(safe-area-inset-bottom));
 }
 .gallery-header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   width: 100%;
-  z-index: 3000;
+  z-index: 9999;
   background: transparent;
   display: flex;
   flex-direction: row;
@@ -151,12 +145,11 @@ body {
 .gallery-main {
   position: relative;
   width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
+  min-height: 100vh;
+  min-height: 100dvh;
+  min-height: 100svh;
+  min-height: -webkit-fill-available;
+  display: block;
   padding-top: 0;
 }
 .gallery-caption {
@@ -176,9 +169,12 @@ body.dark .gallery-caption {
 .carousel-viewport {
   position: relative;
   width: 100vw;
-  height: 100vh;
-  overflow-y: auto;
-  overflow-x: hidden;
+  height: auto;
+  min-height: 100vh;
+  min-height: 100dvh;
+  min-height: 100svh;
+  min-height: -webkit-fill-available;
+  overflow: visible;
   z-index: 1;
   max-width: 100vw;
   contain: layout;
@@ -449,9 +445,12 @@ body.dark .carousel-caption .gallery-desc {
 @media (max-width: 600px) {
   .carousel-viewport {
     padding: 0;
-    height: 100dvh;                 /* modern browsers (visual viewport) */
-    height: 100svh;                 /* iOS 15–16 safe fallback */
-    height: -webkit-fill-available; /* older iOS Safari */
+    height: auto;
+    min-height: 100vh;
+    min-height: 100dvh;                 /* modern browsers (visual viewport) */
+    min-height: 100svh;                 /* iOS 15–16 safe fallback */
+    min-height: -webkit-fill-available; /* older iOS Safari */
+    overflow: visible;
     /* Add safe area padding for iOS Safari */
     padding-bottom: env(safe-area-inset-bottom);
   }

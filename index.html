@@ -207,77 +207,13 @@ function createSlideElement(slide, idx) {
   return slideDiv;
 }
 
-function updateCurrentSlide() {
-  const viewport = document.querySelector('.carousel-viewport');
-  const slidesEls = Array.from(document.querySelectorAll('.carousel-slide'));
-  const viewportHeight = viewport.clientHeight;
-  const scrollTop = viewport.scrollTop;
-  
-  let closestSlide = 0;
-  let closestDistance = Infinity;
-  
-  slidesEls.forEach((slide, idx) => {
-    const slideTop = slide.offsetTop;
-    const slideHeight = slide.offsetHeight;
-    const slideCenter = slideTop + slideHeight / 2;
-    const viewportCenter = scrollTop + viewportHeight / 2;
-    
-    const distance = Math.abs(slideCenter - viewportCenter);
-    
-    if (distance < closestDistance) {
-      closestDistance = distance;
-      closestSlide = idx;
-    }
-  });
-  
-  if (closestSlide !== current) {
-    current = closestSlide;
-  }
-  
-  // Hide subtitle when scrolling past first slide (but not if about modal is open)
-  // Always hide subtitle on mobile devices
-  const subtitle = document.querySelector('.title-subtitle');
-  const modal = document.getElementById('about-modal');
-  if (subtitle) {
-    if (window.innerWidth <= 600 || (closestSlide > 0 && !modal.classList.contains('open'))) {
-      subtitle.classList.add('hidden');
-    } else {
-      subtitle.classList.remove('hidden');
-    }
-  }
-}
+// Scroll handling removed - using natural CSS scrolling
 
 
 
-function scrollToSlide(idx) {
-  const viewport = document.querySelector('.carousel-viewport');
-  const slidesEls = Array.from(document.querySelectorAll('.carousel-slide'));
-  const slide = slidesEls[idx];
-  if (!slide) return;
-  
-  const slideTop = slide.offsetTop;
-  const viewportHeight = viewport.clientHeight;
-  const slideHeight = slide.offsetHeight;
-  const targetScroll = slideTop - (viewportHeight - slideHeight) / 2;
-  
-  viewport.scrollTo({
-    top: targetScroll,
-    behavior: 'smooth'
-  });
-}
+// ScrollToSlide removed - using natural CSS scrolling
 
-// Keyboard navigation
-window.addEventListener('keydown', (e) => {
-  if (e.key === 'ArrowUp') {
-    if (current > 0) {
-      scrollToSlide(current - 1);
-    }
-  } else if (e.key === 'ArrowDown') {
-    if (current < slides.length - 1) {
-      scrollToSlide(current + 1);
-    }
-  }
-});
+// Keyboard navigation removed - using natural CSS scrolling
 
 // Initial render
 renderSlides();
@@ -311,23 +247,11 @@ function ensureCenteredAfterMediaLoad() {
   });
   // Fallback: always call after a short delay
   setTimeout(() => {
-    updateCurrentSlide();
     document.body.classList.remove('loading');
   }, 100);
 }
 
-// Add scroll event listener
-const viewport = document.querySelector('.carousel-viewport');
-viewport.addEventListener('scroll', updateCurrentSlide);
-window.addEventListener('resize', () => updateCurrentSlide());
-
-// Forward scroll events from header to carousel viewport
-const header = document.querySelector('.gallery-header');
-header.addEventListener('wheel', function(e) {
-  e.preventDefault();
-  const delta = e.deltaY;
-  viewport.scrollTop += delta;
-});
+// Scroll event listeners removed - using natural CSS scrolling
 
 ensureCenteredAfterMediaLoad();
 
