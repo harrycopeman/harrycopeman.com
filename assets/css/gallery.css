@@ -81,6 +81,12 @@ body {
   box-sizing: border-box;
   pointer-events: none;
   mix-blend-mode: difference;
+  /* iOS Safari fixes to prevent header hiding */
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  will-change: transform;
 }
 .gallery-title-block {
   text-align: left;
@@ -502,6 +508,15 @@ body.dark .carousel-caption .gallery-desc {
     align-items: baseline;
     justify-content: space-between;
     gap: 16px;
+    /* iOS Safari fixes to prevent header hiding */
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    will-change: transform;
+    /* Force header to stay in viewport on iOS Safari */
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: none;
   }
   
   /* Name on the left */
@@ -545,6 +560,22 @@ body.dark .carousel-caption .gallery-desc {
   /* Hide theme switcher on mobile */
   .theme-option {
     display: none;
+  }
+}
+
+/* iOS Safari specific fixes for header visibility */
+@supports (-webkit-touch-callout: none) {
+  .gallery-header {
+    /* Ensure header stays visible during scroll on iOS Safari */
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-perspective: 1000;
+    perspective: 1000;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    /* Prevent iOS Safari from hiding fixed elements */
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: none;
   }
 }
 .about-link {
