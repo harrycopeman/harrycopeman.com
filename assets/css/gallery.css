@@ -743,7 +743,7 @@ body.dark .about-link-row:hover {
   
   .about-modal-links {
     position: absolute;
-    bottom: calc(40px + env(safe-area-inset-bottom));
+    bottom: calc(60px + env(safe-area-inset-bottom));
     left: 16px;
     margin: 0;
     padding: 4px;
