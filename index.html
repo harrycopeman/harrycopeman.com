@@ -231,14 +231,14 @@ function ensureCenteredAfterMediaLoad() {
         media.addEventListener('load', () => {
           pending--;
           if (pending === 0) {
-            updateCurrentSlide();
+            updateSubtitleVisibility();
             document.body.classList.remove('loading');
           }
         });
         media.addEventListener('loadeddata', () => {
           pending--;
           if (pending === 0) {
-            updateCurrentSlide();
+            updateSubtitleVisibility();
             document.body.classList.remove('loading');
           }
         });
@@ -251,7 +251,54 @@ function ensureCenteredAfterMediaLoad() {
   }, 100);
 }
 
-// Scroll event listeners removed - using natural CSS scrolling
+// Scroll event listeners for subtitle behavior
+let lastScrollY = 0;
+let ticking = false;
+
+function updateSubtitleVisibility() {
+  const titleSubtitle = document.querySelector('.title-subtitle');
+  const scrollY = window.scrollY;
+  
+  // Only hide/show on desktop (not mobile)
+  if (window.innerWidth > 600) {
+    if (scrollY > 100) {
+      titleSubtitle.classList.add('hidden');
+    } else {
+      titleSubtitle.classList.remove('hidden');
+    }
+  }
+  
+  lastScrollY = scrollY;
+  ticking = false;
+}
+
+function requestTick() {
+  if (!ticking) {
+    requestAnimationFrame(updateSubtitleVisibility);
+    ticking = true;
+  }
+}
+
+window.addEventListener('scroll', requestTick, { passive: true });
+
+// Also update on resize to handle mobile/desktop transitions
+window.addEventListener('resize', function() {
+  const titleSubtitle = document.querySelector('.title-subtitle');
+  // On mobile, always show subtitle when about modal is open, hide otherwise
+  if (window.innerWidth <= 600) {
+    const aboutModal = document.getElementById('about-modal');
+    if (aboutModal.classList.contains('open')) {
+      titleSubtitle.classList.remove('hidden');
+      titleSubtitle.classList.add('visible');
+    } else {
+      titleSubtitle.classList.add('hidden');
+      titleSubtitle.classList.remove('visible');
+    }
+  } else {
+    // On desktop, use scroll-based behavior
+    updateSubtitleVisibility();
+  }
+});
 
 ensureCenteredAfterMediaLoad();
 
@@ -309,7 +356,7 @@ document.getElementById('about-link').addEventListener('click', function(e) {
     
     // Check scroll position and hide subtitle if needed
     setTimeout(function() {
-      updateCurrentSlide();
+      updateSubtitleVisibility();
     }, 50);
   } else {
     // Modal is closed, open it
@@ -346,7 +393,7 @@ document.getElementById('about-modal').addEventListener('click', function(e) {
     
     // Check scroll position and hide subtitle if needed
     setTimeout(function() {
-      updateCurrentSlide();
+      updateSubtitleVisibility();
     }, 50);
   }
 });
@@ -368,7 +415,7 @@ window.addEventListener('keydown', function(e) {
       
       // Check scroll position and hide subtitle if needed
       setTimeout(function() {
-        updateCurrentSlide();
+        updateSubtitleVisibility();
       }, 50);
     }
   }
