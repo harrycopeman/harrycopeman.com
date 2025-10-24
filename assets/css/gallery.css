@@ -447,6 +447,9 @@ body.dark .carousel-caption .gallery-desc {
     height: 100vh;
     /* Add safe area padding for iOS Safari */
     padding-bottom: env(safe-area-inset-bottom);
+    /* Ensure content extends behind browser UI */
+    min-height: 100vh;
+    min-height: 100dvh; /* Dynamic viewport height for mobile */
   }
   .carousel-slide {
     flex: 0 0 auto;
@@ -695,6 +698,9 @@ body.dark .about-link-row:hover {
     height: 100vh;
     /* Use viewport units that include safe areas */
     height: 100dvh; /* Dynamic viewport height for mobile */
+    /* Ensure modal extends behind browser UI */
+    min-height: 100vh;
+    min-height: 100dvh;
   }
   
   #about-modal-content {
