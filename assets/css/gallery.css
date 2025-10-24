@@ -23,9 +23,7 @@
   }
 html, body {
   font-family: 'neue', sans-serif;
-  height: 100vh;
-  min-height: 100vh;
-  max-height: 100vh;
+  height: auto;
   margin: 0;
   padding: 0;
   background: white;
@@ -38,6 +36,13 @@ html, body {
   font-size: var(--base-font-size);
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
+}
+
+body {
+  min-height: 100dvh;                 /* modern browsers (visual viewport) */
+  min-height: 100svh;                 /* iOS 15–16 safe fallback */
+  min-height: -webkit-fill-available; /* older iOS Safari */
+  padding-bottom: env(safe-area-inset-bottom); /* prevent overlap */
 }
 
 /* Fade-in effect for page load */
@@ -444,12 +449,11 @@ body.dark .carousel-caption .gallery-desc {
 @media (max-width: 600px) {
   .carousel-viewport {
     padding: 0;
-    height: 100vh;
+    height: 100dvh;                 /* modern browsers (visual viewport) */
+    height: 100svh;                 /* iOS 15–16 safe fallback */
+    height: -webkit-fill-available; /* older iOS Safari */
     /* Add safe area padding for iOS Safari */
     padding-bottom: env(safe-area-inset-bottom);
-    /* Ensure content extends behind browser UI */
-    min-height: 100vh;
-    min-height: 100dvh; /* Dynamic viewport height for mobile */
   }
   .carousel-slide {
     flex: 0 0 auto;
@@ -695,12 +699,9 @@ body.dark .about-link-row:hover {
     right: 0;
     bottom: 0;
     width: 100vw;
-    height: 100vh;
-    /* Use viewport units that include safe areas */
-    height: 100dvh; /* Dynamic viewport height for mobile */
-    /* Ensure modal extends behind browser UI */
-    min-height: 100vh;
-    min-height: 100dvh;
+    height: 100dvh;                 /* modern browsers (visual viewport) */
+    height: 100svh;                 /* iOS 15–16 safe fallback */
+    height: -webkit-fill-available; /* older iOS Safari */
   }
   
   #about-modal-content {
@@ -711,8 +712,14 @@ body.dark .about-link-row:hover {
   }
   
   .about-modal-links {
-    bottom: calc(20px + env(safe-area-inset-bottom));
-    left: calc(20px + env(safe-area-inset-left));
+    position: static;
+    margin-top: 40px;
+    margin-left: 0;
+    padding-top: 300px;
+    padding-bottom: env(safe-area-inset-bottom);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
   }
 } 
 
