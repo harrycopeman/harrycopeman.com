@@ -4,6 +4,12 @@
   --link: #ffffff;
 }
 
+@font-face {
+  font-family: "Neue";
+  src: url("../font/neue.ttf") format("truetype");
+  font-display: swap;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -13,9 +19,9 @@ html, body {
   padding: 0;
   background: var(--bg);
   color: var(--text);
-  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 12px;
-  line-height: 1.5;
+  font-family: "Neue", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 1.4;
   letter-spacing: -0.01em;
   -webkit-font-smoothing: antialiased;
 }
@@ -49,6 +55,6 @@ body {
   }
 
   html, body {
-    font-size: 12px;
+    font-size: 13px;
   }
 }
