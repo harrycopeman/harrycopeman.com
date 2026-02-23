@@ -32,8 +32,7 @@ body {
 
 .page {
   max-width: 560px;
-  margin-left: auto;
-  margin-right: 0;
+  margin: 0;
 }
 
 .text-block p {
