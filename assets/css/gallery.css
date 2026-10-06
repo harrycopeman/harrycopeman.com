@@ -142,7 +142,7 @@ body {
 }
 
 @media (max-width: 600px) {
-  .gallery-track { --gallery-columns: 3; --gallery-row-gap: 40px; column-gap: 20px; }
+  .gallery-track { --gallery-columns: 2; --gallery-row-gap: 40px; column-gap: 20px; }
 }
 
 /* Reserve image proportions while loading to keep the grid still. */
