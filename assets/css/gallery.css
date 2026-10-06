@@ -100,7 +100,7 @@ body {
   color: #8c8c8c;
   font-size: 12px;
   line-height: 1.4;
-  text-align: center;
+  text-align: left;
   overflow-wrap: anywhere;
   white-space: pre-line;
 }
@@ -142,7 +142,7 @@ body {
 }
 
 @media (max-width: 600px) {
-  .gallery-track { --gallery-columns: 2; --gallery-row-gap: 40px; column-gap: 20px; }
+  .gallery-track { --gallery-columns: 3; --gallery-row-gap: 40px; column-gap: 20px; }
 }
 
 /* Reserve image proportions while loading to keep the grid still. */
@@ -188,7 +188,7 @@ body {
 .skeleton-caption {
   width: 45%;
   height: 9px;
-  margin: 14px auto 4px;
+  margin: 14px 0 4px;
   background: #1c1c1c;
 }
 
@@ -268,7 +268,9 @@ body {
 .lightbox-prev { left: 20px; }
 .lightbox-next { right: 20px; }
 .lightbox-bottom { position: absolute; bottom: max(22px, env(safe-area-inset-bottom)); left: 70px; right: 70px; text-align: center; pointer-events: none; }
-.lightbox-caption { margin: 0 0 8px; max-height: 42px; overflow: auto; pointer-events: auto; }
+.lightbox-title { margin: 0; overflow-wrap: anywhere; flex-shrink: 0; max-height: 40px; overflow: auto; }
+.lightbox-caption { margin: 6px 0 0; min-height: 0; overflow: auto; color: #8c8c8c; white-space: pre-line; overflow-wrap: anywhere; pointer-events: auto; }
+.lightbox-bottom { height: 72px; display: flex; flex-direction: column; overflow: hidden; pointer-events: auto; }
 .lightbox-bottom span { color: #666; font-size: 11px; }
 @media (max-width: 600px) {
   .lightbox-stage { inset: 76px 0 110px; }

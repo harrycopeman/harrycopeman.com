@@ -112,9 +112,9 @@
       media.append(retryVideo);
     });
     const caption = document.createElement('figcaption');
-    caption.textContent = block.description?.plain?.trim() || block.title || 'Untitled';
+    caption.textContent = block.title || 'Untitled';
     media.append(video);
-    window.portfolioLightbox.add(data, video, media, caption.textContent);
+    window.portfolioLightbox.add(data, video, media, caption.textContent, block.description?.plain?.trim() || '');
     figure.append(media, caption);
     videoObserver.observe(video);
     return figure;
@@ -165,8 +165,8 @@
     observer.observe(media);
 
     const caption = document.createElement('figcaption');
-    caption.textContent = block.description?.plain?.trim() || block.title || 'Untitled';
-    window.portfolioLightbox.add(block.image, image, media, caption.textContent);
+    caption.textContent = block.title || 'Untitled';
+    window.portfolioLightbox.add(block.image, image, media, caption.textContent, block.description?.plain?.trim() || '');
     figure.append(media, caption);
     return figure;
   }

@@ -5,7 +5,7 @@
   dialog.setAttribute('aria-label', 'Photo viewer');
   dialog.innerHTML = `<div class="lightbox-backdrop"></div><div class="lightbox-stage"></div>
     <div class="lightbox-top"><span class="lightbox-count" aria-live="polite"></span></div>
-    <div class="lightbox-bottom"><p class="lightbox-caption"></p></div>`;
+    <div class="lightbox-bottom"><p class="lightbox-title"></p><p class="lightbox-caption"></p></div>`;
   document.body.append(dialog);
   const stage = dialog.querySelector('.lightbox-stage');
   const backdrop = dialog.querySelector('.lightbox-backdrop');
@@ -135,7 +135,10 @@
       photo.media.classList.add('is-in-viewer');
     }
     dialog.querySelector('.lightbox-count').textContent = `${index + 1} / ${photos.length}`;
-    dialog.querySelector('.lightbox-caption').textContent = photos[index].caption;
+    dialog.querySelector('.lightbox-title').textContent = photos[index].caption;
+    const caption = dialog.querySelector('.lightbox-caption');
+    caption.textContent = photos[index].description;
+    caption.hidden = !photos[index].description;
     syncVideoPlayback();
     paint();
   }
@@ -314,9 +317,9 @@
   });
 
   window.portfolioLightbox = {
-    add(data, thumbnail, media, caption) {
+    add(data, thumbnail, media, caption, description = '') {
       const at = photos.length;
-      const photo = {data, thumbnail, media, caption};
+      const photo = {data, thumbnail, media, caption, description};
       photos.push(photo);
       if (data.kind === 'video') {
         thumbnail.addEventListener('loadedmetadata', () => {
