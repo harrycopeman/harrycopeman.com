@@ -5,22 +5,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>Harry Copeman</title>
   <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+  <link rel="preconnect" href="https://images.are.na">
   <link rel="stylesheet" href="assets/css/gallery.css">
+  <script src="assets/js/lightbox.js" defer></script>
+  <script src="assets/js/masonry.js" defer></script>
+  <script src="assets/js/gallery.js" defer></script>
 </head>
 <body>
   <main class="page">
     <div class="text-block">
       <p>
-        Harry Copeman is a british software designer, living in New York and currently working at
+        Harry Copeman is a british software designer, living in San Francisco and working at
         OpenAI
       </p>
 
       <p class="links">
         <a href="mailto:harry.copeman@gmail.com">Email</a><br>
-        <a href="https://www.cosmos.so/harry" target="_blank" rel="noreferrer">Cosmos</a><br>
+        <a href="https://www.are.na/harry-copeman" target="_blank" rel="noreferrer">Are.na</a><br>
         <a href="https://linkedin.com/in/harrycopeman" target="_blank" rel="noreferrer">LinkedIn</a>
       </p>
     </div>
+    <section class="gallery" aria-label="Selected work">
+      <div class="gallery-track" role="region" aria-label="Portfolio image and video grid" aria-busy="true"></div>
+      <p class="gallery-status" role="status">Loading selected work…</p>
+      <button class="gallery-retry" type="button" hidden>Try again</button>
+      <noscript><p>View the portfolio on <a href="https://www.are.na/channel/portfolio-_lvhxatzlmi">Are.na</a>.</p></noscript>
+    </section>
   </main>
 </body>
 </html>

@@ -9,3 +9,9 @@ git rm --cached <root/live.htaccess>
 git rm --cached <codekit-config.json>
 
 git rm --cached <config.rb>
+
+# Local secrets and hosting state
+.env
+.env.*
+!.env.example
+.vercel/

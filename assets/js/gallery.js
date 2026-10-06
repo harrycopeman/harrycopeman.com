@@ -1,244 +1,224 @@
-// Slide data from previous implementation
-const slides = [
-  {
-    type: 'image',
-    src: 'assets/img/bb-office.jpeg',
-    year: '2020',
-    caption: 'Founded the London office for Bakken & Bæck',
-    alt: 'Bakken & Bæck London office'
-  },
-  {
-    type: 'video',
-    src: 'assets/vid/shop-2.mp4',
-    year: '2024',
-    caption: 'Led varying projects at Shop including a full redesign, a new homefeed, and AI strategy',
-    alt: 'Shop redesign video'
-  },
-  {
-    type: 'image',
-    src: 'assets/img/universe-2.png',
-    year: '2023',
-    caption: 'Led a redesign of the Universe editor experience, winner of the 2023 Apple Design Award',
-    alt: 'Universe editor redesign'
-  },
-  {
-    type: 'video',
-    src: 'assets/vid/ruter-screen.mp4',
-    year: '2022',
-    caption: 'Led a redesign for Norways public transportation company',
-    alt: 'Ruter redesign video'
-  },
-  {
-    type: 'image',
-    src: 'assets/img/farewill.png',
-    year: '2016',
-    caption: 'Founding designer at Farewill (acquired), raising over £1B for charity',
-    alt: 'Farewill founding designer'
-  },
-  {
-    type: 'image',
-    src: 'assets/img/kron-2.png',
-    year: '2019',
-    caption: 'Designed Kron, Norways #1 finance app',
-    alt: 'Kron finance app design'
-  },
-  {
-    type: 'image',
-    src: 'assets/img/insta2.png',
-    year: '2016',
-    caption: 'Designed product tagging across Facebook and Instagram',
-    alt: 'Instagram product tagging'
-  },
-  {
-    type: 'image',
-    src: 'assets/img/devices.png',
-    year: '2015',
-    caption: 'Part of the small team that launched Facebook design resources',
-    alt: 'Facebook design resources'
-  },
-  {
-    type: 'image',
-    src: 'assets/img/mailbox.png',
-    year: '2014',
-    caption: 'Design and prototypes at Mailbox',
-    alt: 'Mailbox design and prototypes'
-  }
-];
+(() => {
+  const endpoint = '/api/portfolio';
+  const track = document.querySelector('.gallery-track');
+  const status = document.querySelector('.gallery-status');
+  const retry = document.querySelector('.gallery-retry');
 
-let current = 0;
-
-function renderSlides() {
-  const track = document.querySelector('.carousel-track');
-  track.innerHTML = '';
-  slides.forEach((slide, idx) => {
-    const slideDiv = document.createElement('div');
-    slideDiv.className = 'carousel-slide';
-    slideDiv.setAttribute('data-index', idx);
-    let el;
-    if (slide.type === 'image') {
-      el = document.createElement('img');
-      el.src = slide.src;
-      el.alt = slide.alt;
-      el.draggable = false;
-    } else if (slide.type === 'video') {
-      el = document.createElement('video');
-      el.src = slide.src;
-      el.autoplay = true;
-      el.muted = true;
-      el.loop = true;
-      el.playsInline = true;
-      el.setAttribute('aria-label', slide.alt);
-      el.draggable = false;
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  const pendingImages = new WeakMap();
+  const observer = new IntersectionObserver(entries => {
+    for (const entry of entries) {
+      if (!entry.isIntersecting) continue;
+      observer.unobserve(entry.target);
+      pendingImages.get(entry.target)?.();
     }
-    slideDiv.appendChild(el);
-    // Add caption under media
-    const captionDiv = document.createElement('div');
-    captionDiv.className = 'carousel-caption';
-    const yearSpan = document.createElement('span');
-    yearSpan.className = 'gallery-year';
-    yearSpan.textContent = slide.year;
-    const descSpan = document.createElement('span');
-    descSpan.className = 'gallery-desc';
-    descSpan.textContent = slide.caption;
-    captionDiv.appendChild(yearSpan);
-    captionDiv.appendChild(descSpan);
-    slideDiv.appendChild(captionDiv);
-    track.appendChild(slideDiv);
-  });
-}
+  }, { rootMargin: '500px' });
 
-function renderNav() {
-  const nav = document.querySelector('.gallery-nav');
-  nav.innerHTML = '';
-  slides.forEach((slide, idx) => {
-    const btn = document.createElement('button');
-    btn.className = 'gallery-nav-btn' + (idx === current ? ' active' : '');
-    btn.textContent = slide.year;
-    btn.addEventListener('click', () => {
-      goToSlide(idx);
-    });
-    nav.appendChild(btn);
-  });
-}
-
-function updateCarousel(animate = true) {
-  const track = document.querySelector('.carousel-track');
-  const slidesEls = Array.from(track.children);
-  const slide = slidesEls[current];
-  if (!slide) return;
-  const viewport = document.querySelector('.carousel-viewport');
-  // Calculate the left offset of the slide relative to the track
-  const slideRect = slide.getBoundingClientRect();
-  const trackRect = track.getBoundingClientRect();
-  const viewportRect = viewport.getBoundingClientRect();
-  // The center of the slide relative to the track
-  const slideCenterInTrack = slide.offsetLeft + slide.offsetWidth / 2;
-  // The center of the viewport relative to the track
-  const viewportCenterInTrack = (viewportRect.width) / 2;
-  // The offset needed to center the slide
-  const offset = viewportCenterInTrack - slideCenterInTrack;
-  track.style.transition = animate ? 'transform 0.6s cubic-bezier(.4,0,.2,1)' : 'none';
-  track.style.transform = `translateX(${offset}px)`;
-  // Update preview states
-  slidesEls.forEach((el, idx) => {
-    el.classList.remove('carousel-slide--preview');
-    if (idx === current + 1) {
-      el.classList.add('carousel-slide--preview');
+  function showSkeletons() {
+    const placeholders = document.createDocumentFragment();
+    for (let index = 0; index < 15; index++) {
+      const figure = document.createElement('div');
+      figure.className = 'gallery-item gallery-skeleton';
+      figure.setAttribute('aria-hidden', 'true');
+      const media = document.createElement('div');
+      media.className = 'gallery-media';
+      media.style.aspectRatio = [0.8, 1.25, 0.75, 1, 1.5][index % 5];
+      const caption = document.createElement('div');
+      caption.className = 'skeleton-caption';
+      figure.append(media, caption);
+      placeholders.append(figure);
     }
-  });
-  // Update caption
-  document.querySelector('.gallery-year').textContent = slides[current].year;
-  document.querySelector('.gallery-desc').textContent = slides[current].caption;
-}
-
-function goToSlide(idx, animate = true) {
-  if (idx === current) return;
-  current = idx;
-  updateCarousel(animate);
-  renderNav();
-  centerActiveNavBtn();
-}
-
-// Keyboard navigation
-window.addEventListener('keydown', (e) => {
-  if (e.key === 'ArrowLeft') {
-    if (current > 0) goToSlide(current - 1);
-  } else if (e.key === 'ArrowRight') {
-    if (current < slides.length - 1) goToSlide(current + 1);
+    track.replaceChildren(placeholders);
   }
-});
 
-// Initial render
-renderSlides();
-
-function ensureCenteredAfterMediaLoad() {
-  const track = document.querySelector('.carousel-track');
-  const slidesEls = Array.from(track.children);
-  let pending = 0;
-  slidesEls.forEach(slideDiv => {
-    const media = slideDiv.querySelector('img, video');
-    if (media) {
-      if (media.complete || media.readyState === 4) {
-        // Already loaded
-      } else {
-        pending++;
-        media.addEventListener('load', () => {
-          pending--;
-          if (pending === 0) updateCarousel();
-        });
-        media.addEventListener('loadeddata', () => {
-          pending--;
-          if (pending === 0) updateCarousel();
-        });
+  function revealImage(media, image) {
+    if (reducedMotion.matches) {
+      media.classList.add('is-ready');
+      return;
+    }
+    const canvas = document.createElement('canvas');
+    canvas.className = 'pixel-preview';
+    canvas.setAttribute('aria-hidden', 'true');
+    const context = canvas.getContext('2d');
+    if (!context) {
+      media.classList.add('is-ready');
+      return;
+    }
+    media.append(canvas);
+    media.classList.add('is-revealing');
+    const steps = [16, 48, 96];
+    let step = 0;
+    function renderStep() {
+      if (!media.isConnected) return;
+      if (step === steps.length || reducedMotion.matches) {
+        media.classList.add('is-ready');
+        setTimeout(() => canvas.remove(), 120);
+        return;
       }
+      canvas.width = steps[step++];
+      canvas.height = Math.max(1, Math.round(canvas.width * image.naturalHeight / image.naturalWidth));
+      context.drawImage(image, 0, 0, canvas.width, canvas.height);
+      setTimeout(renderStep, 45);
     }
-  });
-  // Fallback: always call after a short delay
-  setTimeout(() => updateCarousel(), 100);
-}
+    renderStep();
+  }
 
-window.addEventListener('resize', () => updateCarousel());
-ensureCenteredAfterMediaLoad();
-renderNav();
-
-// Time and theme logic (unchanged)
-function updateTime() {
-  const el = document.getElementById('gallery-time');
-  const now = new Date();
-  el.textContent = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });
-}
-setInterval(updateTime, 1000);
-updateTime();
-
-const lightBtn = document.getElementById('light-toggle');
-const darkBtn = document.getElementById('dark-toggle');
-lightBtn.addEventListener('click', () => {
-  document.body.classList.remove('dark');
-  lightBtn.classList.add('active');
-  darkBtn.classList.remove('active');
-});
-darkBtn.addEventListener('click', () => {
-  document.body.classList.add('dark');
-  darkBtn.classList.add('active');
-  lightBtn.classList.remove('active');
-});
-
-// Add left/right hover cursor logic
-const viewport = document.querySelector('.carousel-viewport');
-if (viewport) {
-  viewport.addEventListener('mousemove', (e) => {
-    const rect = viewport.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-    const leftZone = rect.width * 0.25;
-    const rightZone = rect.width * 0.75;
-    viewport.classList.remove('left-hover', 'right-hover');
-    if (x < leftZone) {
-      viewport.classList.add('left-hover');
-    } else if (x > rightZone) {
-      viewport.classList.add('right-hover');
+  const videoObserver = new IntersectionObserver(entries => {
+    for (const entry of entries) {
+      const video = entry.target;
+      if (video.closest('.lightbox')) continue;
+      const rect = video.getBoundingClientRect();
+      if (rect.bottom > -100 && rect.top < innerHeight + 100 && !document.querySelector('.lightbox[open]')) {
+        if (!video.src) video.src = video.dataset.src;
+        video.play().catch(() => {});
+      } else video.pause();
     }
-  });
-  viewport.addEventListener('mouseleave', () => {
-    viewport.classList.remove('left-hover', 'right-hover');
-  });
-} 
+  }, { rootMargin: '100px' });
+
+  function createVideoFigure(block) {
+    const data = block.video;
+    const figure = document.createElement('figure');
+    figure.className = 'gallery-item';
+    const media = document.createElement('div');
+    media.className = 'gallery-media';
+    media.style.aspectRatio = `${data.width || 16} / ${data.height || 9}`;
+    const video = document.createElement('video');
+    video.autoplay = true;
+    video.loop = true;
+    video.muted = true;
+    video.defaultMuted = true;
+    video.playsInline = true;
+    video.preload = 'metadata';
+    video.poster = data.poster;
+    video.dataset.src = data.src;
+    video.setAttribute('aria-label', block.title || 'Portfolio video');
+    video.addEventListener('loadedmetadata', () => {
+      data.width = video.videoWidth;
+      data.height = video.videoHeight;
+      media.style.aspectRatio = `${data.width} / ${data.height}`;
+    });
+    video.addEventListener('loadeddata', () => media.classList.add('is-ready'));
+    video.addEventListener('error', () => {
+      media.classList.add('has-error');
+      if (media.querySelector('.image-retry')) return;
+      const retryVideo = document.createElement('button');
+      retryVideo.className = 'image-retry';
+      retryVideo.type = 'button';
+      retryVideo.textContent = 'Video unavailable · Retry';
+      retryVideo.onclick = () => {
+        retryVideo.remove(); media.classList.remove('has-error'); video.load();
+        video.play().catch(() => {});
+      };
+      media.append(retryVideo);
+    });
+    const caption = document.createElement('figcaption');
+    caption.textContent = block.description?.plain?.trim() || block.title || 'Untitled';
+    media.append(video);
+    window.portfolioLightbox.add(data, video, media, caption.textContent);
+    figure.append(media, caption);
+    videoObserver.observe(video);
+    return figure;
+  }
+
+  function createFigure(block) {
+    if (block.type === 'Video' && block.video?.src) return createVideoFigure(block);
+    if (block.type !== 'Image' || !block.image?.src) return null;
+
+    const figure = document.createElement('figure');
+    figure.className = 'gallery-item';
+    const media = document.createElement('div');
+    media.className = 'gallery-media';
+    const width = block.image.width || 800;
+    const height = block.image.height || 1000;
+    media.style.aspectRatio = `${width} / ${height}`;
+    const image = document.createElement('img');
+    image.alt = block.image.alt_text || block.title || 'Portfolio image';
+    image.decoding = 'async';
+    image.width = width;
+    image.height = height;
+
+    image.onload = async () => {
+      if (media.classList.contains('is-ready')) return;
+      try { await image.decode(); } catch { /* The loaded image is still usable. */ }
+      if (media.isConnected) revealImage(media, image);
+    };
+    image.onerror = () => {
+      media.classList.add('has-error');
+      const button = document.createElement('button');
+      button.className = 'image-retry';
+      button.type = 'button';
+      button.textContent = 'Image unavailable · Retry';
+      button.addEventListener('click', () => {
+        button.remove();
+        media.classList.remove('has-error');
+        image.src = block.image.src;
+      });
+      media.append(button);
+    };
+    media.append(image);
+    pendingImages.set(media, () => {
+      image.sizes = `${Math.ceil(media.getBoundingClientRect().width)}px`;
+      if (block.image.srcset) image.srcset = block.image.srcset;
+      image.fetchPriority = media.getBoundingClientRect().top < window.innerHeight ? 'high' : 'low';
+      image.src = block.image.src;
+    });
+    observer.observe(media);
+
+    const caption = document.createElement('figcaption');
+    caption.textContent = block.description?.plain?.trim() || block.title || 'Untitled';
+    window.portfolioLightbox.add(block.image, image, media, caption.textContent);
+    figure.append(media, caption);
+    return figure;
+  }
+
+  async function loadGallery() {
+    retry.hidden = true;
+    status.hidden = false;
+    status.textContent = 'Loading selected work…';
+    track.setAttribute('aria-busy', 'true');
+    observer.disconnect();
+    videoObserver.disconnect();
+    window.portfolioLightbox.reset();
+    showSkeletons();
+    let imageCount = 0;
+    let page = 1;
+
+    try {
+      do {
+        const response = await fetch(`${endpoint}?per=100&page=${page}`, {
+          signal: AbortSignal.timeout(15000),
+        });
+        if (!response.ok) throw new Error(`Are.na returned ${response.status}`);
+        const result = await response.json();
+        if (!Array.isArray(result.data)) throw new Error('Unexpected channel response');
+
+        track.querySelectorAll('.gallery-skeleton').forEach(element => element.remove());
+        for (const block of result.data) {
+          const figure = createFigure(block);
+          if (figure) {
+            track.append(figure);
+            imageCount++;
+          }
+        }
+        status.hidden = imageCount > 0;
+        const nextPage = result.meta?.next_page;
+        page = Number.isInteger(nextPage) && nextPage > page ? nextPage : null;
+      } while (page);
+
+      if (!imageCount) status.textContent = 'No images or videos in this collection yet.';
+    } catch (error) {
+      status.hidden = false;
+      status.textContent = imageCount
+        ? 'Some images could not be loaded.'
+        : 'The portfolio is temporarily unavailable.';
+      retry.hidden = false;
+      console.warn('Could not load the portfolio:', error);
+    } finally {
+      track.querySelectorAll('.gallery-skeleton').forEach(element => element.remove());
+      track.setAttribute('aria-busy', 'false');
+    }
+  }
+
+  retry.addEventListener('click', loadGallery);
+  loadGallery();
+})();
